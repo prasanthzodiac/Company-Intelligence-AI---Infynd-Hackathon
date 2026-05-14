@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { API_BASE } from '../services/api.js'
+import { API_BASE, isProductionSameOriginApi } from '../services/api.js'
 import './UploadScreen.css'
 
 // SVG Icon Components
@@ -100,6 +100,13 @@ function UploadScreen({ onProcessingComplete }) {
   const handleUpload = async () => {
     if (!csvFile) {
       alert('Please select a CSV file first')
+      return
+    }
+
+    if (isProductionSameOriginApi()) {
+      alert(
+        'This Vercel site only serves the UI. Deploy the Flask API elsewhere, then in Vercel → Project → Settings → Environment Variables set VITE_API_BASE_URL to your API root (for example https://your-app.onrender.com/api), save, and trigger a new deployment.'
+      )
       return
     }
 

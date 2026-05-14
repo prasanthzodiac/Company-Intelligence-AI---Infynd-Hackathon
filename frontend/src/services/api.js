@@ -12,6 +12,10 @@ function resolveApiBase() {
 
 export const API_BASE = resolveApiBase()
 
+/** True when the built app still targets same-origin `/api` in production (no Flask on Vercel static). */
+export const isProductionSameOriginApi = () =>
+  Boolean(import.meta.env.PROD && API_BASE === '/api')
+
 export const getCompanies = async () => {
   const response = await fetch(`${API_BASE}/companies`)
   if (!response.ok) {
