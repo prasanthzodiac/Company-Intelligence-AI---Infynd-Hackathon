@@ -3,6 +3,7 @@ PyYAML==6.0.2
 requests==2.32.3
 flask==3.0.0
 flask-cors==4.0.0
+gunicorn==22.0.0
 # crawl4ai is optional and version can be installed manually if needed
 
 

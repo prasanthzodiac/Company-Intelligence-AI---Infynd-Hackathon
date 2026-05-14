@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-Start the Flask backend API server
+Start the Flask backend API server (development).
+Production: use Gunicorn — see Procfile and DEPLOYMENT.md.
 """
+import os
 import sys
 from pathlib import Path
 
@@ -12,8 +14,9 @@ sys.path.insert(0, str(backend_dir.parent))
 from backend.api.app import app
 
 if __name__ == '__main__':
+    port = int(os.environ.get("PORT", "5000"))
     print("Starting InFynd Company Intelligence AI Backend API...")
-    print("Access the UI at: http://localhost:5000")
-    print("API endpoints available at: http://localhost:5000/api")
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    print(f"Access the UI at: http://localhost:{port}")
+    print(f"API endpoints available at: http://localhost:{port}/api")
+    app.run(host="0.0.0.0", port=port, debug=True)
 

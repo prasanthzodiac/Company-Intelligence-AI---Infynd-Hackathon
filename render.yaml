@@ -1,0 +1,12 @@
+# Render Blueprint: https://docs.render.com/blueprint-spec
+# Connect this repo in Render → New → Blueprint → select render.yaml (or paste contents).
+version: "1"
+services:
+  - type: web
+    name: company-intelligence-api
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 180 wsgi:app
+    healthCheckPath: /api/companies
