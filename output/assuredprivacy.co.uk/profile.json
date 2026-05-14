@@ -1,0 +1,67 @@
+{
+  "company_name": "Assured Privacy",
+  "domain": "assuredprivacy.co.uk",
+  "description_short": "Privacy insights and rights servicing architecture for businesses.",
+  "description_long": "We help companies utilize data to produce new insights into their businesses, customers, and competitors. We advise on technology, organization, processes, business intelligence systems, and data science techniques.",
+  "industry": "Technology",
+  "sub_industry": "Data Science",
+  "sectors": [
+    "Finance",
+    "Healthcare"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [
+    "EU member states regulators",
+    "Global operations"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "assuredprivacy.co.uk",
+    "company_name": "Assured Privacy",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "GDPR"
+  ],
+  "services": [
+    {
+      "name": "Privacy insights and rights servicing architecture",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "1000+",
+  "technology_signals": [
+    "Cloud",
+    "Cryptography"
+  ],
+  "extraction_confidence": 0.0,
+  "meta": {
+    "extraction_confidence": 0.8
+  }
+}

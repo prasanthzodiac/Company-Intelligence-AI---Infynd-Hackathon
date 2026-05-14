@@ -1,0 +1,97 @@
+{
+  "company_name": "EvaStore Ltd",
+  "domain": "documentstorage.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "Managing",
+      "title": "Director",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "documentstorage.co.uk",
+    "company_name": "EvaStore Ltd",
+    "full_address": "",
+    "phone": "01691 650355",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@evastore.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/evastore-limited",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "GDPR",
+    "NIS",
+    "ISO"
+  ],
+  "services": [
+    {
+      "name": "Storage and Management of Confidential Patient Records",
+      "type": "service"
+    },
+    {
+      "name": "Secure Off-Site Management of Risk Assessments and Insurance Policies",
+      "type": "service"
+    },
+    {
+      "name": "Document Scanning and Indexing",
+      "type": "service"
+    },
+    {
+      "name": "Shredding and Recycling Services",
+      "type": "service"
+    },
+    {
+      "name": "Freight Company Document Management",
+      "type": "service"
+    },
+    {
+      "name": "Financial Services Document Management",
+      "type": "service"
+    },
+    {
+      "name": "Health Service Document Management",
+      "type": "service"
+    },
+    {
+      "name": "Health and Social Care Document Management",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "REST",
+    "Cloud",
+    "AWS",
+    "API"
+  ],
+  "extraction_confidence": 0.35
+}

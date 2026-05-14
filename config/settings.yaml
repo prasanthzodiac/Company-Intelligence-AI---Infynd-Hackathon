@@ -1,0 +1,29 @@
+paths:
+  data_dir: "data"
+  output_dir: "output"
+  logs_dir: "logs"
+
+downloader:
+  # Preferred depth for httrack / wget recursion
+  depth: 3
+  # Optional explicit paths to httrack / wget; leave empty to use PATH lookup
+  httrack_path: ""
+  wget_path: ""
+  # Timeout per domain download (seconds)
+  timeout_seconds: 600
+
+parallel:
+  # Number of parallel workers for download/crawl (0 = auto-detect CPU count)
+  workers: 0
+  # Enable parallel LLM extraction (may overwhelm Ollama if too many workers)
+  # Set to true for faster processing, but limit to 2-4 workers to avoid overwhelming Ollama
+  parallel_llm: true
+
+llm:
+  # Ollama model name, e.g. "llama3" or "llama3.3"
+  model: "llama3"
+  temperature: 0.0
+  # Ollama chat endpoint
+  api_url: "http://localhost:11434/api/chat"
+
+

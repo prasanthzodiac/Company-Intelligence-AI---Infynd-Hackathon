@@ -1,0 +1,104 @@
+{
+  "company_name": "Mandata",
+  "domain": "mandata.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Park, Benton Lane, Newcastle upon Tyne NE12 8BS © 2025 Mandata Privacy Po",
+  "locations": [
+    "Newcastle upon Tyne"
+  ],
+  "leadership": [
+    {
+      "name": "Managing",
+      "title": "Director",
+      "role_type": "executive"
+    },
+    {
+      "name": "Technical",
+      "title": "Director",
+      "role_type": "executive"
+    },
+    {
+      "name": "Commercial",
+      "title": "Director",
+      "role_type": "executive"
+    },
+    {
+      "name": "Patrick Tandy Managing",
+      "title": "Director",
+      "role_type": "executive"
+    },
+    {
+      "name": "Patrick Tandy",
+      "title": "Managing Director",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "mandata.co.uk",
+    "company_name": "Mandata",
+    "full_address": "Park, Benton Lane, Newcastle upon Tyne NE12 8BS © 2025 Mandata Privacy Po",
+    "phone": "0191 250 2220",
+    "sales_phone": "191 250 2220",
+    "fax": "",
+    "mobile": "0191 250 2220",
+    "other_numbers": [
+      "1639130091366",
+      "16391300913",
+      "1901019469"
+    ],
+    "email": "hello@mandata.co.uk",
+    "hours_of_operation": "Monday to Friday: 8am – 6pm* (Software & Tech support)",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/mandata",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.42,
+  "contact_info": {
+    "emails": [
+      "hello@mandata.co.uk",
+      "helpdesk@mandata.co.uk"
+    ],
+    "phones": [
+      "0191 250 2220",
+      "191 250 2220"
+    ]
+  },
+  "social_media_links": {
+    "facebook": "https://www.facebook.com/MandataLtd/",
+    "twitter": "https://twitter.com/MandataLtd/",
+    "instagram": "https://www.instagram.com/mandataltd/",
+    "linkedin": "https://www.linkedin.com/company/mandata/",
+    "youtube": "https://www.youtube.com/@mandataltd"
+  },
+  "address": {
+    "street": "Park",
+    "city": "Newcastle upon Tyne",
+    "postcode": "NE12 8BS"
+  }
+}

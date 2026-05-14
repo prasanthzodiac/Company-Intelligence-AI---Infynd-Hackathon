@@ -1,0 +1,62 @@
+{
+  "company_name": "Aculab Technologies",
+  "domain": "aculabtechnologies.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Milton Keynes, United Kingdom",
+  "locations": [
+    "United Kingdom",
+    "USA"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "aculabtechnologies.com",
+    "company_name": "Aculab Technologies",
+    "full_address": "Lakeside, Bramley Road, Milton Keynes MK1 1PT, United Kingdom",
+    "phone": "+44 (0) 1908 273800",
+    "sales_phone": "+1 (781) 352 3550",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [
+      "(781) 352 3550",
+      "27001",
+      "2015",
+      "2013",
+      "2024"
+    ],
+    "email": [
+      "info@aculab.com",
+      "sales@aculab.comHead"
+    ],
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://uk.linkedin.com/company/aculab",
+    "facebook": "https://www.facebook.com/AculabEmpoweringYourCommunications",
+    "x": "https://twitter.com/aculab",
+    "instagram": "https://www.instagram.com/aculab_/"
+  },
+  "certifications": [],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.0,
+  "meta": {
+    "extraction_confidence": 1.0
+  }
+}

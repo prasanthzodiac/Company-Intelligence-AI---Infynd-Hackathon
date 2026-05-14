@@ -1,0 +1,50 @@
+{
+  "company_name": "Blue Wolf",
+  "domain": "bluewolfics.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": [],
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "Blue Wolf",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "bluewolfics.com",
+    "company_name": "Blue Wolf",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.16
+}

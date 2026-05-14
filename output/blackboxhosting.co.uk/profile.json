@@ -1,0 +1,89 @@
+{
+  "company_name": "BlackBox Hosting",
+  "domain": "blackboxhosting.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "17391848",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "them in time, cloud misconfigurations remain a looming threat, even if your organisation adopts modern cloud security tools",
+  "locations": [
+    "cloud misconfigurations remain a looming threat"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "blackboxhosting.co.uk",
+    "company_name": "BlackBox Hosting",
+    "full_address": "them in time, cloud misconfigurations remain a looming threat, even if your organisation adopts modern cloud security tools",
+    "phone": "+44 02037 4078",
+    "sales_phone": "150954236-1320",
+    "fax": "",
+    "mobile": "02037 407840",
+    "other_numbers": [
+      "+44 02037407840",
+      "02037407840",
+      "1739184803"
+    ],
+    "email": "5ABEmailinfo@blackboxhosting.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/blackbox-hosting-ltd",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "certification",
+    "ISO",
+    "NIS"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "API",
+    "AI",
+    "Docker",
+    "Kubernetes",
+    "Cloud",
+    "AWS",
+    "REST"
+  ],
+  "extraction_confidence": 0.44,
+  "founder_and_managing_director": "Matthew Burden",
+  "established_year": 11,
+  "industry_certifications": [
+    "Cisco CCNA",
+    "Cisco CCNP",
+    "Cisco CCIE (held since 2016)",
+    "MCP",
+    "MCSA (Messaging)",
+    "MCSE 2003",
+    "MCITP Enterprise Administrator 2008"
+  ],
+  "phone_numbers": [
+    "02037 407840",
+    "150954236-1320",
+    "203 740 7840",
+    "+44 02037 4078"
+  ],
+  "social_media_links": {
+    "facebook": "https://www.facebook.com/BlackBoxHosting/",
+    "linkedin": "https://www.linkedin.com/company/blackbox-hosting-ltd/",
+    "twitter": "https://twitter.com/blackboxh_uk"
+  },
+  "company_registration_number": "17391848"
+}

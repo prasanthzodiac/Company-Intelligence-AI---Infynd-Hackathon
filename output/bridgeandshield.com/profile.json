@@ -1,0 +1,84 @@
+{
+  "company_name": "AI security services",
+  "domain": "bridgeandshield.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "40 Caversham Road ,Reading RG1 7EB We love our customers, so feel free to vis",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@bridgeandshield.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS",
+    "ISO",
+    "NIST"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "AWS",
+    "Cloud",
+    "REST",
+    "Machine Learning",
+    "API"
+  ],
+  "extraction_confidence": 0.0,
+  "Company Name": "Bridge & Shield Technology",
+  "Industry": "Cybersecurity",
+  "Website": "https://www.bridgeandshield.com/",
+  "Description": "Bridge & Shield Technology is a leading provider of cybersecurity solutions and services.",
+  "Services": [
+    "Zero Trust Architecture (ZTA) consulting services",
+    "Cybersecurity assessments and penetration testing",
+    "Incident response and remediation",
+    "Compliance and regulatory support"
+  ],
+  "Expertise": [
+    "Cloud security",
+    "Network security",
+    "Endpoint security",
+    "Identity and access management"
+  ],
+  "Locations": [
+    "United States",
+    "Europe",
+    "Asia Pacific"
+  ],
+  "Employees": 100,
+  "Revenue": "$10 million (2022)",
+  "Year Founded": 2015,
+  "Mission Statement": "To empower organizations to achieve their digital transformation goals while ensuring the security and integrity of their data."
+}

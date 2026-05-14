@@ -1,0 +1,64 @@
+{
+  "company_name": "Applied Concepts Ltd",
+  "domain": "appliedconcepts.co.uk",
+  "description_short": "Helps start-up or established clients develop innovative embedded systems for medtech, biotechnology, and industrial fields.",
+  "description_long": "Transforming ideas into proof of concept prototypes with expertise in electronics hardware and software. Technologies include analog and digital hardware design, microfluidics control, mechatronics, video capture and transmission, and more.",
+  "industry": "Technology",
+  "sub_industry": "Medtech, Biotechnology, Industrial",
+  "sectors": [
+    "Technology",
+    "Healthcare"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "ISO 9001, QMS ISO 13485, Medical Devices IEC 62304",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "The Old Piggery, 1 Sheepshead Lane, Harston, Cambridgeshire, CB22 7QA, UK",
+  "locations": [
+    "Cambridge, UK"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "appliedconcepts.co.uk",
+    "company_name": "Applied Concepts Ltd",
+    "full_address": "The Old Piggery, 1 Sheepshead Lane, Harston, Cambridgeshire, CB22 7QA, UK",
+    "phone": "+44 (0)1223 874450",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@appliedconcepts.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO 9001",
+    "Medical Devices IEC 62304",
+    "QMS ISO 13485"
+  ],
+  "services": [
+    {
+      "name": "hardware and software. Technologies include",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "11-50",
+  "technology_signals": [
+    "Azure"
+  ],
+  "extraction_confidence": 0.0
+}

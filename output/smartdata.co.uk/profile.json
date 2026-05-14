@@ -1,0 +1,83 @@
+{
+  "company_name": "SmartData UK Limited",
+  "domain": "smartdata.co.uk",
+  "description_short": "These terms and conditions apply to all Development and other services provided by SmartData UK Limited to the Client.",
+  "description_long": "These terms and conditions apply to all Development and other services provided by SmartData UK Limited to the Client.",
+  "industry": "Consulting",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "is being protected from spambots",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "smartdata.co.uk",
+    "company_name": "SmartData UK Limited",
+    "full_address": "is being protected from spambots",
+    "phone": "8456 128 061",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "of the recipient; or",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "certification",
+    "NIST",
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "IT strategy",
+      "type": "service"
+    },
+    {
+      "name": "performance",
+      "type": "service"
+    },
+    {
+      "name": "troubleshooting",
+      "type": "service"
+    },
+    {
+      "name": "risk reduction & evaluation",
+      "type": "service"
+    },
+    {
+      "name": "business agility",
+      "type": "service"
+    },
+    {
+      "name": "Agile introduction",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "JavaScript",
+    "REST",
+    "AWS",
+    "API"
+  ],
+  "extraction_confidence": 0.48
+}

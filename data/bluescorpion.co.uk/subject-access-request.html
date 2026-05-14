@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style> body {opacity:0;transition: 10ms opacity;} </style>
+  <title>Subject Access Request | Blue Scorpion</title>
+  <meta charset="utf-8">
+   <meta name="description" content="We are specialists in PCI DSS compliance - and with our help, you can be too. We save you money on non-compliance fines and help protect your brand." />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Subject Access Request | Blue Scorpion" />
+	<meta property="og:description" content="We are specialists in PCI DSS compliance - and with our help, you can be too. We save you money on non-compliance fines and help protect your brand." />
+	<meta property="og:url" content="https://www.bluescorpion.co.uk/subject-access-request" />
+	<meta property="og:site_name" content="Blue Scorpion" />
+	<meta property="og:image" content="https://www.bluescorpion.co.uk/images/bluescorpion_logo_round.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Subject Access Request | Blue Scorpion" />
+	<meta name="twitter:description" content="We are specialists in PCI DSS compliance - and with our help, you can be too. We save you money on non-compliance fines and help protect your brand." />
+	  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="icon" href="/images/fav.png" type="image/png" sizes="16x16"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#293484">
+  
+<script type="text/javascript" src="/js/pframe_async.js" async></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/pframe.js"></script>
+<script language="javascript" type="text/javascript">
+// JS added by _PF_doRegisteredJS
+jQuery.noConflict();
+var _PF_returnRouteID='69439815a7a8f';
+var _PF_pageID='';
+</script>
+<script language="javascript" type="text/javascript">
+// JS added by lazyLoadImages
+_PF_addEvent(window, 'DOMContentLoaded', function() {
+	try {
+		const images = window.document.querySelectorAll('source, img');
+		const config = {
+			rootMargin: '1px 0px',
+			threshold: 0.01
+		};
+		let observer;
+		let preloadImage = (element) => {
+			if (element.dataset && element.dataset.src) {
+				element.src = element.dataset.src;
+			}
+			if (element.dataset && element.dataset.srcset) {
+				element.srcset = element.dataset.srcset
+			}
+		}
+		let onIntersection = (entries) => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					observer.unobserve(entry.target);
+					preloadImage(entry.target);
+				}
+			});
+		}
+		if (!('IntersectionObserver' in window)) {
+			Array.from(images).forEach(image => preloadImage(image));
+		}else{
+			observer = new IntersectionObserver(onIntersection, config);
+			images.forEach(image => {
+				observer.observe(image);
+			});
+		}
+	}catch(err) {
+		alert(err);
+	}
+});
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '385273212084604');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1"
+src="https://www.facebook.com/tr?id=385273212084604&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3587746-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-3587746-1');
+</script>
+</head>
+<body>
+  <header>
+    <div class="navbar-toggler toggle" role="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+    </div>
+    <div class="row topbar no-gutters">
+      <div class="col bluescorpion_gradbg">
+        <div class="social_icons_outer">
+          <span class="social_icons">
+            <a target="_newWinFB" href="https://www.facebook.com/BlueScorpionLimited/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinTW" href="https://twitter.com/BlueScorpionLtd" title="Twitter"><i class="fab fa-twitter"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinLI" href="https://www.linkedin.com/company/blue-scorpion-limited?trk=company_logo" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinIN" href="https://www.instagram.com/bluescorpionltd/" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </span>
+          <span class="social_icons">
+            <a target="_newWinYT" href="https://www.youtube.com/channel/UC1JIOvUd3eb0APDjApymN1A" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </span>
+        </div>
+        <span class="top_bar_tel_email">
+          <span class="telno">01732 602 111</span> <a href="mailto:sales@bluescorpion.co.uk" class="top_bar_email">sales@bluescorpion.co.uk</a>
+        </span>
+        <span class="shopping_cart">
+          <a href="/basket" title="Shopping Cart"><i class="fas fa-shopping-cart"></i> <span id="cart_number_id" class="cart_number">0</span></a>
+        </span>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters px-0">
+      <div class="row no-gutters">
+        <div class="col-lg-6 center-align no-gutters">
+          <div class="logos_outer">
+            <div class="blue_scorpion_logo">
+              <picture>
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/blue_scorpion_logo_768_screen.webp" type="image/webp">
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/blue_scorpion_logo.png" type="image/png">
+                <source media="(min-width: 769px)" srcset="/images/blue_scorpion_logo.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/images/blue_scorpion_logo.png" type="image/png">
+                <img src="/images/blue_scorpion_logo.png" alt="Blue Scorpion">
+              </picture>
+            </div>
+            <div class="eit_logo">
+              <a href="https://www.euroit.co.uk/">
+              <picture>
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/eit_logo_768_screen.webp" type="image/webp">
+                <source media="(min-width: 320px) and (max-width: 768px)" srcset="/images/eit_logo.png" type="image/png">
+                <source media="(min-width: 769px)" srcset="/images/eit_logo.webp" type="image/webp">
+                <source media="(min-width: 769px)" srcset="/images/eit_logo.png" type="image/png">
+                <img src="/images/eit_logo.png" alt="EIT">
+              </picture>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 center-align no-gutters">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbar1">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/"><span>HOME</span></a>
+
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link" href="/products" data-toggle="dropdown">PRODUCTS&nbsp;&nbsp; <i class="fas fa-angle-down"></i></a>
+                  <ul id="products_dropdown" class="dropdown-menu hover_or_click animate slideIn">
+                    <li><a class="dropdown-item" href="/cyber-protect">Cyber Protect</a></li>
+                    <li><a class="dropdown-item" href="/ip-protect-lite">IP Protect Lite</a></li>
+                    <li><a class="dropdown-item" href="/ip-protect-enterprise">IP Protect (Enterprise)</a></li>
+                    <li><a class="dropdown-item" href="/wifi">GDPR Compliant WiFi</a></li>
+                    <li><a class="dropdown-item" href="/payment-solutions">Payment Solutions</a></li>
+                    <li><a class="dropdown-item" href="/it-procurement">IT Procurement</a></li>
+                    <li><a class="dropdown-item" href="/datasheets">Datasheets</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/buy-now"><span>BUY NOW</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about-us"><span>ABOUT US</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact"><span>CONTACT</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container-fluid no-gutters px-0 home_main_outer">
+      <div class="row no-gutters align-items-center h-100 home_main delivery_policy">
+        <div class="col-lg-12 align-self-center no-gutters my-auto slide-up-fade-in">
+          <h1 class="my-auto align-self-center">Subject Access Request</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row equal align-items-center">
+        <div class="col-lg-12 center-align">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Subject Access Request</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row equal align-items-center">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+          <h3>About</h3>
+          <p>The EU General Data Protection Regulation (GDPR), grants you the right to access your personal data held by Blue Scorpion Limited. These requests are known as subject access requests (SAR) and in accordance with Section 45, we will provide you confirmation that we are processing your personal data, provide you information pertaining to the processing of your personal data and provide you a copy of the personal data we hold.</p>
+          <h3>Making a subject access request</h3>
+          <p>Subject access requests must be submitted in writing.  We expect to respond to your request within one month of receipt of your subject access request and proof of identity.  In some cases (where requests are complex or numerous) we may take up to a further two months; we will let you know where this may be the case.</p>
+          <p>Please email <a href="mailto:sar@bluescorpion.co.uk">sar@bluescorpion.co.uk</a> with your request together with your proof of ID or documentation that confirms your entitlement to act on the data subject’s behalf (for example, a signed form of authority or power of attorney) to the following:</p>
+          <p>Our Data Protection Officer may ask for additional information to verify your identity, to be sure we are passing your data to you and you only.</p>
+        </div>
+        <div class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+    </div>
+
+        <div class="container-fluid no-gutters px-0 want_to_know_2_outer">
+      <div class="row equal align-items-center want_to_know_2">
+        <div class="col-lg-6 center-align align-items-center no-gutters">
+          <p>Want to know more about any of our solutions?<br> <strong>Please get in touch.</strong><br>Email <a href="mailto:sales@bluescorpion.co.uk">sales@bluescorpion.co.uk</a><br>Telephone: <a href="tel:+441732602111"><span class="telno">01732&nbsp;602&nbsp;111</span></a></p>
+        </div>
+        <div class="col-lg-6 center-align align-items-center no-gutters">
+          <div class="row equal align-items-center center-align">
+            <div class="col-lg-6 align-items-center center-align">
+            <input type="text" class="form-control" id="contact_name" placeholder="Name" name="contact_name" title="Name" value="">            <input type="text" class="form-control" id="contact_email" placeholder="Email" name="contact_email" title="Email" value="">            </div>
+            <div class="col-lg-6 align-items-center center-align">
+            <input type="text" class="form-control" id="contact_tel" placeholder="Telephone" name="contact_tel" title="Tel" value="">            <button type="submit" class="btn btn-default" onclick="doContactUs()">Submit</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="modal fade mx-3" id="mesgModal" tabindex="-1" role="dialog">
+ <div class="modal-dialog modal-dialog-centered h-100" role="document">
+	<div class="modal-content">
+	  <div class="modal-header">
+		 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		 </button>
+	  </div>
+	  <div class="modal-body p-3 text-center mx-auto">
+		 <p><span id="mesgModalPop"></p>
+	  </div>
+	  <div id="popbuttonsmm" class="modal-footer text-center">
+	  <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+	  </div>
+	</div>
+ </div>
+</div>
+<input id="mesgModal_button" type="button" value="" class="btn btn-default" style="display:none;" data-toggle="modal" data-target="#mesgModal">  <script language="javascript" type="text/javascript">
+    function doContactUs() {
+    	spanobj=$o('mesgModalPop');
+    	emailobj=jQuery('#contact_email');
+    	nameobj=jQuery('#contact_name');
+    	telobj=jQuery('#contact_tel');
+    	flash=null;
+    	
+    	if (!nameobj.val()) flash="Please specify your name.";
+		else{
+			if (!emailobj.val()) flash="Please specify your email address.";
+			else{
+				if (!telobj.val()) flash="Please specify your telephone number.";
+			}
+		}
+    	if (!flash) {
+			ajaxdata={
+				'email':emailobj.val(),
+				'name':nameobj.val(),
+				'tel':telobj.val(),
+			};
+			jQuery.ajax({
+				type: "GET",
+				dataType: "json",
+				url: "/index/contactus/action:apply",
+				data: ajaxdata
+			}).always(function (retdata, jqx, textStatus, error) {
+				flash=(error) ? 'A problem occurred. textStatus: ' + textStatus + ' --- Error: ' + error : retdata['flash'];
+				if (!error && fbq) fbq('track', 'CompleteRegistration');
+				while (spanobj.hasChildNodes()) spanobj.removeChild(spanobj.childNodes[0]);
+				tob=document.createTextNode(retdata['flash']);
+				spanobj.appendChild(tob);
+				butt=jQuery('#mesgModal_button');
+				if (butt) butt.click();
+				return false;
+			});
+		}
+		if (flash) {
+			while (spanobj.hasChildNodes()) spanobj.removeChild(spanobj.childNodes[0]);
+			tob=document.createTextNode(flash);
+			spanobj.appendChild(tob);
+			butt=jQuery('#mesgModal_button');
+			if (butt) butt.click();
+			return false;
+		}
+    }
+    </script>
+  </main>
+  <footer>
+    <div class="container-fluid no-gutters px-0">
+        <div class="row equal">
+        <div id="left_spacer" class="col-lg-2 no-gutters">
+        </div>
+        <div class="col-lg-2">
+          <h3>Find us</h3>
+          <h4>Head Office:</h4><p><span class="scorpion_blue">Blue Scorpion Limited</span><br>East Malling Business Centre<br>NFU Building<br>New Road<br>East Malling<br>Kent ME19 6BJ</p>        </div>
+        <div class="col-lg-2">
+          <h3 class="find_us_spacer">&nbsp;</h3>
+          <h4>EIT Head Office:</h4><p><span class="scorpion_blue">European&nbsp;Information&nbsp;Technology&nbsp;Ltd</span><br>Kent Suite<br>London House<br>Texcel Business Park<br>Thames Road<br>Crayford<br>Kent DA1 4SL</p>        </div>
+        <div class="col-lg-2">
+          <h3 class="find_us_spacer">&nbsp;</h3>
+          <h4>EIT Logistics Centre:</h4><p><span class="scorpion_blue">European&nbsp;Information&nbsp;Technology&nbsp;Ltd</span><br>Unit 5 Church Trading Estate<br>Slade Green Road<br>Erith<br>Kent DA8 2JA</p>        </div>
+        <div class="col-lg-2">
+          <h3>Contact Information</h3>
+          <dl><dt>Head Office:</dt><dd><a href="tel:+441732602111"><span class="telno">+44&nbsp;(0)&nbsp;1732&nbsp;602&nbsp;111</span></a></dd></dl><dl><dt>EIT Office:</dt><dd><a href="tel:+441322524765"><span class="telno">+44&nbsp;(0)&nbsp;1322&nbsp;524&nbsp;765</span></a></dd></dl><dl><dt>Sales Line:</dt><dd><a href="tel:+441732440510"><span class="telno">+44&nbsp;(0)&nbsp;1732&nbsp;440&nbsp;510</span></a></dd></dl><div class="clearfix"></div><br><p><a href="mailto:sales@bluescorpion.co.uk" class="mailto-link">sales@bluescorpion.co.uk</a><br><a href="http://www.bluescorpion.co.uk">www.bluescorpion.co.uk</a><br><a href="https://www.euroit.co.uk/" target="_blank" rel="noopener">www.euroit.co.uk</a></p>        </div>
+        <div class="col-lg-2">
+          <h3>Links</h3>
+        	<p><a href="/delivery-policy">Delivery Policy</a><br>
+        		<a href="/refunds-and-cancellations">Refund Policy</a><br>
+          <a href="/privacy-policy">Privacy Policy</a><br>
+          <a href="/gdpr-consent">GDPR Consent</a><br>
+          <a href="mailto:info@bluescorpion.co.uk?subject=Update my preferences" class="mailto-link">Update My Preferences</a><br>
+          <a href="/cookie-policy">Cookie Policy</a><br>
+          <a href="/subject-access-request">Subject Access Request</a>
+          </p>
+          <div class="social_footer">
+            <span class="social_icons">
+              <a target="_newWinFB" href="https://www.facebook.com/BlueScorpionLimited/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinTW" href="https://twitter.com/BlueScorpionLtd" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinLI" href="https://www.linkedin.com/company/blue-scorpion-limited?trk=company_logo" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinIN" href="https://www.instagram.com/bluescorpionltd/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </span>
+            <span class="social_icons">
+              <a target="_newWinYT" href="https://www.youtube.com/channel/UC1JIOvUd3eb0APDjApymN1A" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </span>
+          </div>
+        </div>
+        <div id="right_spacer" class="col-lg-2 center-align no-gutters">
+        </div>
+      </div>
+      <div class="row equal no-gutters sage_icon">
+        <div class="col-lg-12 text-center no-gutters">
+          <!-- <img src="/images/placeholder.jpg" data-src="/images/Payments-by-Sage-Pay-Horizontal-2.jpg" class="text-center"> -->
+	  <img src="/images/placeholder.jpg" data-src="/images/Opayo_Logo.png" style="border:1px solid #dedede;" class="text-center">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="container-fluid no-gutters px-0">
+    <div class="row equal align-items-center">
+      <div class="col-lg-12 center-align align-items-center no-gutters copyright_footer">
+        Copyright &copy; 2019 Blue Scorpion Limited. Blue Scorpion<sup>TM</sup> is a registered trademark.
+      </div>
+    </div>
+  </div>
+  <div class="alert alert-dismissible text-center cookiealert" role="alert">
+    <div class="cookiealert-container">
+      We use <a href="/cookie-policy">cookies</a> to ensure you get the best experience on our website.
+      <button type="button" class="btn btn-default btn-sm acceptcookies" aria-label="Close">
+          I agree
+      </button>
+    </div>
+  </div>
+  <script async crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link href="/css/bluescorpion-styles-v2.css" rel="stylesheet">
+	<script>
+	_PF_addEvent(window, 'load', function() {
+		document.querySelector("body").style.opacity = 1;
+	});
+	</script>
+	<script src="/js/cookiealert.js" async></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="/js/jquery-3.3.1.slim.min.js"></script>
+  <script defer src="/js/popper.min.js"></script>
+  <script defer src="/js/bootstrap.min.js"></script>
+  <script defer src="/js/modernizr.js"></script>
+  <script defer id="rendered-js">// Load video popup modal
+    jQuery(document).ready(function() {
+      var $videoSrc;
+      jQuery('.video-btn').click(function() {
+        $videoSrc = jQuery(this).data("src");
+      });
+      if ($videoSrc) console.log($videoSrc);
+      jQuery('#myModal').on('shown.bs.modal', function(e) {
+        jQuery("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+      });
+      jQuery('#myModal').on('hide.bs.modal', function(e) {
+        jQuery("#video").attr('src', $videoSrc);
+      });
+    });
+  </script>
+  <script defer>// Hover products navigation on desktop, click on mobile devices
+    if (jQuery(window).width() < 991) {
+      jQuery('#products_dropdown').removeClass('hover_or_click');
+    }
+  </script>
+  <script defer>// Toggle on burger navigation for mobile devices
+    jQuery(document).ready(function() {
+      jQuery('.toggle').click(function() {
+        jQuery('.toggle').toggleClass('active');
+      });
+    });
+  </script>
+  <script defer>// Load product carousel and speed of slide transition
+    jQuery(document).ready(function() {
+      jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000 // 2 seconds
+    });
+  </script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="/js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/responsive-slider.js"></script>
+  <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css" media="screen" />
+	<script>
+	jQuery('.fancybox')
+	 .fancybox({
+		  type: 'iframe',
+		  autoSize : false,
+		  allowFullscreen: true,
+		  beforeLoad : function() { 
+				this.width  = parseInt(this.element.data('fancybox-width')); 
+				this.height = parseInt(this.element.data('fancybox-height'));
+		  }
+	});
+	</script>
+  <script language="javascript" type="text/javascript">
+var missing=[];
+var timerObject=null;
+var notmissing=[];
+var valObject={};
+_PF_addEvent(window, 'load', function(wevt) {
+	valObject=_PF_objectAssign(valObject, {"contact_tel":{"type":"regex","regex":"\/[0-9\\+ ]\/"}});
+	// Bootstrap JS for contact_tel
+	_PF_addEvent('contact_tel', 'keyup', function (evt) {
+		if (!preCheck(this, 'keyup')) return;
+		tval=_PF_getVar(this);
+		tres=tval.match(/[0-9\+ ]/g);
+		if (tres) {
+			_PF_setVar(this, tres.join(''));
+		}else _PF_setVar(this, '');
+	}, false);
+	_PF_addEvent('contact_tel', 'paste', function (evt) {
+		if (!preCheck(this, 'paste')) return;
+		tval=_PF_getVar(this);
+		tres=tval.match(/[0-9\+ ]/g);
+		if (tres) {
+			_PF_setVar(this, tres.join(''));
+		}else _PF_setVar(this, '');
+	}, false);
+}, false);
+
+</script>
+<script type="text/javascript">
+if (jQuery) {
+	var objtabtracker=null;
+	var tid='83608b06';
+	var rr='';
+	// Wait until the DOM has loaded before querying the document
+	jQuery(document).ready(function() {
+		objtabtracker=jQuery('#tabtracker');
+		jQuery('ul.tabs').each(function() {
+			// For each set of tabs, we want to keep track of
+			// which tab is active and it's associated content
+			var $active, $content, $links = jQuery(this).find('a');
+
+			// If the location.hash matches one of the links, use that as the active tab.
+			// If no match is found, use the first link as the initial active tab.
+			$active = jQuery($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+			$active.addClass('active');
+
+			$content = jQuery($active[0].hash);
+			// Hide the remaining content
+			$links.not($active).each(function () {
+				jQuery(this.hash).hide();
+			});
+
+			// Bind the click event handler
+			jQuery(this).on('click', 'a', function(e){
+				// Make the old tab inactive.
+				$active.removeClass('active');
+				$content.hide();
+
+				// Update the variables with the new link and content
+				$active = jQuery(this);
+				$content = jQuery(this.hash);
+				if (objtabtracker) {
+					objtabtracker.val(this.hash.toString().replace(/^#/,''));
+					if (tid && rr != '') {
+						tabcookie=_PF_getCookie('tabcookie');
+						tabcookie=(tabcookie) ? JSON.parse(tabcookie) : {};
+						if ('rr' in tabcookie && tabcookie['rr'] != rr) tabcookie={'rr':rr};
+						tabcookie[tid]=objtabtracker.val();
+						//_PF_setCookie('tabcookie', tid + '|' + objtabtracker.val());
+						_PF_setCookie('tabcookie', JSON.stringify(tabcookie));
+					}
+					//alert('tabcookie: ' + _PF_getCookie('tabcookie'));
+				}
+				// Make the tab active.
+				$active.addClass('active');
+				$content.show();
+
+				// Prevent the anchor's default click action
+				e.preventDefault();
+			});
+		});
+		if (objtabtracker) {
+			if (objtabtracker.val()) {
+				jtmp=jQuery('#l' + objtabtracker.val());
+				if (jtmp) {
+					jtmp.trigger("click");
+				}
+			}else{
+				if (window.location.hash) {
+					objtabtracker.val(window.location.hash.toString().replace(/^#/,''));
+					if (tid && rr != '') {
+						tabcookie=_PF_getCookie('tabcookie');
+						tabcookie=(tabcookie) ? JSON.parse(tabcookie) : {};
+						if ('rr' in tabcookie && tabcookie['rr'] != rr) tabcookie={'rr':rr};
+						tabcookie[tid]=objtabtracker.val();
+						//_PF_setCookie('tabcookie', tid + '|' + objtabtracker.val());
+						_PF_setCookie('tabcookie', JSON.stringify(tabcookie));
+					}
+					jQuery(document).scrollTop(0);
+				}else{
+					tabpatt=/(&|\?)tabtracker=([^&]+)/;
+					pmat=tabpatt.exec(window.location.href);
+					if (pmat && 2 in pmat) {
+						tabcookie=_PF_getCookie('tabcookie');
+						ok=true;
+						if (tabcookie) {
+							tabcookie=JSON.parse(tabcookie);
+							if (tabcookie['rr'] == rr) {
+								//if (!(tabcookiebits[0] == '83608b06' && tabcookiebits[1] == pmat[2])) ok=false;
+								if (tid in tabcookie && tabcookie[tid] == pmat[2]) ok=false;
+							}
+						}
+						if (ok) {
+							objtabtracker.val(pmat[2]);
+							jtmp=jQuery('#l' + objtabtracker.val());
+							if (jtmp) {
+								jtmp.trigger("click");
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+	function _PF_linkBack(url) {
+		u=url;
+		if (objtabtracker) {
+			var jsonObj={};
+			jsonObj['tabtracker']=objtabtracker.val();
+			jsonObj['_PF_arg_merge']='y';
+			uriobj=URI(u);
+//			ubits=uriobj.search(true);
+			uriobj.setSearch('_frmobj', JSON.stringify(jsonObj));
+			url=uriobj;
+		}
+		return url;
+	}
+	
+}
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function() {
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c362d6e361b3372892f3e42/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+
+</html>

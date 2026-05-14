@@ -1,0 +1,102 @@
+{
+  "company_name": "MBA",
+  "domain": "mba-it.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "*Contact Number *Company Name *Job Title *Thank you! Your submission has been received!Oops! Something went wrong while submitting the form",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "mba-it.com",
+    "company_name": "MBA",
+    "full_address": "*Contact Number *Company Name *Job Title *Thank you! Your submission has been received!Oops! Something went wrong while submitting the form",
+    "phone": "020 3815 6680",
+    "sales_phone": "020-3815-6680",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@mba-it.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/mba-it-limited",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "managed-security-services",
+      "type": "service"
+    },
+    {
+      "name": "network-security",
+      "type": "service"
+    },
+    {
+      "name": "secure-access-service-edge-sase",
+      "type": "service"
+    },
+    {
+      "name": "security-awareness",
+      "type": "service"
+    },
+    {
+      "name": "security-orchestration-automation-response-soar",
+      "type": "service"
+    },
+    {
+      "name": "sensitive-data-discovery-ransomware-protection",
+      "type": "service"
+    },
+    {
+      "name": "traditional-infrastructure",
+      "type": "service"
+    },
+    {
+      "name": "ucaas",
+      "type": "service"
+    },
+    {
+      "name": "virtual-desktop-infrastructure-vdi",
+      "type": "service"
+    },
+    {
+      "name": "virtualised-networking",
+      "type": "service"
+    },
+    {
+      "name": "zero-trust-data-protection",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.41,
+  "location": "London, EC1R 0NE",
+  "contact_email": "info@mba-it.com",
+  "phone_number": "020 3815 6680",
+  "description": ""
+}

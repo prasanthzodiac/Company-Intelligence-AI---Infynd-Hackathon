@@ -1,0 +1,68 @@
+{
+  "company_name": "Arrow PC Network",
+  "domain": "arrowpcnetwork.uk",
+  "description_short": "Leading IT Services Integrator delivering world-class IT infrastructure services.",
+  "description_long": "We are a team of dedicated professionals and certified engineers focusing on innovation to provide cost-effective solutions and efficient services.",
+  "industry": "Technology",
+  "sub_industry": "IT Services",
+  "sectors": [
+    "Technology"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "165 The Broadway, London, England, SW19 1NE",
+  "locations": [
+    "London, England, SW19 1NE"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "arrowpcnetwork.uk",
+    "company_name": "Arrow PC Network",
+    "full_address": "165 The Broadway, London, England, SW19 1NE",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO 20000-1:2018",
+    "ISO/IEC 27001:2013",
+    "ISO 9001:2015"
+  ],
+  "services": [
+    {
+      "name": "Precisely Customized Services",
+      "type": "service"
+    },
+    {
+      "name": "Managed Services",
+      "type": "MSP"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "1000+",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.0
+}

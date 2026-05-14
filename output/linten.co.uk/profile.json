@@ -1,0 +1,86 @@
+{
+  "company_name": "Linten Technologies",
+  "domain": "linten.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [
+    "Finance",
+    "Healthcare"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "linten.co.uk",
+    "company_name": "Linten Technologies",
+    "full_address": "",
+    "phone": "0161 503 5050",
+    "sales_phone": "0303 123 1113",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "hello@linten.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/lintentech",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "IT Support",
+      "type": "service"
+    },
+    {
+      "name": "Managed IT Services",
+      "type": "service"
+    },
+    {
+      "name": "Cloud Solutions",
+      "type": "service"
+    },
+    {
+      "name": "Cyber Security",
+      "type": "service"
+    },
+    {
+      "name": "Disaster Recovery",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.37,
+  "description": "",
+  "contact_info": {
+    "address": "",
+    "phone": "",
+    "email": ""
+  },
+  "social_media": [],
+  "awards": [],
+  "news": []
+}

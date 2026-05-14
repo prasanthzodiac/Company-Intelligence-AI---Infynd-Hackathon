@@ -1,0 +1,98 @@
+{
+  "company_name": "Avco Systems",
+  "domain": "avcosystems.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Avco Systems 17 Bath Road Slough SL1 3UF",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "01753 213 700",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "contact@albacross.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "Secure File Transfer (SFX)",
+      "type": "service"
+    },
+    {
+      "name": "MongoDB",
+      "type": "service"
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "type": "service"
+    },
+    {
+      "name": "Integration Testing",
+      "type": "service"
+    },
+    {
+      "name": "Process Development",
+      "type": "service"
+    },
+    {
+      "name": "Strategic Development",
+      "type": "service"
+    },
+    {
+      "name": "Tech Update",
+      "type": "service"
+    },
+    {
+      "name": "Web Development",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.0,
+  "location": "17 Bath Road Slough SL1 3UF",
+  "contact_info": {
+    "phone_number": "01753 213 700",
+    "email": "info@avcosystems.com"
+  },
+  "description": "",
+  "team_building": {
+    "type": "Electricity, Mud and Physical Exertion"
+  },
+  "charity": {
+    "name": "Charity"
+  }
+}

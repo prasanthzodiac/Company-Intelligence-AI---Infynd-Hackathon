@@ -1,0 +1,75 @@
+{
+  "company_name": "BerSec LTD",
+  "domain": "bersec.co.uk",
+  "description_short": "Cybersecurity consulting company focused on improving cybersecurity and awareness within organizations.",
+  "description_long": "We are a consulting company focused on cybersecurity Our mission is to improve cybersecurity and awareness within organizations and help them protect their data. Our customers always receive timely deliveries and professional service preceded by a thorough analysis. That is why we provide solutions that meet both the current and future expectations and needs of our clients.",
+  "industry": "Cybersecurity",
+  "sub_industry": "",
+  "sectors": [
+    "Technology"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "BerSec LTD",
+  "logo_url": "",
+  "headquarters": "70 A Beverley Road, HU3 1YD Hull, UK",
+  "locations": [
+    "Hull, UK"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "bersec.co.uk",
+    "company_name": "BerSec LTD",
+    "full_address": "",
+    "phone": "09974367022",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/bersec",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [
+    {
+      "name": "we provide solutions that meet",
+      "type": "service"
+    },
+    {
+      "name": "and professional service preceded by",
+      "type": "service"
+    },
+    {
+      "name": "are a consulting company focused",
+      "type": "service"
+    },
+    {
+      "name": "focused on cybersecurity Our mission",
+      "type": "service"
+    },
+    {
+      "name": "to improve cybersecurity a",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "1000+",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.59
+}

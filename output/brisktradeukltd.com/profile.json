@@ -1,0 +1,96 @@
+{
+  "company_name": "Brisktradeukltd Inc.",
+  "domain": "brisktradeukltd.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Location: Basepoint, The Historic Dockyard, Chatham, England, ME4 4TZ Email: info@brisktradeukltd.com Call: +442",
+  "locations": [
+    "Chatham"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "+442034881095",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@brisktradeukltd.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "API",
+    "AI",
+    "Cloud",
+    "REST"
+  ],
+  "extraction_confidence": 0.0,
+  "Company": {
+    "Name": "Brisk Trade UK Ltd",
+    "Website": "index.html",
+    "Email": "info@brisktradeukltd.com",
+    "Business Hours": "Monday: Fri. 8am to 5pm Sat. 8am to 11am"
+  },
+  "Profile": {
+    "About Us": "We all have, at some point in our lives, been in a stage of our career where we are not sure of our next step.",
+    "Career Coach vs Mentor vs Recruitment Consultant vs Headhunter": "Itâs advisable to always approach the experts in this field for right career advice."
+  },
+  "Security": {
+    "Phishing Campaigns": {
+      "How a Phishing Campaign Works": "A phishing campaign uses social-engineering techniques to lure email recipients into revealing personal or financial information.",
+      "Types of Phishing Campaigns": [
+        "Spear phishing attacks",
+        "Whaling",
+        "Vishing",
+        "Smishing"
+      ]
+    },
+    "DPIAs (Data Protection Impact Assessments)": {
+      "Why are DPIAs important?": "DPIAs are a useful way of ensuring the efficiency â and cost-effectiveness â of the security measures you implement."
+    }
+  },
+  "Information Extraction": {
+    "Train your filter": [
+      "Never respond to spam",
+      "Hide your email address"
+    ],
+    "Use a third-party anti-spam filter": [
+      "ESET Smart Security 9 got the highest score for catching spam and integrating with Outlook."
+    ],
+    "Change your email address": [
+      "When you purchase something after clicking links in our articles, we may earn a small commission."
+    ]
+  },
+  "Company Services": {
+    "Cooperative, Joint Partnerships": "Securicon has an extensive track record of cooperative partnerships, working closely with network engineers and system developers to ensure that security requirements are adequately and accurately addressed throughout network and enterprise system architecture levels."
+  }
+}

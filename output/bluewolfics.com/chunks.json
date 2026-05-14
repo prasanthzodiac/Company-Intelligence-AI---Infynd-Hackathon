@@ -1,0 +1,29 @@
+[
+  {
+    "domain": "bluewolfics.com",
+    "page": "index.html",
+    "section": "Maintenance mode is on",
+    "text": "Site will be available soon. Thank you for your patience!",
+    "source_path": "D:\\ZORO\\company_intel\\data\\bluewolfics.com\\index.html",
+    "page_title": "Site is undergoing maintenance",
+    "meta_description": "Information & cyber security"
+  },
+  {
+    "domain": "bluewolfics.com",
+    "page": "wp-login.php.html",
+    "section": "Log In",
+    "text": "Powered by WordPress Lost your password? ← Go to Blue wolf var _zxcvbnSettings = {\"src\":\"https://bluewolfics.com/wp-includes/js/zxcvbn.min.js\"};\n//# sourceURL=zxcvbn-async-js-extra wp.i18n.setLocaleData( { 'text direction\\u0004ltr': [ 'ltr' ] } );\n//# sourceURL=wp-i18n-js-after var pwsL10n = {\"unknown\":\"Password strength unknown\",\"short\":\"Very weak\",\"bad\":\"Weak\",\"good\":\"Medium\",\"strong\":\"Strong\",\"mismatch\":\"Mismatch\"};\n//# sourceURL=password-strength-meter-js-extra var _wpUtilSettings = {\"ajax\":{\"url\":\"/wp-admin/admin-ajax.php\"}};\n//# sourceURL=wp-util-js-extra var userProfileL10n = {\"user_id\":\"0\",\"nonce\":\"0dc01b6219\"};\n//# sourceURL=user-profile-js-extra /(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener(\"hashchange\",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);",
+    "source_path": "D:\\ZORO\\company_intel\\data\\bluewolfics.com\\wp-login.php.html",
+    "page_title": "Log In ‹ Blue wolf — WordPress",
+    "meta_description": ""
+  },
+  {
+    "domain": "bluewolfics.com",
+    "page": "wp-login.php.html",
+    "section": "Powered by WordPress",
+    "text": "Lost your password? function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( \"user_login\" );d.focus(); d.select();} catch( er ) {}}, 200);}\nwp_attempt_focus();\nif ( typeof wpOnload === 'function' ) { wpOnload() } ← Go to Blue wolf",
+    "source_path": "D:\\ZORO\\company_intel\\data\\bluewolfics.com\\wp-login.php.html",
+    "page_title": "Log In ‹ Blue wolf — WordPress",
+    "meta_description": ""
+  }
+]

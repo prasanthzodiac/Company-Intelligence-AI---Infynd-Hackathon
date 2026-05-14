@@ -1,0 +1,101 @@
+{
+  "company_name": "Blog Inc.",
+  "domain": "blog.juriba.com",
+  "description_short": "After successfully negotiating a Windows 10 or Office 365 migration deal with a service integrator, you also need to set your project up for success.",
+  "description_long": "After successfully negotiating a Windows 10 or Office 365 migration deal with a service integrator, you also need to set your project up for success.",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO"
+  ],
+  "services": [
+    {
+      "name": "with a service integrator, you",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "API",
+    "REST",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.0,
+  "company": {
+    "Name": "Juriba",
+    "Description": "",
+    "Industry": "Enterprise Application and Device Lifecycle Management",
+    "Founded": "",
+    "HQ": "",
+    "CEO": "",
+    "Products": [
+      "App Readiness",
+      "Dashworks Workflow Automation Engine"
+    ],
+    "Services": [
+      "Application Owner Program",
+      "Service Level Agreement (SLA)"
+    ],
+    "Mission": ""
+  },
+  "Founders": [],
+  "Leadership": [
+    {
+      "Name": "Bob Kelly",
+      "Title": "Chief Product Officer"
+    },
+    {
+      "Name": "Barry Angell",
+      "Title": ""
+    }
+  ],
+  "News": [
+    {
+      "Date": "March 14th, 2024",
+      "Title": "Bob Kelly appointed as new Chief Product Officer at Juriba"
+    },
+    {
+      "Date": "January 30th, 2024",
+      "Title": "Application owner challenges: resource allocation and expertise"
+    }
+  ],
+  "Milestones": [],
+  "Partnerships": [],
+  "Awards": []
+}

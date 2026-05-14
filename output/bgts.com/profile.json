@@ -1,0 +1,143 @@
+{
+  "company_name": "BGTS",
+  "domain": "bgts.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "Suman Alamsetti",
+      "title": "Director",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "+44 (845) 5947971",
+    "sales_phone": "+49 (211) 90760230",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [
+      "+31 (70) 2170157",
+      "+31 20 3691184"
+    ],
+    "email": "info-uk@bgts.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/bgts",
+    "facebook": "https://www.facebook.com/QodeInteractive/",
+    "x": "https://twitter.com/qodeinteractive",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "Digital Transformation & Engineering",
+      "type": "service"
+    },
+    {
+      "name": "Software Development",
+      "type": "service"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "type": "service"
+    },
+    {
+      "name": "Quality Engineering & Assurance",
+      "type": "service"
+    },
+    {
+      "name": "Cloud",
+      "type": "service"
+    },
+    {
+      "name": "Data & Analytics",
+      "type": "service"
+    },
+    {
+      "name": "Technology Consulting",
+      "type": "service"
+    },
+    {
+      "name": "Digital Strategy",
+      "type": "service"
+    },
+    {
+      "name": "Technology Roadmap",
+      "type": "service"
+    },
+    {
+      "name": "Agile Project Delivery",
+      "type": "service"
+    },
+    {
+      "name": "Enterprise Service Management",
+      "type": "service"
+    },
+    {
+      "name": "Endpoint Management",
+      "type": "service"
+    },
+    {
+      "name": "Cloud & Data Centre Operations",
+      "type": "service"
+    },
+    {
+      "name": "DevOps",
+      "type": "service"
+    },
+    {
+      "name": "NOC Monitoring",
+      "type": "service"
+    },
+    {
+      "name": "End User Support",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud",
+    "API",
+    "REST"
+  ],
+  "extraction_confidence": 0.0,
+  "contact_info": {
+    "phones": [
+      "+44 (845) 5947971",
+      "+49 (211) 90760230",
+      "+31 (70) 2170157"
+    ],
+    "emails": [
+      "info@bgts.com"
+    ]
+  },
+  "description": "",
+  "social_media": {
+    "linkedin": "https://linkedin.com/company/bgts"
+  }
+}

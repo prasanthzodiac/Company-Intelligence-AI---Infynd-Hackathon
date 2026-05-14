@@ -1,0 +1,89 @@
+{
+  "company_name": "Aztec Computers Ltd",
+  "domain": "aztec.support",
+  "description_short": "",
+  "description_long": "",
+  "industry": "IT Support Services",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "4301156",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "The CourtyardTrident Business ParkChichester RoadPO20 9DY ISMS and Quality",
+  "locations": [
+    "West Sussex",
+    "Hampshire"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "aztec.support",
+    "company_name": "Aztec Computers Ltd",
+    "full_address": "The CourtyardTrident Business ParkChichester RoadPO20 9DY ISMS and Quality",
+    "phone": "01243 200 175",
+    "sales_phone": "01243 200 175",
+    "fax": "",
+    "mobile": "01243 200 175",
+    "other_numbers": [],
+    "email": "data@aztec.support",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/AztecSupport",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO"
+  ],
+  "services": [
+    {
+      "name": "Managed Local IT Support Services",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud",
+    "REST"
+  ],
+  "extraction_confidence": 0.52,
+  "location": "Southern England",
+  "description": "Located in southern England, Hampshire boasts picturesque countryside, lively towns, and a multitude of historic sites.",
+  "contact_info": {
+    "phone_numbers": [
+      "01243 200 175"
+    ],
+    "email": "",
+    "office_address": "5 & 5A The Courtyard, Trident Business Park, Chichester Road, PO20 9DY"
+  },
+  "social_media_links": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/AztecSupport"
+    },
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/AztecSupport"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/AztecSupportUK"
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/AztecSupport"
+    }
+  ]
+}

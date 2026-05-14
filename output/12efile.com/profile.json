@@ -1,0 +1,104 @@
+{
+  "company_name": "12efile Inc.",
+  "domain": "12efile.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Unit 101, China House,\n401 Edgware Road,\nLondon\nNW2 6GY\nUnited Kingd",
+  "locations": [
+    "London"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "12efile.com",
+    "company_name": "",
+    "full_address": "Unit 101, China House,\n401 Edgware Road,\nLondon\nNW2 6GY\nUnited Kingd",
+    "phone": "+44 20 8450 2290",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "Kevin.Munn@12efile.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO",
+    "certified",
+    "NIS",
+    "ISO 27001"
+  ],
+  "services": [
+    {
+      "name": "Pension Return (Non-Occupational / SIPP)",
+      "type": "service"
+    },
+    {
+      "name": "Pension Return (Occupational)",
+      "type": "service"
+    },
+    {
+      "name": "Accounting for Tax (Pension Company)",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "React",
+    "REST",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.0,
+  "Company": {
+    "Name": "www.1 2eFile.com",
+    "Description": "",
+    "Industry": "",
+    "Founded": "",
+    "Location": "",
+    "Employees": "",
+    "Revenue": "",
+    "CEO": "",
+    "Products/Services": [
+      "RTI e-Filing Service",
+      "Employee RTI FPS Rectification Service to HMRC-past 6 years",
+      "Auto Tax Code Update - DPS"
+    ],
+    "Support": {
+      "Phone Support": true,
+      "Email Support": true,
+      "FAQ Support": true,
+      "Live Demo Support": true
+    },
+    "Pension Providers Supported": [
+      "Aegon Pension",
+      "Creative Auto Enrolment",
+      "GenLife",
+      "My Workplace Pension Options UK",
+      "Workplace Pension Royal London Group",
+      "Simply AE Pension",
+      "The Corpad Master Trust",
+      "Workers Pension Trust Aviva Pension Evolve Pension Hargreaves Lansdown NEST People's Pension Salvus Master Trust Smart Pension The Pensions Trust BBS Pension FriendsLife Pension Legal and General Pension NOW: Pensions Prudential Pension Scottish Widows Standard Life True Potential"
+    ]
+  }
+}

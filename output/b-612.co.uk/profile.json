@@ -1,0 +1,74 @@
+{
+  "company_name": "B-612",
+  "domain": "b-612.co.uk",
+  "description_short": "Trusted Partner of your Network Infrastructure.",
+  "description_long": "Specialised in managing network infrastructure in Data Centres on behalf of a wide range of colocation users, B-612 offers a comprehensive suite of tailored Remote Hands & Eyes solutions to help you drive services availability up and network management cost down.",
+  "industry": "Technology",
+  "sub_industry": "Data Centre Services",
+  "sectors": [
+    "IT",
+    "Data Centre"
+  ],
+  "ssc_code": "",
+  "products": [
+    "Remote Hands & Eyes solutions"
+  ],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "B-612",
+  "logo_url": "",
+  "headquarters": "Buenos Aires, Argentina",
+  "locations": [
+    "Buenos Aires, Argentina"
+  ],
+  "leadership": [
+    {
+      "name": "",
+      "title": "",
+      "role_type": ""
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "b-612.co.uk",
+    "company_name": "B-612",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "24/7/365",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO 9001 Certified"
+  ],
+  "services": [
+    {
+      "name": "Remote Hands & Eyes solutions",
+      "type": "service"
+    }
+  ],
+  "business_type": "Solutions Provider",
+  "company_size": "100+ Installations",
+  "technology_signals": [
+    "AI",
+    "REST",
+    "API"
+  ],
+  "extraction_confidence": 0.0,
+  "meta": {
+    "extraction_confidence": 0.8
+  }
+}

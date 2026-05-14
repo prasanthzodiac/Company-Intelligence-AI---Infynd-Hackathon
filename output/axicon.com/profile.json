@@ -1,0 +1,157 @@
+{
+  "company_name": "Axicon Inc.",
+  "domain": "axicon.com",
+  "description_short": "Axicon 15000 series linear & 2D Barcode Verifier. Barcode verification for 2D barcodes, Linear Barcodes and DPM codes. ISO 15415, 15416, 29158",
+  "description_long": "Axicon 15000 series linear & 2D Barcode Verifier. Barcode verification for 2D barcodes, Linear Barcodes and DPM codes. ISO 15415, 15416, 29158",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "Axicon",
+      "title": "Managing Director",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "01869 350442",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "labels@axicon.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.0,
+  "Company": {
+    "Name": "Axicon",
+    "Description": "",
+    "Industry": "Technology",
+    "Location": "",
+    "Founded": "",
+    "Employees": "",
+    "Revenue": ""
+  },
+  "Plugins": [
+    {
+      "name": "AIAG GTL - Automotive",
+      "description": "Checks data content of the ‘license plate’ barcode for automotive industry Global Transport Label (encoded using Code 128)."
+    },
+    {
+      "name": "AI CHECK - All",
+      "description": "Validates Application identifiers (AIs) and data structure content for both GS1-128 and GS1 DataBar Expanded."
+    },
+    {
+      "name": "AI DATE - Retail",
+      "description": "Checks that a valid date AI (11, 12, 13, 15, 17, 7003, 8008, or 8101) and its data are present."
+    },
+    {
+      "name": "AUS-VARIABLE - Retail",
+      "description": "Displays in-house product, 5-digit price and validation of both check digits (displayed on variable quantity eg cheese and meat products) Unique variant to cover the specific requirements of the Australian and the New Zealand markets."
+    },
+    {
+      "name": "BRANDED - Retail",
+      "description": "Displays breakdown of information in UK Branded Variable Measure Consumer Unit EAN-13 codes."
+    },
+    {
+      "name": "C39 ASCII - Automotive",
+      "description": "Decodes full ASCII Code 39 barcodes."
+    },
+    {
+      "name": "C39 PHARM - Pharmaceutical",
+      "description": "Displays the decoded number for Italian Pharmacode (base 32) Code."
+    },
+    {
+      "name": "COMMENTS - All",
+      "description": "Allows for free text to describe or comment on verification results."
+    },
+    {
+      "name": "COUPON - Retail",
+      "description": "Displays information on issuer, coupon number and value (Euro and UK) and (USA) provides information on manufacturer, family type, purchase requirement and value."
+    },
+    {
+      "name": "DELIVERY DATE - All",
+      "description": "To check that a best-before or use-by date is n days later than the present date."
+    },
+    {
+      "name": "EURO COUPON - Retail",
+      "description": "Displays information on issuer, coupon number and value."
+    },
+    {
+      "name": "FILE DATA - All",
+      "description": "To read the first line of data from a text file at the moment the scan is made."
+    },
+    {
+      "name": "GENERIC VMCU - All",
+      "description": "Allows for any variable measure consumer unit prefix (02, 20 to 29) to be used as basis for checking data content."
+    },
+    {
+      "name": "GEN SPEC - Retail",
+      "description": "Describes where a GS1 barcode may be used."
+    },
+    {
+      "name": "GTIN - All",
+      "description": "To report whether a barcode contains a GTIN."
+    },
+    {
+      "name": "HIBC - Pharmaceutical",
+      "description": "Health Industry Barcode. Validates both primary and secondary HIBC symbols. Checks date identifier and structure of data content."
+    },
+    {
+      "name": "INSTORE - Retail",
+      "description": "Displays in-house product reference, 5-digit price and validation of both check digits for in-store variable measure retail items."
+    },
+    {
+      "name": "ISBN - Retail",
+      "description": "Displays the original ISBN or ISSN number of book and magazine barcodes, and 5-digit add-on data."
+    },
+    {
+      "name": "JOB REF - All",
+      "description": "Allows a single line reference for ISO traceability and spreadsheet information; forms part of the printed report. You can configure a default Job Reference, and also choose to be prompted for a job reference on every scan."
+    },
+    {
+      "name": "LENGTH CHECK - All",
+      "description": "Allows for checking of minimum and maximum lengths of Code 39, ITF, Codabar, Code 128, GS1 DataBar, MSI Plessey, and Code 93 symbols."
+    },
+    {
+      "name": "LOOKUP - All",
+      "description": "Links to an existing database to show (and print) description of product along with quality control information. Please see Text Lookup below."
+    },
+    {
+      "name": "LPPR - Pharmaceutical",
+      "description": "Checks French (Liste des Produits et Prestations Remboursables) LPPR codes as applicable."
+    }
+  ]
+}

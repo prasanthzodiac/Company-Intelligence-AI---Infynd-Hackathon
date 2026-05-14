@@ -1,0 +1,87 @@
+{
+  "company_name": "Blue Scorpion Limited",
+  "domain": "bluescorpion.co.uk",
+  "description_short": "Blue Scorpion's roots come from over 55 years' combined in-house expertise working with major retailers, Acquirers and payment service providers.",
+  "description_long": "Blue Scorpion's roots come from over 55 years' combined in-house expertise working with major retailers, Acquirers and payment service providers.",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "04717852",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "BuildingNew RoadEast MallingKent ME19 6BJ EIT Head Office:European Information Technolo",
+  "locations": [
+    "BuildingNew RoadEast MallingKent",
+    "HouseTexcel Business ParkThames RoadCrayfordKent",
+    "ParkThames RoadCrayfordKent"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "bluescorpion.co.uk",
+    "company_name": "Blue Scorpion Limited",
+    "full_address": "BuildingNew RoadEast MallingKent ME19 6BJ EIT Head Office:European Information Technolo",
+    "phone": "01732 602 111",
+    "sales_phone": "01732 602 111",
+    "fax": "",
+    "mobile": "01732 602 111",
+    "other_numbers": [
+      "1732 602 111",
+      "1322 524 765",
+      "1732 440 510"
+    ],
+    "email": "sales@bluescorpion.co.uk",
+    "hours_of_operation": "Monday-Friday:9am - 5.30pmSaturday:closedSunday:closed",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/blue-scorpion-limited",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS",
+    "GDPR"
+  ],
+  "services": [
+    {
+      "name": "Managed Services for Payment Card Industry Data Security Standard (PCI DSS) compliance",
+      "type": "service"
+    },
+    {
+      "name": "IP Protect",
+      "type": "service"
+    },
+    {
+      "name": "IP Protect Lite",
+      "type": "service"
+    },
+    {
+      "name": "Cyber Protect (wireless segregation through a single port WiFi router)",
+      "type": "service"
+    },
+    {
+      "name": "WiFi services",
+      "type": "service"
+    },
+    {
+      "name": "Payment solutions",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "React"
+  ],
+  "extraction_confidence": 0.59
+}

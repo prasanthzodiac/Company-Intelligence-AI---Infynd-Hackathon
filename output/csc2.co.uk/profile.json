@@ -1,0 +1,76 @@
+{
+  "company_name": "CSC2",
+  "domain": "csc2.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "ISO Compliance",
+  "sub_industry": "",
+  "sectors": [
+    "Compliance"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "csc2.co.uk",
+    "company_name": "CSC2",
+    "full_address": "",
+    "phone": "0300 123 3393",
+    "sales_phone": "0808 802 5544",
+    "fax": "",
+    "mobile": "0300 123 3393",
+    "other_numbers": [
+      "0800 068 4141",
+      "0808 801 0525",
+      "07860 039967"
+    ],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/csc2",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "certification",
+    "certified",
+    "ISO 27001",
+    "ISO",
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "",
+      "type": "service"
+    },
+    {
+      "name": "",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "API",
+    "AI",
+    "Cloud",
+    "JavaScript",
+    "REST",
+    "Machine Learning"
+  ],
+  "extraction_confidence": 0.39
+}

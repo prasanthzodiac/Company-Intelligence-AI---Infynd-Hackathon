@@ -1,0 +1,67 @@
+{
+  "company_name": "ARKK Solutions",
+  "domain": "arkksolutions.com",
+  "description_short": "Tax automation, regulatory reporting, and digital tagging solutions.",
+  "description_long": "ARKK Solutions offers a distinctively fresh approach to tax, regulatory reporting, and digital tagging by combining cutting-edge technology, continuous innovation, and a commitment to customer success.",
+  "industry": "Technology",
+  "sub_industry": "Financial Services",
+  "sectors": [
+    "Finance",
+    "Tax"
+  ],
+  "ssc_code": "",
+  "products": [
+    "ARKK Automation Platform"
+  ],
+  "domain_status": "Active",
+  "company_registration": "6957576",
+  "vat_number": "973961178",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "London, SE1 9HF",
+  "locations": [
+    "London",
+    "Belfast"
+  ],
+  "leadership": [
+    {
+      "name": "Kreeson Thatiha,",
+      "title": "Head of Finance  Client Money, eToro",
+      "role_type": "other"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "arkksolutions.com",
+    "company_name": "ARKK Solutions",
+    "full_address": "24 Southwark Bridge Road, London, SE1 9HF",
+    "phone": "020 3750 3030",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "enquiries@arkksolutions.com"
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [
+    {
+      "name": "ARKK Automation Platform",
+      "type": "product"
+    }
+  ],
+  "business_type": "SaaS",
+  "company_size": "1000+",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.0
+}

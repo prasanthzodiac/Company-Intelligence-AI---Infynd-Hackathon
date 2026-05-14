@@ -1,0 +1,74 @@
+{
+  "company_name": "12m Tech",
+  "domain": "12mtech.uk",
+  "description_short": "September 2021 – 12m Tech",
+  "description_long": "Cyber Security Services – 12m Tech\nDocker Installation and Maintenance Service – 12m Tech\nJitsi for Secure Teleconferencing – 12m Tech\nKubernetes Technology – 12m Tech\nOpen-source Database Solutions – 12m Tech\nPowerDNS Solution – 12m Tech\nPython Programming – 12m Tech\nRed Teaming Hood and the Wolf – 12m Tech",
+  "industry": "Cyber Security",
+  "sub_industry": "",
+  "sectors": [
+    "Technology"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [
+    "UK"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "12mtech.uk",
+    "company_name": "12m Tech",
+    "full_address": "",
+    "phone": "0 203 7400231",
+    "sales_phone": "0 207 1833073",
+    "fax": "",
+    "mobile": "0 203 7400231",
+    "other_numbers": [],
+    "email": "info@12mtech.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [
+    {
+      "name": "Open-source Database Solutions – 12m",
+      "type": "service"
+    },
+    {
+      "name": "Tech PowerDNS Solution – 12m",
+      "type": "service"
+    },
+    {
+      "name": "Cyber Security Services – 12m",
+      "type": "service"
+    },
+    {
+      "name": "Cyber Security Services –",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "1-10",
+  "technology_signals": [
+    "AI",
+    "Docker",
+    "Kubernetes",
+    "Python"
+  ],
+  "extraction_confidence": 0.58
+}

@@ -1,0 +1,83 @@
+{
+  "company_name": "18 November 2020",
+  "domain": "excellasers.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "nformation: Be among the first to receive updates and news from Excel Lasers.VeterinaryMedicalProductsServicesExcel LasersGreat Bradley HallNewmarket CB8 9LTUnited Kingdo",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "Clinical",
+      "title": "Director",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "excellasers.com",
+    "company_name": "18 November 2020",
+    "full_address": "nformation: Be among the first to receive updates and news from Excel Lasers.VeterinaryMedicalProductsServicesExcel LasersGreat Bradley HallNewmarket CB8 9LTUnited Kingdo",
+    "phone": "1440 783201",
+    "sales_phone": "1440 783201",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@excellasers.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/excel-lasers-limited",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO",
+    "certification"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "REST",
+    "API"
+  ],
+  "extraction_confidence": 0.4,
+  "Company Name": "Excel Lasers",
+  "Location": "Great Bradley Hall, Newmarket CB8 9LT, United Kingdom",
+  "Phone Number": "+44 (0)1440 783201",
+  "Email": "info@excellasers.com",
+  "Description": "Excel Lasers supplies and supports diode lasers and accessories for use in the NHS, private clinics and veterinary practices throughout the UK. It is the only UK supplier of Onemytis, a new type of surgical instrument for veterinary use.",
+  "Services": [
+    "OEM Laser Servicing",
+    "Diomed Service"
+  ],
+  "Products": [
+    "Onemytis",
+    "VenaCure 1470",
+    "Lasotronix",
+    "Gigaa Gbox",
+    "Delta Lasers",
+    "VELAS",
+    "Plume Safe",
+    "Nouvag Infiltration Pump"
+  ],
+  "Certifications": [
+    "ISO 13485:2016"
+  ]
+}

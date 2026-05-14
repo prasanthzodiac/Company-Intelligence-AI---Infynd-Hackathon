@@ -1,0 +1,38 @@
+[
+  {
+    "domain": "2mgsolutions.com",
+    "page": "index.html",
+    "section": "Contact Information",
+    "text": "Email addresses: PolicySOCIALLinkedInCONTACTsales@2mgsolutions.comTel\nPhone numbers: 020 3878 390027, 020 3878 3900, 2024\n\nFooter information: Be the First to Receive the Latest News From 2MG Solutions.COMPANYLEGALPrivacy PolicySOCIALLinkedInCONTACTsales@2mgsolutions.comTel:020 3878 390027 Old Gloucester StreetLondon, WC1N 3AXUnited Kingdom© 2024 by 2MG Solutions.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\2mgsolutions.com\\index.html",
+    "page_title": "2MG Solutions",
+    "meta_description": "2MG Solutions – London-based firm providing comprehensive IT solutions, including cloud, IT transformation, and digital innovation across various sectors",
+    "structured_data": {
+      "emails": [
+        "PolicySOCIALLinkedInCONTACTsales@2mgsolutions.comTel"
+      ],
+      "phones": [
+        "020 3878 390027",
+        "020 3878 3900",
+        "2024"
+      ],
+      "social_links": {
+        "linkedin": "https://uk.linkedin.com/company/2mghealthcare"
+      }
+    }
+  },
+  {
+    "domain": "2mgsolutions.com",
+    "page": "index.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nLinkedin: https://uk.linkedin.com/company/2mghealthcare",
+    "source_path": "D:\\ZORO\\company_intel\\data\\2mgsolutions.com\\index.html",
+    "page_title": "2MG Solutions",
+    "meta_description": "2MG Solutions – London-based firm providing comprehensive IT solutions, including cloud, IT transformation, and digital innovation across various sectors",
+    "structured_data": {
+      "social_links": {
+        "linkedin": "https://uk.linkedin.com/company/2mghealthcare"
+      }
+    }
+  }
+]

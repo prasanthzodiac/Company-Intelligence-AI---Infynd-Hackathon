@@ -1,0 +1,758 @@
+[
+  {
+    "domain": "12efile.com",
+    "page": "about-us.html",
+    "section": "Technology used",
+    "text": "We support XML, iXBRL and CSV formats and we are platform independent based on open standards. We have never had any technical compatibility problems with any client or BACs system and we are sure our system will work with yours.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\about-us.html",
+    "page_title": "About us - 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "about-us.html",
+    "section": "All major databases",
+    "text": "ORACLE, IBM DB2, and Postgres Databases have been tested to work well with the system. These state of the art databases support any quantity of records you wish to have and can easily generate various reports.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\about-us.html",
+    "page_title": "About us - 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "about-us.html",
+    "section": "Best Quality Practice",
+    "text": "We believe in providing a quality service and looking after our clients well with highly competitive pricing. The solution we provide has been put through different accuracy and e-filing tests set by the HMRC. It passed them all without fail.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\about-us.html",
+    "page_title": "About us - 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "announce.html",
+    "section": "Change to our Minimum Charges",
+    "text": "Please be advised that from 1st June 2023 the minimum charge for our services will increase from the current - £70 + VAT to £80 + VAT . We are reluctant to make this price adjustment but we do need to cover the ever increasing costs in relation to our hosting and other supporting services. Regards Accounts Department",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\announce.html",
+    "page_title": "Announcement",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "cis_rectification.html",
+    "section": "CIS 300 Data Rectification Service to HMRC-current & upto past 6 years",
+    "text": "You can rectify your HMRC CIS Subcontractor Payment errors by the approaches mentioned below If you’ve identified overpayments, missed payments or miscalculations in your CIS 300 submissions to HMRC over the past 6 years, our CIS Data Rectification Service helps you correct them quickly and accurately. Our easy-to-use platform accepts standard CSV files, allowing you to upload and rectify your data instantly. We handle the entire E-filing process securely and efficiently, ensuring full confidentiality in a UKAS Certified ISO/IEC 27001 and ISO 9001 environment at a highly competitive cost. To rectify the errors, you must re-submit the full CIS 300 return, including all entries, not just the one's with the error. For example: If your previous CIS300 return included 100 subcontractors and you missed one, your amended return should now include 101 subcontractors. Conversely, if you need to remove an incorrectly added subcontractor, the amended return should include 99 subcontractors. This ensures that HMRC receives a complete and accurate record of all subcontractor payments for that period.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\cis_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "coHoChanges.html",
+    "section": "What is changing?",
+    "text": "The free joint online service provided by HMRC & Companies House, called File your company accounts AND Company Tax Return (sometimes called CATO / “Company Accounts & Tax Online”), will be ending on 31 March 2026. After this date, you will no longer be able to submit your accounts + Company Tax Return using this joint service. Companies House is also moving towards software-only filing, meaning paper forms and older online services will gradually disappear.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\coHoChanges.html",
+    "page_title": "P11D P46(Car) E-Filing",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "coHoChanges.html",
+    "section": "Why the change?",
+    "text": "The current joint service is considered outdated — it doesn't meet modern digital standards or the enhanced requirements for corporation tax and company law under the Economic Crime and Corporate Transparency Act. Moving to software-based and “tagged” electronic filings helps with accuracy, consistency, transparency, better validation, and helps to fight fraud/economic crime.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\coHoChanges.html",
+    "page_title": "P11D P46(Car) E-Filing",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "contact-us.html",
+    "section": "Address",
+    "text": "Unit 101, China House,\n401 Edgware Road,\nLondon\nNW2 6GY\nUnited Kingdom",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\contact-us.html",
+    "page_title": "Contact",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "contact-us.html",
+    "section": "Phone Number",
+    "text": "Help / Support +44 20 8450 2290 Sales +44 20 8450 2290",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\contact-us.html",
+    "page_title": "Contact",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "contact-us.html",
+    "section": "Email",
+    "text": "Kevin.Munn@12efile.com",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\contact-us.html",
+    "page_title": "Contact",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "CTservices.html",
+    "section": "What You Must File:",
+    "text": "To make a valid electronic Corporation Tax return, you need to submit all three of the following simultaneously: Annual Accounts in iXBRL format Computation of the Accounts in iXBRL format CT600 (and supplements) in HMRC XML format (or CSV that can be converted to XML)",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\CTservices.html",
+    "page_title": "HMRC & CT Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "CTservices.html",
+    "section": "How it works?",
+    "text": "You upload the three required components (CT600 + supplements, computations, accounts). We convert the CT600 from CSV (if needed) into HMRC’s XML format. We validate all three documents against HMRC’s business rules and check for errors in real time. You’ll receive immediate alerts if there are issues, with pointers to where corrections are needed. Once everything passes validation, you can preview the combined return (CT + accounts) in PDF form. After your final review, click ‘Submit’ to send the complete package via HMRC’s XML submission protocol. On successful submission, you receive a proof of E-filing certificate showing timestamp, what you filed, HMRC markers, etc.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\CTservices.html",
+    "page_title": "HMRC & CT Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "ct_rectification.html",
+    "section": "CT and iXBRL Accounts to the HMRC",
+    "text": "You can rectify your HMRC CT and iXBRL Accounts errors as mentioned below You can use CT and iXBRL Accounts Data Rectification to correct any errors, omissions, or misstatements in your Corporation Tax submissions to HMRC. To make these corrections, you must re-submit the complete CT and iXBRL Accounts File, ensuring all forms and computations are accurate and compliant.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\ct_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "eps_rectification.html",
+    "section": "EPS (Employer Payment Summary) Data Rectification to HMRC-current & upto past 6 years",
+    "text": "You can rectify your HMRC EPS errors as mentioned below You can use EPS (Employer Payment Summary) Data Rectification to correct any errors, omissions, or incorrect adjustments previously submitted to HMRC. To make these corrections, you must re-submit the complete EPS file, ensuring all payment recovery details, statutory payments, and adjustments are accurate and up to date.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\eps_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "hmrcTIL.html",
+    "section": "iXBRL A/C Test In Live (TIL)",
+    "text": "To achieve 100% perfect iXBRL Accounts Tagging is very simple. After you have completed your iXBRL Accounts tagging you simply upload the accounts to the www.1 2eFile.com server through https. 1 2eFile will automatically check if the tagged iXBRL Accounts have any syntax errors and if the tagging is well formed. If there are any items which do not comply you will be instantly notified on the fly. If you pass this first step check your files will be automatically further submitted to HMRC's TEST IN LIVE (TIL) service for further checking on your actual tagging to ensure complete compliance.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\hmrcTIL.html",
+    "page_title": "hmrc Test In Live",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "hmrcTIL.html",
+    "section": "Type 1: Accounts Tagging Alone",
+    "text": "This test helps you to achieve 100% accuracy in your Accounts Tagging alone, without you needing to provide the Computation & CT600. This is particularly useful for companies providing Accounts Tagging services for clients. It is proven and well used by our clients, including one of the UK's top four consulting & accounting firms. To be able to do the test a developer needs to apply to HMRC for a software developer test credential (i.e. a User ID, Password and a dummy UTR No). The message class used for the TPVS test is exactly the same as the one for live e-filing, but the TPVS test server is hosted separately",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\hmrcTIL.html",
+    "page_title": "hmrc Test In Live",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "hmrcTIL.html",
+    "section": "Type 2: Accounts Tagging together with Computations and CT600",
+    "text": "A complete CT return test, which includes all the CT return documents, namely iXBRL Accounts, Computations of the Accounts in an iXBRL format, and CT600 & CT Supplements in a CSV or XML format. We will provide the necessary template CT600 data and convert all the documents to HMRC's required format and submit to TIL. This test will give you the confidence that all your CT returns are perfect and ready to go once you decide to submit them Live.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\hmrcTIL.html",
+    "page_title": "hmrc Test In Live",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "E-filing Specialist",
+    "text": "Rectification (Amending) of HMRC & Companies House Data Errors CIS Payment, RTI, PENSION, CT and iXBRL A/C iXBRL A/C E-filing for Companies House E-File your Current Year, Previous Year & Amended Returns RTI FPS, EPS etc., E-filing E-File your Current Year, Previous Year & Amended Returns MTD IT (Property) eReturn Free property data check-in Reclaim of Tax and NIC E-filing E-File your Current Year, Previous Year & Amended Returns CT and iXBRL A/C E-filing for HMRC E-File your Current Year, Previous Year & Amended Returns CIS 300 E-filing E-File your Current Year, Previous Year & Amended Returns Pension Scheme E-filing E-File your Current Year, Previous Year & Amended Returns Other E-filing Services If the service you require is not listed, please click here HMRC Recognised & UKAS ISO/IEC 27001 and ISO 9001 Certified",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "OUR PRODUCT RANGE",
+    "text": "We provide the range of efiling services listed below. Please click on the links below to find out more. HMRC & CH Data Rectification Rectify your RTI, PENSION and CIS Payment data errors up to past 6 years Companies House iXBRL A/C E-filing Companies House has granted us official recognition for offering these services. HMRC CT & iXBRL A/C E-filing We provide data conversion intelligence to convert your CT600 and its supplements into a XML format RTI FPS, EPS etc., E-filing We take data security extremely seriously and are ISO 27001 certified. MTD VAT E-filing 1 2eFile's intelligent server will allow you to send your eReturns to HMRC using a simple CSV or XML file. Pension Scheme E-filing One of the most reliable pension scheme E-filing facilities in the market CIS E-filing E-filing your CIS300 data to the HMRC or getting CIS Verifications from HMRC P11D, P11D(b) and P46(Car) E-filing E-file your P11D and P46(Car) easily through the 1 2eFile's web-based on demand system. Agent Authorisation Designed to streamline and simplify the process of requesting client authorisation or reauthorisation. Interest Restriction Return (IRR) It includes a summary of group details and calculates any interest restriction or reactivation. Charities Online You can utilize the Charities Online service provided by HMRC to file and claim Gift Aid for your CASC iXBRL A/C Test In Live To achieve 100% perfect iXBRL Accounts Tagging is very simple. After you have completed your iXBRL",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "HMRC & CH Data Rectification",
+    "text": "Rectify your RTI, PENSION and CIS Payment data errors up to past 6 years",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "Companies House iXBRL A/C E-filing",
+    "text": "Companies House has granted us official recognition for offering these services.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "HMRC CT & iXBRL A/C E-filing",
+    "text": "We provide data conversion intelligence to convert your CT600 and its supplements into a XML format",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "RTI FPS, EPS etc., E-filing",
+    "text": "We take data security extremely seriously and are ISO 27001 certified.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "MTD VAT E-filing",
+    "text": "1 2eFile's intelligent server will allow you to send your eReturns to HMRC using a simple CSV or XML file.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "Pension Scheme E-filing",
+    "text": "One of the most reliable pension scheme E-filing facilities in the market",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "CIS E-filing",
+    "text": "E-filing your CIS300 data to the HMRC or getting CIS Verifications from HMRC",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "P11D, P11D(b) and P46(Car) E-filing",
+    "text": "E-file your P11D and P46(Car) easily through the 1 2eFile's web-based on demand system.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "Agent Authorisation",
+    "text": "Designed to streamline and simplify the process of requesting client authorisation or reauthorisation.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "Interest Restriction Return (IRR)",
+    "text": "It includes a summary of group details and calculates any interest restriction or reactivation.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "Charities Online",
+    "text": "You can utilize the Charities Online service provided by HMRC to file and claim Gift Aid for your CASC",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "index.html",
+    "section": "iXBRL A/C Test In Live",
+    "text": "To achieve 100% perfect iXBRL Accounts Tagging is very simple. After you have completed your iXBRL",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\index.html",
+    "page_title": "12efile E-filing Specialists",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "iXBRL_rectification.html",
+    "section": "iXBRL Accounts Rectification to Companies House",
+    "text": "You can rectify your Companies House Accounts errors as mentioned below You can use iXBRL Accounts Rectification to correct any filing errors, omissions, or inconsistencies in your previously submitted accounts to Companies House. To make these corrections, you must re-submit the revised iXBRL accounts file, ensuring all financial data is accurate and compliant. We also provide iXBRL tagging of financial statements. We’ll provide the relevant ready-to-use template for you to enter your presenter credentials. If you don’t yet have them, you can apply with Companies House",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\iXBRL_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdITproperty.html",
+    "section": "Making Tax Digital (MTD) for Income Tax Property In-Year e-Return Services",
+    "text": "1. MTD IT - UK Property Business (Quarterly updates) Submit cumulative summaries of UK property income and expenses under MTD 2. MTD IT - Foreign Property Business (Quarterly updates) Submit cumulative summaries of overseas property income and expenses under MTD",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdITproperty.html",
+    "page_title": "1 2efile MTD IT Property In-Year e-Return Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "How E-filing VAT to HMRC works under MTD?",
+    "text": "www.12eFile.com has developed an innovative unique cloud based intelligent auto data converter which will convert your VAT eReturn data file into HMRC's MTD VAT required format and further efile it to HMRC automatically. The steps below explain how to achieve MTD VAT eReturns without needing you to do any program changes.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 1:Creating a MTD Account with HMRC",
+    "text": "MTD VAT is a new service provided from a different HMRC system. To be able to send MTD VAT returns you need to log on to HMRC's website https://www.gov.uk/guidance/sign-up-for-making-tax-digital-for-vat to create a MTD account. Creating a MTD account is a matter of entering your company name and address, UTR, VAT Registration Number, Mobile device number (for receiving authentication codes) and other details at HMRC's website. Once your registration for MTD VAT is successful HMRC will sent you the MTD VAT Authorisation USER ID and PASSWORD by post to your given address.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 2:Setting Up a MTD Authorisation for MTD VAT return",
+    "text": "To start using MTD VAT services you need to create an account with our company at www.12eFile.com. Please click on SIGN UP to create an account now. After you have signed up with 1 2eFile you need to sign in and click on eFile Ready Chart of Setup to enter the MTD VAT User details you have received by post from HMRC. Our system links up to HMRC for you to enter the HMRC MTD VAT user ID and password so that you can set up the MTD VAT Authorisations in conjunction with our MTD VAT eReturn system. When the MTD VAT Authorisation process is completed you will be able to conduct the MTD VAT eReturns using a normal CSV or XML file",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 3:Extract Data from your Accounting Software",
+    "text": "The first step is to extract the VAT data from your accounting package or specialist VAT software calculator. Our system will accept the VAT data in either CSV or XML file formats. The XML file used should comply with HMRC's XML schema. You can extract the data for an individual client or for a batch of clients (i.e. VAT data of multiple clients in the same file). 1 2eFile will provide you with a template and a comprehensive instruction manual to guide you on the data requirements for extracting your MTD VAT data files.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 4:Upload Data File into 1 2eFile",
+    "text": "After signing in successfully, you can upload the VAT data file extracted from your accounting / VAT system software. Uploading a CSV or XML file into the 1 2eFile system is just as easy as sending an email with an attached file.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 5:Review the Data to be E-filed",
+    "text": "It is important to review the data you have uploaded before E-filing it to HMRC. If any of your data fails to comply with the HMRC standards we will instantly advise you about what errors are in the file. You can further rectify and upload the data file once again. If required our support team will always be ready to assist you with the rectification.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 6:E-File the Data to HMRC",
+    "text": "You simply need to click on the 'E-file' button to submit the data to HMRC. The server will further conduct final checks on the uploaded data file and then e-file it for you.\nIf you are a first time user of our MTD service, it is mandatory to do the one time MTD VAT Setup in 1 2eFile. You will be allowed to e-file your MTD data only after completion of this MTD VAT Authorisation process.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "mtdServices.html",
+    "section": "Step 7:Download Success Certificate and Reports",
+    "text": "Under MTD, you will also need to store all your e-filed data and reports digitally. www.12eFile.com will issue a success certificate which includes HMRC's provided Timestamp and Receipt-Id . We provide various e-filed data reports and search functions for you to view and print any MTD data you wish. In addition, our system will also store your data for up to 3 years.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\mtdServices.html",
+    "page_title": "MTD 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "p11dServices.html",
+    "section": "E-filing of P11D, P11D(b) and P46(Car) data to HMRC",
+    "text": "Whether you are E-filing your P11D, P46(Car), MTD VAT, RTI, CIS300 data to the HMRC or getting CIS Verifications from HMRC, the process is the same First download the respective spreadsheet template from our website. Second populate your P11D / P46(Car) data onto the spreadsheet and then save it as a CSV file. Third upload it to our system, we will automatically convert it into an XML file and e-file it for you. Fourth is download or print out the successful E-filing certificate.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\p11dServices.html",
+    "page_title": "P11D P46(Car) E-filing",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penr_rectification.html",
+    "section": "Pensioner RTI FPS Rectification Service to HMRC-past 6 years",
+    "text": "You can rectify your Pensioner RTI FPS errors by the approaches mentioned below You can use Pensioner RTI FPS Rectification to rectify any overpayments / omitted payments / mis-calculated payments and report to HMRC. An Active Pensioner errors (Current Tax Year) can be rectified using Additional FPS You can also use it to report missed out Leaver information and also to report final payment / arrears to a leaver or an Pensioner who expired after notifying HMRC of the leaving date.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penr_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penr_rectification.html",
+    "section": "Pensioner Payment Rectification Service",
+    "text": "1. Current Tax Year Data Rectification - Pensioner Additional FPS Amending Trivial Commutation Lump Sum (TCLS) or One-off Pension Amounts Correction of Flexibility Payments Amending Death Benefit Payments Corrections to Serious Ill-health payments Late Reporting of Death of a deceased Pension Recipient Final Payment made after death Self Defined template 2. Past Tax Year Data Rectification - Pensioner Year-to-Date(YTD) FPS Amending Trivial Commutation Lump Sum (TCLS) or One-off Pension Amounts Correction of Flexibility Payments Amending Death Benefit Payments Corrections to Serious Ill-health payments Late Reporting of Death of a deceased Pension Recipient Final Payment made after death Self Defined template Earlier Year Update (EYU) Amending Trivial Commutation Lump Sum (TCLS) or One-off Pension Amounts Correction of Flexibility Payments Amending Death Benefit Payments Corrections to Serious Ill-health payments Late Reporting of Death of a deceased Pension Recipient Final Payment made after death Self Defined template",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penr_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_nonocc_efiling.html",
+    "section": "Pension Return (Non-Occupational / SIPP) E-Filing to HMRC",
+    "text": "E-File your SIPP and personal pension returns directly to HMRC. Our Non-Occupational Pension Return e-Filing Service provides a secure and HMRC-compliant gateway for submitting Self-Invested Personal Pension (SIPP) and other non-occupational pension scheme returns directly to HMRC. We perform all required schema, format, and business rule validations defined by HMRC before transmission to ensure your file is accepted without technical errors. Once successfully transmitted, you receive a digital e-Filing confirmation certificate as proof of submission. Ideal for pension administrators, practitioners, and providers seeking a simple, reliable, and HMRC-approved submission channel for all SIPP and non-occupational pension obligations.Ideal for pension administrators, practitioners, and providers seeking a simple, reliable, and HMRC-approved submission channel for all SIPP and non-occupational pension obligations.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_nonocc_efiling.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_nonocc_efiling.html",
+    "section": "Pension Scheme Returns E-Filing Service",
+    "text": "Pension Return (Non-Occupational / SIPP)",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_nonocc_efiling.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_occ_efiling.html",
+    "section": "Pension Return (Occupational) E-Filing to HMRC",
+    "text": "Submit occupational pension scheme returns with ease and compliance to HMRC. Our Occupational Pension Return e-Filing Service offers pension scheme administrators a simple and efficient way to upload and transmit occupational pension scheme returns to HMRC. The service supports file upload from any accounting or administration system, performs HMRC-defined data structure and rule validations, and securely submits the validated return through our electronic gateway. Each submission includes a receipt and HMRC acknowledgment reference, giving you assurance of successful delivery. Designed for both standalone and multi-scheme administrators, our platform ensures your electronic submissions remain compliant and hassle-free.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_occ_efiling.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_occ_efiling.html",
+    "section": "Pension Scheme Returns E-Filing Service",
+    "text": "Pension Return (Occupational)",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_occ_efiling.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_pencom_efiling.html",
+    "section": "Accounting for Tax (Pension Company) E-Filing to HMRC",
+    "text": "E-File pension tax accounting returns through HMRC-compliant gateway. Our Accounting for Tax (AFT) e-Filing Service enables pension scheme administrators and companies to electronically file Accounting for Tax returns to HMRC quickly and securely. We carry out all HMRC-specified format, schema, and rule checks before transmission, helping prevent rejections due to file or schema errors. Upon successful submission, a digital confirmation receipt is provided for your compliance records. This service supports both quarterly and amended submissions, ensuring a smooth, secure, and fully compliant electronic filing process via the HMRC gateway.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_pencom_efiling.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_pencom_efiling.html",
+    "section": "Pension Scheme Returns E-Filing Service",
+    "text": "Accounting for Tax (Pension Company)",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_pencom_efiling.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_rectification.html",
+    "section": "Pension Scheme Returns Rectification Service to HMRC",
+    "text": "You can use the Pension Scheme Returns Rectification Service to correct any errors, omissions, or reporting discrepancies in previously submitted Pension Scheme Returns to HMRC. This service is available for both Pension Administrators and Pension Providers. To make these corrections, you must re-submit the complete pension return, ensuring all tax and scheme details are accurate and compliant.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "penschm_rectification.html",
+    "section": "Pension Scheme Returns Rectification Service",
+    "text": "Amended Accounting for Tax (Pension Company) Amended Pension Return (Occupational) Amended Pension Return (Non-Occupational)",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\penschm_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 9 )P11D and P46 Car eReturn",
+    "text": "There are no hidden costs. Support is inclusive in the price. Free unlimited additional users.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 1 )Rectification of CIS, Payroll RTI eReturn Errors**",
+    "text": "( 1.1 ) Employee PAYE Rectification Current Tax Year Data Rectification - Employee Form Price 1.1.1 Employee RTI Additional FPS Returns Active Employee FPS - Payment Errors Leaver Employee FPS - Omission Errors Leaver Employee FPS - Reporting Payments after Leaving or Death Self Defined template £ 5.00 (per Employee) Past Tax Year Data Rectification - Employee Form Price 1.1.2 Employee Year-to-Date (YTD) FPS Active Employee - Payment Errors Leaver Employee - Omission Errors Leaver Employee - Reporting Payments after Leaving or Death Self Defined template £ 5.00 (per Employee) 1.1.3 Employee Earlier Year Update (EYU) Correcting Employees’ Past Year Payment Errors Leaver Employee - Omission Errors Leaver Employee - Reporting Payments after Leaving or Death Self Defined template £ 5.00 (per Employee) The Minimum charge for using any of the RECTIFICATION services is £ 80.00 in an HMRC Tax month. ( 1.2 ) Pensioner Payment Rectification Current Tax Year Data Rectification - Pensioner Form Price 1.2.1 Pensioner RTI Additional FPS Returns Amending Trivial Commutation Lump Sum (TCLS) or One-off Pension Amounts Correction of Flexibility Payments Amending Death Benefit Payments Corrections to Serious Ill-health payments Late Reporting of Death of a deceased Pension Recipient Final Payment made after death Self Defined template £ 5.00 (per Pensioner) Past Tax Year Data Rectification - Pensioner Form Price 1.2.2 Pensioner Year-to-Date (YTD) FPS Amending Trivial Commutation Lump Sum (TCLS) or One-off Pension Amounts Correction of Flexibility Payments Amending Death Benefit Payments Corrections to Serious Ill-health payments Late Reporting of Death of a deceased Pension Recipient Final Payment made after death Self Defined template £ 5.00 (per Pensioner) 1.2.3 Pensioner Earlier Year Update (EYU) Amending Trivial Commutation Lump Sum (TCLS) or One-off Pension Amounts Correction of Flexibility Payments Amending Death Benefit Payments Corrections to Serious Ill-health payments Late Reporting of Death of a deceased Pension Recipient Final Payment made after death Self Defined template £ 5.00 (per Pensioner) The Minimum charge for using any of the RECTIFICATION services is £ 80.00 in an HMRC Tax month. ( 1.3 ) CIS Payment Data Rectification Current Tax Year Data Rectification Form Price 1.3.1 Amended CIS 300 returns £ 5.00 (per Subcontractor) Past Tax Year Data Rectification Form Price 1.3.2 Amended CIS 300 returns £ 5.00 (per Subcontractor) The Minimum charge for using any of the RECTIFICATION services is £ 80.00 in an HMRC Tax month. ( 1.4 ) EPS (Employer Payment Summary) Data Rectification Past Tax Year Data Rectification Form Price 1.4.1 Amended Past Year EPS (Employer Payment Summary) returns £ 70.00 (per Employer) The Minimum charge for using any of the RECTIFICATION services is £ 80.00 in an HMRC Tax month. The minimum charge for using any service listed in ( 1 ) is £ 80.00 in an HMRC month regardless of usage. ** One off non-recurring On Boarding Set Up, Support cost for using the service listed in ( 1 ) £300.00 A Tax month starting from 6th of the month to 5th of the following month Consultancy Charges: If additional consultancy is required for advice on data format and data conversion beyond the provided support literature for any of the rectification returns above, there will be an extra charge. This fee is subject to agreement. Price Examples: Tax month 1 you e-Filed 50 different employees / pensioner / subcontractor previous year amended return The total cost will be 50 x £5 = £250 If on tax month 2 you e-Filed just 5 amended returns in total for that month the cost would be £80 ( minimum charge applied ). If in tax month 3 you did not e-File any amended return you would not be charged at all. Note: The current Tax Year Payment Rectification is £3.00 per employee Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 2 )Companies House iXBRL Accounts E-filing",
+    "text": "iXBRL Account to Companies house Details Price One off iXBRL Account to Companies house £ 150.00 per company per annual return Volume discount available Contact Us One off non-recurring setup cost £ 350.00 Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 3 )HMRC CT, iXBRL Accounts & IRR E-filing",
+    "text": "3(a). CT600 and iXBRL Accounts to HMRC Details Price One off CT600 and iXBRL Accounts to HMRC £ 250.00 per company Volume discount available Contact Us One off non-recurring setup cost £ 350.00 3(b). Interest Restriction Return (IRR) to HMRC Details Price One off non-recurring setup cost £ 350.00 The usage cost to be mutually agreed depending on the volume, i.e., the number of UK Companies included in the Full or Abbreviated IRR. Volume discount available Contact Us Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 4 )Construction Industry Scheme (CIS) 300*",
+    "text": "(All CIS 300 returns are calculated based on the eReturns filed on a monthly basis) No. of Subcontractors Price per subcontractor 01 - 500 Subcontractors £ 2.30 per Subcontractor 501 - 1,000 Subcontractors £ 1.20 per Subcontractor 1,001 - 1,500 Subcontractors £ 0.80 per Subcontractor 1,500 Subcontractors onwards £ 0.40 per Subcontractor NIL Return £ 20.00 per return Subcontractor Verification Requests FREE One off non-recurring set up cost £ 1.00 (per subcontractor) ( Up to a Maximum of £ 500, depending on the number of subcontractors you e-File in the first month ) Minimum Charge £ 80.00 (per month regardless of usage) Price example 1: Assuming in your monthly CIS 300 returns you have e-Filed for a total of 60 subcontractors. First layer : 60 x £2.30 = £ 138 -------------------------------------------------- Total monthly charge would be £ 138 Price example 2: Assuming in your monthly CIS 300 returns you have e-Filed for a total of 2,500 subcontractors. First layer : 500 x £2.30 = £ 1,150 Second layer : 500 x £1.20 = £ 600 Third layer : 500 x £0.80 = £ 400 Fourth layer : 1000 x £0.40 = £ 400 -------------------------------------------------- Total monthly charge would be £ 2,550 • Monthly invoices would be produced based on the number of subcontractors e-Filed on a Tax Month basis, using the Illustrated scale. All prices shown exclude VAT. Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 5 )FPS (Full Payment Submission) eReturn+ +( Tax Year)",
+    "text": "(All RTI Charges are calculated based on the eReturns filed on a Tax Month basis) First 1000 Employees 1001 - 10,000 Employees Over 10,000 Employees Monthly Payrun FPS eReturn 35p 19p 15p Weekly Payrun FPS eReturn 10p 6p 4p 2 Weekly Payrun FPS eReturn 18p 10p 8p 4 Weekly Payrun FPS eReturn 35p 19p 15p Quarterly Payrun FPS eReturn 250p 140p 100p Bi-Annually Payrun FPS eReturn 400p 160p 85p Annually Payrun FPS eReturn 800p 190p 160p Irregular Payrun FPS eReturn 600p 190p 160p Price example 1: Assuming in a particular month you have the following usage: 500 - Employee Monthly Payrun FPS eReturns 5 - Employee P6 DPS Notice Downloads 1 - Employer Payment Submission (EPS) The total monthly ongoing E-filing cost would be: FPS eReturn (Monthly) 1st layer :\t500 x\t£0.35\t=\t£ 175.00 P6 DPS Download :\t5 x\t£0.03\t=\t£ 0.15 EPS eReturn :\t1 x\t£2.00\t=\t£ 2.00 Total Cost for that month would be £ 177.15 Price example 2: Assuming in a particular month you have the following usage: 2400 - Employee Monthly Payrun FPS eReturns 1500 - Employee Weekly Payrun FPS eReturns 20 - Employee P6 DPS Notice Downloads The total monthly ongoing E-filing cost would be: FPS eReturn (Monthly) 1st layer :\t1000 x\t£0.35\t=\t£ 350.00 FPS eReturn (Monthly) 2nd layer :\t1400 x\t£0.19\t=\t£ 266.00 FPS eReturn (Weekly) 1st layer :\t1000 x\t£0.10\t=\t£ 100.00 FPS eReturn (Weekly) 2nd layer :\t500 x\t£0.06\t=\t£ 30.00 EPS eReturn :\t1 x\t£2.00\t=\t£ 2.00 P6 DPS Download :\t20 x\t£0.03\t=\t£ 0.60 Total Cost for that month would be £ 748.60 Price example 3: Assuming in a particular month you have the following usage: 15,000 - Employee Monthly Payrun FPS eReturns 2,600 - Employee Weekly Payrun FPS eReturns 8,000 - Employee P9 DPS Notice Downloads The total monthly ongoing E-filing cost would be: FPS eReturn (Monthly) 1st layer :\t1000 x\t£0.35\t=\t£ 350.00 FPS eReturn (Monthly) 2nd layer :\t9000 x\t£0.19\t=\t£ 1710.00 FPS eReturn (Monthly) 3rd layer :\t5000 x\t£0.15\t=\t£ 750.00 FPS eReturn (Weekly) 1st layer :\t1000 x\t£0.10\t=\t£ 100.00 FPS eReturn (Weekly) 2nd layer :\t1600 x\t£0.06\t=\t£ 96.00 EPS eReturn :\t1 x\t£2.00\t=\t£ 2.00 P9 DPS Download :\t8000 x\t£0.03\t=\t£ 240.00 Total Cost for that month would be £ 3248.00 The minimum charge for using any service listed in ( 5 ) is £ 80.00 per HMRC month regardless of usage. + + One off non-recurring set up cost for using the service listed in ( 5 ) : £ 500 - £ 5000 (As per the Requirement) All quotes are based on Per PAYE basis. All prices shown exclude VAT. Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 6 )Other RTI eReturn Services+ +( Tax Year)",
+    "text": "(All RTI Charges are calculated based on the eReturns filed on a Tax Month basis) Form Price EPS (Employer Payment Submission) £ 2 (per Return) NVR (NINO Verification Request) 2p (per employee) P6 3p (per employee) P9 3p (per employee) SL1, SL2 2p (per employee) PGL1, PGL2 2p (per employee) All other notifications 2p (per employee) eReports P45 Part 1, 1A, 2 Download (Viewing / Printing) £ 5 (per employee) P60 Download (Viewing / Printing) £ 3 (per employee) The minimum charge for using any service listed in ( 6 ) is £ 80.00 regardless of usage. + + One off non-recurring set up cost for using the service listed in ( 6 ) : £ 500 - £ 5000 (As per the Requirement) All quotes are based on Per PAYE basis. All prices shown exclude VAT. Notice of termination : 3 months. Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 7 )Pension eReturn",
+    "text": "Details Price Occupational: (SAS Self-Administered Scheme or APSS 301) £ 100.00 per Submission Non-Occupational Scheme: (SIPP Self-Invested Personal Pension or APSS 313) No. of Members Price (Annual) 01 - 500 Members £ 3.50 per Member 501 - 1,000 Members £ 2.00 per Member 1,001 - 5,000 Members £ 1.00 per Member 5,001 - 50,000 Members £ 0.30 per Member 50,001 - 500,000 Members £ 0.10 per Member One off non-recurring set up cost £ 500.00 The minimum charge for using any service listed in ( 7 ) is £ 80.00 regardless of usage. There is no additional cost for additional system users Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 8 )MTD VAT eReturn",
+    "text": "These will vary in accordance with your requirements. Details Price Set Up and Implementation: £ 300.00 - £ 3,000.00 * * One off non-recurring cost for using the service listed in ( 8 ), ranging between £ 300.00 and £ 3,000.00, please contact us for a quote. Usage Costs : £ 10.00 (per VRN per Return) Minimun Charge : £ 80.00 (per month/quarter) Price example Monthly Quarterly Price example 1: If you have 1 VRN and your returns are sent monthly, the cost will be £ 80.00 per month, £ 960.00 per year. Price example 2: If you have 9 VRN's and those returns are sent monthly, the cost will be £ 90.00 per month, £ 1080.00 per year. Price example 1: If you have 1 VRN and your returns are sent quarterly, the cost will be £ 80.00 per quarter, £ 320.00 per year. Price example 2: If you have 9 VRN's and those returns are sent quarterly, the cost will be £ 90.00 per quarter, £ 360.00 per year. Mobile MTD VAT Verification Service: FREE VRN: VAT Registration Number Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "price.html",
+    "section": "( 9 )P11D and P46 Car eReturn",
+    "text": "Forms Price (Annual) P11D £ 3.00 per employee P46 Car - Quarterly Returns £ 3.00 per car One off non-recurring set up cost for using the service listed in ( 9 ) £ 300.00 The minimum charge for using any service listed in ( 9 ) is £80.00 per year Back to top",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\price.html",
+    "page_title": "Price 1 2efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "product.html",
+    "section": "Product Range",
+    "text": "Independent/standalone filing of regular HMRC Returns for CIS, RTI and Pension Rectifications to data filed to HMRC for CIS, RTI and Pension An Agent Authorisation App",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\product.html",
+    "page_title": "12efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "reclaim.html",
+    "section": "Reclaim of Tax:",
+    "text": "If you’ve paid more tax than required, you may be eligible for a refund from HMRC. Overpayments can occur for a variety of reasons, such as: Allowances or deductions not applied correctly Changes in income or expenses after filing Overpaid PAYE or self-assessment tax Refunds of Corporation Tax or Capital Gains Tax Our service provides a secure electronic gateway to submit your reclaim, performing HMRC specified schema and business rule validations before E-filing. This ensures that your claim is submitted in the correct format for HMRC processing, with digital confirmation of submission.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\reclaim.html",
+    "page_title": "Contact",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "reclaim.html",
+    "section": "Reclaim of NIC:",
+    "text": "National Insurance Contributions (NIC) can sometimes be overpaid due to payroll adjustments, misreported earnings, or employee status changes. Examples include: Overpaid Class 1 NIC due to payroll errors Overpaid Class 1A NIC on benefits in kind Employer NIC overpayments on terminated employees Tronc scheme NIC overpayments (for hospitality tips) You can submit a reclaim to HMRC to recover any excess contributions. Our service acts as a gateway for submitting NIC reclaims, checking compliance with HMRC’s business rules and format requirements before electronic transmission, helping ensure your submission is accepted by HMRC and a digital acknowledgment is issued.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\reclaim.html",
+    "page_title": "Contact",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "1. System Compatibility",
+    "text": "SAP, Oracle, bespoke and other software package users have been successfully using our system for their various eReturns to the HMRC. The system is platform independent, cloud-based, and will be compatible with any system and any version of HR and Payroll you use. The file formats the system supports for RTI eReturns to HMRC are: CSV XML",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "2. The Range of RTI eReturns / eReceipts Supported",
+    "text": "We support the full range of RTI Data eReturns and eReceipts, plus other additional services.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "Complete range of RTI eReturns included are",
+    "text": "FPS, Full Payment Submission EPS, Employer Payment Summary NVR, NINo Verification Request FSY, Final Submission for the Tax Year Addn. FPS, Additional Full Payment Submission P11D P46 Car",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "Complete range of RTI Data eReceipts (DPS) included are",
+    "text": "P6, P9, SL1, SL2, PGL1, PGL2 and NINO & RTI notices. CSV and XML channels are supported.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "RTI Additional Services",
+    "text": "Produces Leaver P45 Data / PDFs for printing out. Produces Year End P60 Data / PDFs on Completion of Final FPS e-Payslips",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "Others",
+    "text": "Supports daily, weekly, monthly, annual and anytime etc, pay run data. Compatibility with your system is assured as it is 100% browser-based. Many users have used the system successfully. It is very stable and reliable.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "3a. How does E-filing of Returns Work?",
+    "text": "You may e-file your FPS, EPS, EYU and NVR returns with the www.1 2eFile.com specialist eReturn system using a CSV file or an XML file. However, different file formats require different preparation. This section explains what may be involved when using different file formats for your returns. 3.1 - CSV File Format Approach The steps involved to e-file your RTI returns using a CSV file are as follows: Step 1: Request the template for the respective return you wish to make from 1 2eFile.com. Step 2: Based on the template's specified data requirements you need to derive the data from the payroll system you use and place the data onto the template spreadsheet. The specifications for the data are given in the instructions document along with the template. Step 3: Check the template containing all your data is in accordance with the instructions we specified. Our specifications are based on HMRC's Schema specification as well as BACS Standards. Step 4: Convert the template into a CSV file. Step 5: Upload the CSV file to www.1 2eFile.com Server Step 6: Make a final check on the uploaded RTI data and approve the data, or remove the data if your data contains errors and then repeat the uploading process when you are happy with the data. Step 7: Click on the E-file button. Wait a few minutes and then you will be able to download the E-filed Success Certificate, which contains the HMRC Timestamp and HMRC IR MARK. 3.2 - XML file Approach The steps involved in E-filing your RTI eReturns through XML file are similar to the CSV file approach. A XML file will come from a payroll package with the capability of producing the XML output inbuilt. The XML file in question must be fully in compliance with HMRC's various RTI required data specifications Step 1: After completing the pay run you can produce the XML file in your system Step 2: Sign in to the www.1 2eFile.com server and upload your XML file Step 3: Make a final check on the uploaded RTI data and approve it, or remove the data if your data contains errors and then repeat the uploading process when you are happy with the data. Step 4: Click on the E-file button. Wait a few minutes and then you will be able to download the E-filed Success Certificate, which contains the HMRC Timestamp and HMRC IR MARK.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "3.1 - CSV File Format Approach",
+    "text": "The steps involved to e-file your RTI returns using a CSV file are as follows: Step 1: Request the template for the respective return you wish to make from 1 2eFile.com. Step 2: Based on the template's specified data requirements you need to derive the data from the payroll system you use and place the data onto the template spreadsheet. The specifications for the data are given in the instructions document along with the template. Step 3: Check the template containing all your data is in accordance with the instructions we specified. Our specifications are based on HMRC's Schema specification as well as BACS Standards. Step 4: Convert the template into a CSV file. Step 5: Upload the CSV file to www.1 2eFile.com Server Step 6: Make a final check on the uploaded RTI data and approve the data, or remove the data if your data contains errors and then repeat the uploading process when you are happy with the data. Step 7: Click on the E-file button. Wait a few minutes and then you will be able to download the E-filed Success Certificate, which contains the HMRC Timestamp and HMRC IR MARK.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "3.2 - XML file Approach",
+    "text": "The steps involved in E-filing your RTI eReturns through XML file are similar to the CSV file approach. A XML file will come from a payroll package with the capability of producing the XML output inbuilt. The XML file in question must be fully in compliance with HMRC's various RTI required data specifications Step 1: After completing the pay run you can produce the XML file in your system Step 2: Sign in to the www.1 2eFile.com server and upload your XML file Step 3: Make a final check on the uploaded RTI data and approve it, or remove the data if your data contains errors and then repeat the uploading process when you are happy with the data. Step 4: Click on the E-file button. Wait a few minutes and then you will be able to download the E-filed Success Certificate, which contains the HMRC Timestamp and HMRC IR MARK.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "3b. How Does RTI eReceipts Work?",
+    "text": "www.1 2eFile.com will automatically unload all these notices for you into the 1 2eFile server for you to view. We will also convert the above mentioned files into CSV formats. You can download the P6, P9, SL1, SL2, PGL1, PGL2 and NINO & RTI notices in a CSV format and then upload them to your payroll system for auto-tax code updates. However, to achieve auto-tax code or NINO updates you need to ask your software engineer to help you to map the data directly into your database. Under RTI HMRC will send you various notices through its Data Provisioning Service (DPS). These notices include P6 P9 SL1 SL2 PGL1 PGL2 NINO & RTI",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "1. Full Payment Submission (FPS)",
+    "text": "All employers regardless of the number of employees you have. The FPS tells HMRC who is in your company payroll and what payments you have made to the employees concerned. Unique Service Our system can help to consolidate your data from different locations and/or from different pay frequencies and e-File your FPS data in accordance with the HMRC requirements.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "2. Employer Payment Submission (EPS)",
+    "text": "EPS is a monthly return which allows the employer to recover statutory payments (SSP and SMP etc), CIS Deductions suffered or NIC Holidays, from HMRC. If you do not have any SSP, SMP, CIS suffered or NIC holiday to reclaim from HMRC you DO NOT NEED to e-File the EPS. Small companies may use the EPS to notify HMRC of dormant periods. For a typical Pension Provider, there may be exemption from e-Filing the EPS. The process you need to make for this return is the same as before i.e. request and download the template from 1 2eFile.com, fill it in and upload it back to the 1 2eFile server for e-Filing.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "3. NINO Verification Service (NVR)",
+    "text": "This submission allows employers to validate their employee's NINO (National Insurance number) or to obtain a NINO from HMRC for the Employee Details supplied on the NVR. The process is similar to the above process i.e. download the template from www.1 2eFile.com, fill it in and then upload it back to 1 2eFile to e-file the NVR request to HMRC for NINO information. After e-filing you need to later log back in to www.1 2eFile.com to view and/or download the responses from HMRC. The process is conducted through the HMRC's Data Provisioning Service (DPS). You will receive details of the specific NINO responses via NINO and RTI DPS notifications. You are then provided with an option to download the NINO and RTI DPS notifications in a CSV file enabling you to further upload to your system to update your employee's NINOs.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rtiServices.html",
+    "section": "4. Auto Tax Code Update - DPS",
+    "text": "Once you sign up to our service we can help you do the auto tax code updates of your P6 or P9. This system is proven and has been used successfully by many very large employers since 2006. Our System will automatically fetch your tax codes, then convert them to a CSV format for you to upload to your server to conduct the auto tax code updates. This is done under the HMRC DPS system. The system supports the data of up to 250,000 employees. Complete range of RTI Data eReceipts (DPS) included are - P6, P9, SL1, SL2, PGL1, PGL2 and NINO & RTI notices Notices - CSV and XML channels are supported",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rtiServices.html",
+    "page_title": "12efile RTI Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rti_rectification.html",
+    "section": "Employee RTI FPS Rectification Service to HMRC-past 6 years",
+    "text": "You can rectify your Employee RTI FPS errors by the approaches mentioned below You can use Employee RTI FPS Rectification to rectify any overpayments / omitted payments / mis-calculated payments and report to HMRC. An Active Employee errors (Current Tax Year) can be rectified using Additional FPS You can also use it to report missed out Leaver information and also to report final payment / arrears to a leaver or an employee who expired after notifying HMRC of the leaving date.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rti_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "rti_rectification.html",
+    "section": "Employee PAYE Rectification Service",
+    "text": "1. Current Tax Year Data Rectification - Employee Additional FPS Active Employee FPS - Payment Errors Leaver Employee FPS - Omission Errors Leaver Employee FPS - Reporting Payments after Leaving or Death Self Defined template 2. Past Tax Year Data Rectification - Employee Year-to-Date(YTD) FPS Active Employee - Payment Errors Leaver Employee - Omission Errors Leaver Employee - Reporting Payments after Leaving or Death Self Defined template Earlier Year Update (EYU) Correcting Employees’ Past Year Payment Errors Leaver Employee - Omission Errors Leaver Employee - Reporting Payments after Leaving or Death Self Defined template",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\rti_rectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "supporthome.html",
+    "section": "Other Support",
+    "text": "Phone Support Continue > Email Support Continue > FAQ Support Continue >",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\supporthome.html",
+    "page_title": "12efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "supporthome.html",
+    "section": "Live Demo Support",
+    "text": "Please click here to talk to REAL people showing you how to use the system. Continue >",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\supporthome.html",
+    "page_title": "12efile",
+    "meta_description": ""
+  },
+  {
+    "domain": "12efile.com",
+    "page": "workplacePenRectification.html",
+    "section": "We support all popular pension providers",
+    "text": "Aegon Pension Creative Auto Enrolment GenLife My Workplace Pension Options UK Workplace Pension Royal London Group Simply AE Pension The Corpad Master Trust Workers Pension Trust Aviva Pension Evolve Pension Hargreaves Lansdown NEST People's Pension Salvus Master Trust Smart Pension The Pensions Trust BBS Pension FriendsLife Pension Legal and General Pension NOW: Pensions Prudential Pension Scottish Widows Standard Life True Potential",
+    "source_path": "D:\\ZORO\\company_intel\\data\\12efile.com\\workplacePenRectification.html",
+    "page_title": "HMRC & Companies House Errors Rectification E-filing Services",
+    "meta_description": ""
+  }
+]

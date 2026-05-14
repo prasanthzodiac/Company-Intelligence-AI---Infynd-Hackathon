@@ -1,0 +1,64 @@
+{
+  "company_name": "2mghealthcare Inc.",
+  "domain": "2mghealthcare.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "_text-id-gsbp-8ca128b a:hover,.gspb_text-id-gsbp-8ca128b .wp-block a:hover{background-size:100% 95%;} Level 7, Regal House 70 London Road, Twickenham TW1 3QS",
+  "locations": [
+    "London"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "2mghealthcare.com",
+    "company_name": "",
+    "full_address": "_text-id-gsbp-8ca128b a:hover,.gspb_text-id-gsbp-8ca128b .wp-block a:hover{background-size:100% 95%;} Level 7, Regal House 70 London Road, Twickenham TW1 3QS",
+    "phone": "020 3878 3900",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "sales@2mghealthcare.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/2mghealthcare/",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.0,
+  "company": {
+    "Profile": {
+      "name": "",
+      "description": ""
+    },
+    "Research Support & Trusted Research Environments (TRE)": {
+      "heading": "Transforming Innovation into Impact with Data, AI, and Cloud Excellence"
+    }
+  }
+}

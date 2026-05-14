@@ -1,0 +1,51 @@
+[
+  {
+    "domain": "aculabtechnologies.com",
+    "page": "index.html",
+    "section": "Contact Information",
+    "text": "Email addresses: info@aculab.com, sales@aculab.comHead\nPhone numbers: +1 (781) 352 3550, 2015, 27001, 2013, +44 (0) 1908 273800, 2024, 9001, (781) 352 3550, 1000\n\nFooter information: ACULAB TECHNOLOGIESContact:+44 (0) 1908 273800 (UK)+1 (781) 352 3550 (USA)info@aculab.comsales@aculab.comHead Office:Aculab, LakesideBramley RoadMilton KeynesMK1 1PT, United KingdomCorporate Site:www.aculab.comPrivacy & Cookies© 2024 by Aculab",
+    "source_path": "D:\\ZORO\\company_intel\\data\\aculabtechnologies.com\\index.html",
+    "page_title": "Aculab Technologies: Telecommunication Services",
+    "meta_description": "Aculab Technologies delivers deployment-proven telecommunication, CPaaS and enterprise biometric products to the global market to help transform your business.",
+    "structured_data": {
+      "emails": [
+        "info@aculab.com",
+        "sales@aculab.comHead"
+      ],
+      "phones": [
+        "+1 (781) 352 3550",
+        "2015",
+        "27001",
+        "2013",
+        "+44 (0) 1908 273800",
+        "2024",
+        "9001",
+        "(781) 352 3550",
+        "1000"
+      ],
+      "social_links": {
+        "linkedin": "https://uk.linkedin.com/company/aculab",
+        "x": "https://twitter.com/aculab",
+        "facebook": "https://www.facebook.com/AculabEmpoweringYourCommunications",
+        "instagram": "https://www.instagram.com/aculab_/"
+      }
+    }
+  },
+  {
+    "domain": "aculabtechnologies.com",
+    "page": "index.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nLinkedin: https://uk.linkedin.com/company/aculab\nX: https://twitter.com/aculab\nFacebook: https://www.facebook.com/AculabEmpoweringYourCommunications\nInstagram: https://www.instagram.com/aculab_/",
+    "source_path": "D:\\ZORO\\company_intel\\data\\aculabtechnologies.com\\index.html",
+    "page_title": "Aculab Technologies: Telecommunication Services",
+    "meta_description": "Aculab Technologies delivers deployment-proven telecommunication, CPaaS and enterprise biometric products to the global market to help transform your business.",
+    "structured_data": {
+      "social_links": {
+        "linkedin": "https://uk.linkedin.com/company/aculab",
+        "x": "https://twitter.com/aculab",
+        "facebook": "https://www.facebook.com/AculabEmpoweringYourCommunications",
+        "instagram": "https://www.instagram.com/aculab_/"
+      }
+    }
+  }
+]

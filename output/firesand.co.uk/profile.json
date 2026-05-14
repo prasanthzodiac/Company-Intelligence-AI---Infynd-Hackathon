@@ -1,0 +1,102 @@
+{
+  "company_name": "Certification",
+  "domain": "firesand.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Phone numbers: 01908 477 588, 01908 477588\n\nFooter information: 01908 477588Harben HouseSevern DriveNewport PagnellMilton KeynesBuckinghamshireMK16 9EY",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "firesand.co.uk",
+    "company_name": "Certification",
+    "full_address": "Phone numbers: 01908 477 588, 01908 477588\n\nFooter information: 01908 477588Harben HouseSevern DriveNewport PagnellMilton KeynesBuckinghamshireMK16 9EY",
+    "phone": "01908 477 588",
+    "sales_phone": "01908 477588",
+    "fax": "",
+    "mobile": "01908 477 588",
+    "other_numbers": [],
+    "email": "enquiries@firesand.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/11013005/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BgFoYMx8BRSKIHuZVYa4MEg%3D%3D",
+    "facebook": "https://www.facebook.com/FiresandLtd/?modal=admin_todo_tour",
+    "x": "https://twitter.com/FiresandLtd?lang=en-gb",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "certification",
+    "NIS"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "REST"
+  ],
+  "extraction_confidence": 0.39,
+  "Company": {
+    "Name": "Firesand Limited",
+    "Description": "",
+    "Location": "Newport Pagnell, Milton Keynes, Buckinghamshire, MK16 9EY",
+    "Phone": "+44 1908 477588",
+    "Email": "enquiries@firesand.co.uk",
+    "Website": "",
+    "Industry": "Cybersecurity",
+    "Services": [
+      "Penetration Testing",
+      "Managed IT Services",
+      "Digital Forensics",
+      "Governance, Risk and Compliance",
+      "Product Security Engineering",
+      "Secure Design and Development Strategy",
+      "Data Privacy",
+      "Training and Education"
+    ],
+    "Sectors": [
+      "IGaming",
+      "Maritime Cyber Security"
+    ]
+  },
+  "Partnership": {
+    "Description": "Partner with us to strengthen your security offering through white-labelled expertise.",
+    "Services": [
+      "Security Design, Development and Strategy",
+      "Data Privacy Services",
+      "Assurance",
+      "Governance, Risk and Compliance",
+      "Training and Education"
+    ]
+  },
+  "Privacy Policy": {
+    "Description": "We collect personal information to provide quotes, undertake contracts agreed with you and manage the relationship for the period you are a client.",
+    "Rights": [
+      "Request what information we hold about you",
+      "See it",
+      "Ask us to correct it if it is inaccurate",
+      "Ask for it to be erased",
+      "Ask for us to give you a copy of the information"
+    ]
+  },
+  "Social Media": {
+    "LinkedIn": "",
+    "Twitter": "",
+    "Facebook": ""
+  }
+}

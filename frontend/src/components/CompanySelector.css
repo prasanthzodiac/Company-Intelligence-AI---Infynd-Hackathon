@@ -1,0 +1,198 @@
+.company-selector-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Match upload screen/app shell background for subtle, consistent blending */
+  background: #050509;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.12) 1px, transparent 0);
+  background-size: 20px 20px;
+  position: relative;
+  overflow: hidden;
+  color: #e5e7eb;
+}
+
+.company-selector-shell::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 92, 77, 0.08) 0%, transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(255, 92, 77, 0.03) 0%, transparent 55%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.company-selector-header {
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.7);
+  /* Same subtle header gradient as upload screen */
+  background: linear-gradient(180deg, #020308 0%, #060612 70%, transparent 100%);
+  position: relative;
+  z-index: 2;
+}
+
+.company-selector-main {
+  flex: 1;
+  padding: 48px 56px 72px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.company-selector-copy h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0 0 8px;
+  color: #f9fafb;
+}
+
+.company-selector-copy p {
+  margin: 0 0 24px;
+  max-width: 520px;
+  font-size: 14px;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  padding-top: 16px;
+}
+
+.company-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  border-radius: 24px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease,
+    background 0.22s ease;
+  text-align: left;
+  animation: company-card-float 7s ease-in-out infinite;
+}
+
+.company-card-inner {
+  width: 100%;
+  height: 100%;
+  padding: 24px 24px 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(15, 23, 42, 0.7);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 92, 77, 0.10) 0%, rgba(15, 23, 42, 0.97) 52%),
+    radial-gradient(circle at 120% 130%, rgba(15, 23, 42, 1) 0%, #020617 60%);
+  box-shadow:
+    0 16px 40px rgba(15, 23, 42, 0.75),
+    0 0 0 1px rgba(15, 23, 42, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.company-card:hover .company-card-inner {
+  transform: translateY(-6px);
+  border-color: rgba(248, 113, 113, 0.9);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 92, 77, 0.20) 0%, rgba(15, 23, 42, 1) 58%),
+    radial-gradient(circle at 120% 130%, rgba(15, 23, 42, 1) 0%, #020617 65%);
+  box-shadow:
+    0 22px 55px rgba(15, 23, 42, 0.85),
+    0 0 0 1px rgba(248, 113, 113, 0.28);
+}
+
+.company-card-icon-large {
+  width: 70px;
+  height: 70px;
+  border-radius: 22px;
+  /* Warm red‑orange badge that matches the app's red/black theme */
+  background: linear-gradient(135deg, #f97316, #ef4444);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9fafb;
+  font-weight: 700;
+  font-size: 30px;
+  box-shadow: 0 14px 26px rgba(239, 68, 68, 0.35);
+  position: relative;
+  overflow: hidden;
+}
+
+.company-card-logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(15, 23, 42, 0.9));
+}
+
+.company-card-initial {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.company-card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.company-card-subtitle {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.company-card-footer {
+  margin-top: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #fbbf24;
+  opacity: 0.9;
+}
+
+.company-card-footer.centered-footer {
+  text-align: center;
+}
+
+@keyframes company-card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media (max-width: 768px) {
+  .company-selector-header {
+    padding-inline: 20px;
+  }
+
+  .company-selector-main {
+    padding: 28px 20px 40px;
+  }
+}
+
+

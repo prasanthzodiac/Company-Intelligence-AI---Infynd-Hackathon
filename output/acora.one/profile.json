@@ -1,0 +1,110 @@
+{
+  "company_name": "Acora One",
+  "domain": "acora.one",
+  "description_short": "IT support for small to medium-sized businesses",
+  "description_long": "We are passionate about helping your small to medium-sized business make the most of technology, ensuring it's working efficiently for your business. With our customers at the heart of everything we do, we're dedicated to delivering top-tier service that truly stands out.",
+  "industry": "Technology",
+  "sub_industry": "IT Support",
+  "sectors": [
+    "Technology",
+    "Healthcare"
+  ],
+  "ssc_code": "",
+  "products": [
+    "Managed IT Support",
+    "IT Support Norwich",
+    "Cyber Security",
+    "Backup Solutions",
+    "Cloud Hosting",
+    "Connectivity",
+    "Bespoke Software",
+    "Cloud Telephony",
+    "Web Hosting"
+  ],
+  "domain_status": "Active",
+  "company_registration": "02348923",
+  "vat_number": "GB 508 999 291",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "19 Meridian Way, Norwich NR7 0TA",
+  "locations": [
+    "Norwich NR7 0TA"
+  ],
+  "leadership": [
+    {
+      "name": "Sophie Roberts",
+      "title": "Account Manager"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "acora.one",
+    "company_name": "Acora One",
+    "full_address": "19 Meridian Way, Norwich NR7 0TA",
+    "phone": "01603 431200",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [
+      "01603 431200"
+    ],
+    "email": "info@acora.one",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/5018813",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "https://www.youtube.com/user/AcoraIT",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [
+    {
+      "name": "Managed IT Support",
+      "type": "service"
+    },
+    {
+      "name": "IT Support Norwich",
+      "type": "service"
+    },
+    {
+      "name": "Cyber Security",
+      "type": "service"
+    },
+    {
+      "name": "Backup Solutions",
+      "type": "service"
+    },
+    {
+      "name": "Cloud Hosting",
+      "type": "service"
+    },
+    {
+      "name": "Connectivity",
+      "type": "service"
+    },
+    {
+      "name": "Bespoke Software",
+      "type": "service"
+    },
+    {
+      "name": "Cloud Telephony",
+      "type": "service"
+    },
+    {
+      "name": "Web Hosting",
+      "type": "service"
+    }
+  ],
+  "business_type": "SaaS",
+  "company_size": "1-10",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.83
+}

@@ -1,0 +1,75 @@
+{
+  "company_name": "Phew Ltd",
+  "domain": "phew.org.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "House, 45a Station Road, Willington MK44 3QL Manage Cookie Consent We use technologies like cookies to store",
+  "locations": [
+    "Willington",
+    "Thurleigh"
+  ],
+  "leadership": [
+    {
+      "name": "Managing",
+      "title": "Director",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "phew.org.uk",
+    "company_name": "Phew Ltd",
+    "full_address": "House, 45a Station Road, Willington MK44 3QL Manage Cookie Consent We use technologies like cookies to store",
+    "phone": "01234 779050",
+    "sales_phone": "01234 779058",
+    "fax": "",
+    "mobile": "01234 779 050",
+    "other_numbers": [],
+    "email": "hello@phew.org.uk",
+    "hours_of_operation": "are Monday to Friday 9:00 am – 5:00 pm. Our aim, if we can’t respond or answer your question immedia",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/phew",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "CAF",
+    "NIST",
+    "NIS"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "React",
+    "REST"
+  ],
+  "extraction_confidence": 0.43,
+  "registered_address": "Cheribourne House, 45a",
+  "phone_numbers": [
+    "01234 779050",
+    "01234 779058"
+  ],
+  "email_addresses": [
+    "hello@phew.org.uk",
+    "hello@phew.org.uk",
+    "support@phew.org.uk"
+  ]
+}

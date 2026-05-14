@@ -1,0 +1,182 @@
+[
+  {
+    "company_id": 1,
+    "domain": "2mghealthcare.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\2mghealthcare.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 2,
+    "domain": "adas-ltd.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\adas-ltd.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 3,
+    "domain": "aristi.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\aristi.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 4,
+    "domain": "correct-group.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\correct-group.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 5,
+    "domain": "creatio.org.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\creatio.org.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 6,
+    "domain": "csc2.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\csc2.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 7,
+    "domain": "excellasers.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\excellasers.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 8,
+    "domain": "firesand.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\firesand.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 9,
+    "domain": "jumany.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\jumany.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 10,
+    "domain": "kudos-software.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\kudos-software.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 11,
+    "domain": "officernd.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\officernd.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 12,
+    "domain": "ospcyberacademy.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\ospcyberacademy.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 13,
+    "domain": "oxfordduplicationcentre.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\oxfordduplicationcentre.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 14,
+    "domain": "phew.org.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\phew.org.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 15,
+    "domain": "s8080.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\s8080.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 16,
+    "domain": "smartdata.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\smartdata.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 17,
+    "domain": "aztec.support",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\aztec.support",
+    "status": "pending"
+  },
+  {
+    "company_id": 18,
+    "domain": "bcs365.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\bcs365.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 19,
+    "domain": "bersec.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\bersec.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 20,
+    "domain": "bespokesupportsolutions.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\bespokesupportsolutions.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 21,
+    "domain": "blackboxhosting.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\blackboxhosting.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 22,
+    "domain": "documentstorage.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\documentstorage.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 23,
+    "domain": "lapis-consulting.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\lapis-consulting.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 24,
+    "domain": "linten.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\linten.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 25,
+    "domain": "mandata.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\mandata.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 26,
+    "domain": "mba-it.com",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\mba-it.com",
+    "status": "pending"
+  },
+  {
+    "company_id": 27,
+    "domain": "thehillcompany.co.uk",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\thehillcompany.co.uk",
+    "status": "pending"
+  },
+  {
+    "company_id": 28,
+    "domain": "thesecurityconsultancy.net",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\thesecurityconsultancy.net",
+    "status": "pending"
+  },
+  {
+    "company_id": 29,
+    "domain": "emagine.org",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\emagine.org",
+    "status": "pending"
+  },
+  {
+    "company_id": 30,
+    "domain": "acora.one",
+    "folder_path": "D:\\ZORO\\company_intel\\data\\acora.one",
+    "status": "pending"
+  }
+]

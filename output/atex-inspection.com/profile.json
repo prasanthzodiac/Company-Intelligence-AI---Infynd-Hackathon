@@ -1,0 +1,66 @@
+{
+  "company_name": "Terrington",
+  "domain": "atex-inspection.com",
+  "description_short": "Transform by name Transform by nature – We have many stories showing how our software has transformed our client’s businesses and processes, save time and money by enabling them to effectively track and process any form of data they choose to collect, not just or Atex compliance.",
+  "description_long": "Transform by name Transform by nature – We have many stories showing how our software has transformed our client’s businesses and processes, save time and money by enabling them to effectively track and process any form of data they choose to collect, not just or Atex compliance.",
+  "industry": "ATEX & Verification Services",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Terrington Data Management IT Centre York Science Park Heslington York YO10 5NP United Kingdom Tel: +44 (0)1904 922091 Em",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "certified"
+  ],
+  "services": [
+    {
+      "name": "how our software has transformed",
+      "type": "service"
+    },
+    {
+      "name": "or Atex compliance.",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "React",
+    "AWS",
+    "API",
+    "REST",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.0
+}

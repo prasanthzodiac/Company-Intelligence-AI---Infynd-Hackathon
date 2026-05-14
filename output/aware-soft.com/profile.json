@@ -1,0 +1,58 @@
+{
+  "company_name": "Aware Soft",
+  "domain": "aware-soft.com",
+  "description_short": "IT technical services, hosting specialists, cyber security, licensing & management, software development, cloud-based telephony and broadband solutions.",
+  "description_long": "Aware Soft provides a range of IT services including backup & disaster recovery, virtualisation, SQL server troubleshooting, ISO certification, and more. We also offer hosting solutions, cyber security services, comprehensive licensing and management, bespoke software development, and cloud-based telephony and broadband solutions.",
+  "industry": "Technology",
+  "sub_industry": "IT Services",
+  "sectors": [
+    "Technology",
+    "Finance"
+  ],
+  "ssc_code": "",
+  "products": [
+    "Backup Disaster Recovery",
+    "Hosted Exchange",
+    "Network Monitoring & PRTG"
+  ],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "phone": "0345 862 0350"
+  },
+  "social": {
+    "linkedin": ""
+  },
+  "certifications": [
+    "Cyber Essentials Plus certification",
+    "Cyber Essentials"
+  ],
+  "services": [
+    {
+      "name": "Backup Disaster Recovery",
+      "type": "service"
+    },
+    {
+      "name": "Hosted Exchange",
+      "type": "service"
+    },
+    {
+      "name": "Network Monitoring & PRTG",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "1-10",
+  "technology_signals": [
+    "Cloud",
+    "AI"
+  ],
+  "extraction_confidence": 0.8
+}

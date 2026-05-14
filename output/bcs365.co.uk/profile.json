@@ -1,0 +1,98 @@
+{
+  "company_name": "Business Computer Solutions",
+  "domain": "bcs365.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "IT Support and Consultancy",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "bcs365.co.uk",
+    "company_name": "Business Computer Solutions",
+    "full_address": "",
+    "phone": "01843 572600",
+    "sales_phone": "01843 572600",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "hello@bcs365.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [],
+  "services": [
+    {
+      "name": "Managed Cyber Security",
+      "type": "service"
+    },
+    {
+      "name": "IT Security Audit",
+      "type": "service"
+    },
+    {
+      "name": "IT Security Consultancy",
+      "type": "service"
+    },
+    {
+      "name": "Cloud Computing Services",
+      "type": "service"
+    },
+    {
+      "name": "VoIP Solutions",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud"
+  ],
+  "extraction_confidence": 0.34,
+  "location": "Kent",
+  "description": "We are a 100% employee-owned company providing IT support and consultancy services to businesses in Kent.",
+  "team": [
+    "Aaron Rosser",
+    "Aidan Gorman",
+    "Andola Crowley",
+    "Carrie Malone",
+    "Chelsea Pullan",
+    "Chris Delaney",
+    "Dan Beresford",
+    "Dominic Towe",
+    "Harry Ashton",
+    "Harry Marsden",
+    "Harvey Whichall",
+    "James Vigar",
+    "Jess Hodges",
+    "Khan Tomlinson",
+    "Lee Hutton",
+    "Martin Hynes",
+    "Reece Weston",
+    "Toby Field"
+  ],
+  "blog": [
+    "https://www.bcs-it.co.uk/blog/",
+    "https://www.bcs-it.co.uk/blog/7-things-to-consider-when-getting-a-new-computer-to-avoid-buyers-remorse/"
+  ]
+}

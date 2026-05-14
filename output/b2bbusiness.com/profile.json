@@ -1,0 +1,80 @@
+{
+  "company_name": "B2BCRM Software",
+  "domain": "b2bbusiness.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "b2bbusiness.com",
+    "company_name": "B2BCRM Software",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "#avada-vertical-menu-widget-3 ul.menu li a {font-size:14px;}",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "Cloud",
+    "AI"
+  ],
+  "extraction_confidence": 0.21,
+  "Company": {
+    "Name": "B2B",
+    "Description": "",
+    "Award Winning IT Service Provider": true,
+    "Services": [
+      "Award Winning Communications Service Provider",
+      "Award Winning CRM Software Development Service",
+      "Award Winning Digital Purchase Order System",
+      "Award Winning Education and Training Services",
+      "Award Winning Environmental Policy",
+      "Award Winning Expenses Management",
+      "Award Winning File It Online",
+      "Award Winning HR Online",
+      "Award Winning IT Audit and Support",
+      "Award Winning Marketing and Advertising",
+      "Award Winning Project Management",
+      "Award Winning Sales and Customer Service"
+    ],
+    "Testimonials": [
+      "David Sheldon: You made the process so simple. Everything is now so much faster and easier to work with than before."
+    ]
+  }
+}

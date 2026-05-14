@@ -1,0 +1,53 @@
+{
+  "company_name": "2MG Solutions",
+  "domain": "2mgsolutions.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "Old Gloucester Street, London, WC1N 3AX, United Kingdom",
+  "locations": [
+    "London"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "2mgsolutions.com",
+    "company_name": "2MG Solutions",
+    "full_address": "Old Gloucester Street, London, WC1N 3AX, United Kingdom",
+    "phone": [
+      "020 3878 3900",
+      "2024"
+    ],
+    "sales_phone": [
+      "020 3878 390027"
+    ],
+    "fax": [],
+    "mobile": "020 3878 3900",
+    "other_numbers": [],
+    "email": [
+      "PolicySOCIALLinkedInCONTACTsales@2mgsolutions.comTel"
+    ],
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://uk.linkedin.com/company/2mghealthcare"
+  },
+  "certifications": [],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI"
+  ],
+  "extraction_confidence": 0.0
+}

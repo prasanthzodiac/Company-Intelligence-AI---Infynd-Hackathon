@@ -1,0 +1,79 @@
+{
+  "company_name": "APVIKE",
+  "domain": "apvike.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "UK Office: 71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom Call: +44.20.4577.4260 IN",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "For",
+      "title": "CEO s  Enterprises For Business Executives For CIOs",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "+44.20.4577.4260",
+    "sales_phone": "+91.98200.3594",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "career@apvike.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/apvike-ltd-uk",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "https://www.youtube.com/watch?v=5JBmGR5reEs&pp=ygUHYXB2aWtlIA%3D%3D?rel=0",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "certification",
+    "NIS",
+    "ISO"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "REST",
+    "AI",
+    "Cloud",
+    "Python"
+  ],
+  "extraction_confidence": 0.0,
+  "Company Name": "Apvike Ltd. - UK",
+  "Company Registration Number": 13998488,
+  "Address": "71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom",
+  "Website": "apvike.com",
+  "Description": "Empowering industries and businesses with enthusiasm and Critical Business Thinking. As an innovative solution provider, we empower our customers with process automation, business decision support methodologies and systems.",
+  "Services": [
+    "Enterprise Performance Management",
+    "Into-Plane Service Automation, Asset Tracking and Business Support Services Solutions."
+  ],
+  "Products": [
+    "KPIwoven",
+    "KPIwoven Demo Series"
+  ],
+  "Industry": [
+    "Software Engineering"
+  ]
+}

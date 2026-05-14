@@ -1,0 +1,95 @@
+{
+  "company_name": "Blue Cube Security",
+  "domain": "bluecubesecurity.com",
+  "description_short": "Blue Cube Security is a leading provider of cybersecurity solutions and services. With over 25 years of experience, we have established ourselves as a trusted partner for organizations seeking to protect their digital assets.",
+  "description_long": "Blue Cube Security is a leading provider of cybersecurity solutions and services. With over 25 years of experience, we have established ourselves as a trusted partner for organizations seeking to protect their digital assets.",
+  "industry": "Compliance",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "Executive",
+      "title": "Director",
+      "role_type": "executive"
+    },
+    {
+      "name": "Blue Cube News",
+      "title": "CEO",
+      "role_type": "executive"
+    },
+    {
+      "name": "Blue Cube Security",
+      "title": "CEO",
+      "role_type": "executive"
+    },
+    {
+      "name": "Sales",
+      "title": "Director",
+      "role_type": "executive"
+    },
+    {
+      "name": "Vendor Fraud Ransomware",
+      "title": "CEO",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "+44 345 094 3070",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "DPO@BlueCubeSecurity.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "Cybersecurity Posture Review",
+      "type": "service"
+    },
+    {
+      "name": "Firewall Management",
+      "type": "service"
+    },
+    {
+      "name": "Governance Services",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "REST",
+    "Cloud",
+    "AWS",
+    "API"
+  ],
+  "extraction_confidence": 0.0
+}

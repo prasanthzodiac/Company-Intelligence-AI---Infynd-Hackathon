@@ -1,0 +1,50 @@
+{
+  "company_name": "12d UK Ltd",
+  "domain": "12d.co.uk",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "2025",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "London, EC2Y 9DT, United Kingdom",
+  "locations": [
+    "London"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "12d.co.uk",
+    "company_name": "12d UK Ltd",
+    "full_address": "WeWork Moor Place, Private Office 02-1321 Fore Street Avenue, London, EC2Y 9DT, United Kingdom",
+    "phone": "+44 20 4592 0657",
+    "sales_phone": "02-132\n1",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [
+      "2025 12",
+      "19650"
+    ],
+    "email": "",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "certifications": [],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [],
+  "extraction_confidence": 0.0
+}

@@ -1,0 +1,104 @@
+{
+  "company_name": "Anekanta Ltd (UK Registration 10090401)",
+  "domain": "anekanta.co.uk",
+  "description_short": "Anekanta provides a comprehensive range of AI strategy, risk, literacy and governance services designed to increase the responsible adoption of AI; focusing ISO 42001 and compliance with the EU AI Act and other global regulatory frameworks.",
+  "description_long": "Anekanta provides a comprehensive range of AI strategy, risk, literacy and governance services designed to increase the responsible adoption of AI; focusing ISO 42001 and compliance with the EU AI Act and other global regulatory frameworks.",
+  "industry": "Compliance",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "ta ® Ltd. privacy@Anekanta.co.uk Registered office: Stanhope House, Mark Rake, Bromborough, Wirral,\nCH62 2DN Company registered number: 10090401 You h",
+  "locations": [],
+  "leadership": [
+    {
+      "name": "Consulting",
+      "title": "Founder",
+      "role_type": "executive"
+    },
+    {
+      "name": "Jul Our",
+      "title": "Founder",
+      "role_type": "executive"
+    },
+    {
+      "name": "Appoints Anekanta",
+      "title": "Founder",
+      "role_type": "executive"
+    }
+  ],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "ask@anekanta.co.uk",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO"
+  ],
+  "services": [
+    {
+      "name": "Ai Use Case Evaluation",
+      "type": "service"
+    },
+    {
+      "name": "Ai and Technology Strategy Consulting",
+      "type": "service"
+    },
+    {
+      "name": "Risk and Impact Assessment for High-Risk and Biometrics Ai",
+      "type": "service"
+    },
+    {
+      "name": "Ai Literacy Training Aligned with Article 4, EU Ai Act",
+      "type": "service"
+    },
+    {
+      "name": "CPD Certified Ai Literacy and Governance Training for Boards and Senior Leaders",
+      "type": "service"
+    },
+    {
+      "name": "Governance and Compliance Services",
+      "type": "service"
+    },
+    {
+      "name": "Preparation Services for ISO/IEC 42001",
+      "type": "service"
+    }
+  ],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "AWS",
+    "REST",
+    "API",
+    "React"
+  ],
+  "extraction_confidence": 0.0,
+  "Contact Information": {
+    "Email": "ask@anekanta.co.uk"
+  }
+}

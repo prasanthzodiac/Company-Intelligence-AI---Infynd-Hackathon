@@ -1,0 +1,154 @@
+{
+  "company_name": "Acumenbay Inc.",
+  "domain": "acumenbay.com",
+  "description_short": "",
+  "description_long": "",
+  "industry": "",
+  "sub_industry": "",
+  "sectors": [],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "",
+    "company_name": "",
+    "full_address": "",
+    "phone": "",
+    "sales_phone": "",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@acumenbay.com",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO",
+    "NIS"
+  ],
+  "services": [],
+  "business_type": "",
+  "company_size": "",
+  "technology_signals": [
+    "AI",
+    "Cloud",
+    "API",
+    "Machine Learning",
+    "AWS"
+  ],
+  "extraction_confidence": 0.0,
+  "Company": {
+    "Name": "SymplERP",
+    "Description": "SymplERP solution provides CRM, Sales, Products Management, Inventory Management, Warehouse setup, Stocks, Replenishment management.",
+    "Industry": "Software",
+    "Founded": null,
+    "Location": null
+  },
+  "Services": [
+    {
+      "Name": "IT Service Management",
+      "Description": "Used for incident, problem, change and service management."
+    },
+    {
+      "Name": "IT Operations Management",
+      "Description": "Supports business applications, cloud infrastructure and processes."
+    },
+    {
+      "Name": "Strategic Portfolio Management",
+      "Description": "Assesses alignment of projects with strategic objectives."
+    },
+    {
+      "Name": "Application Portfolio Management",
+      "Description": "Helps make portfolio lean and reduce total cost of ownership."
+    },
+    {
+      "Name": "Customer Service Management",
+      "Description": "Supports processes involved in customer management, customer experience and improvements."
+    },
+    {
+      "Name": "Telecom Network Inventory",
+      "Description": "Consolidates network inventory and enables lifecycle automation."
+    },
+    {
+      "Name": "Global Risk and Compliance",
+      "Description": "Helps address risks, monitor compliance and risk, and improve decision making."
+    },
+    {
+      "Name": "IT Asset Management",
+      "Description": "Tracks inventory, procurement, deployment, maintenance, and retirement of IT assets."
+    },
+    {
+      "Name": "Enterprise Asset Management",
+      "Description": "Oversees physical asset lifecycles and equipment maintenance."
+    },
+    {
+      "Name": "IoT Device Management",
+      "Description": "Configures, monitors, and maintains connected devices within an IoT environment."
+    }
+  ],
+  "Partnerships": [
+    {
+      "Name": "ServiceNow"
+    }
+  ],
+  "Capabilities": [
+    {
+      "Name": "CRM",
+      "Description": "Provides customer relationship management capabilities."
+    },
+    {
+      "Name": "Sales",
+      "Description": "Supports sales processes and management."
+    },
+    {
+      "Name": "Products Management",
+      "Description": "Manages products, including inventory and replenishment."
+    },
+    {
+      "Name": "Inventory Management",
+      "Description": "Tracks and manages inventory levels."
+    },
+    {
+      "Name": "Warehouse setup",
+      "Description": "Sets up warehouse management processes."
+    },
+    {
+      "Name": "Stocks Replenishment",
+      "Description": "Manages stocks and replenishment processes."
+    }
+  ],
+  "Experience": [
+    {
+      "Client": "Large European Life Sciences client",
+      "Services": [
+        "IT Service Management",
+        "Customer Service Management"
+      ],
+      "Description": "Defined user stories, conceptualized solution, configured ITSM module for CMDB and incident management process."
+    },
+    {
+      "Client": "Large European Telecom client",
+      "Services": [
+        "Customer Service Management"
+      ],
+      "Description": "Delivered field service management along with another IT company."
+    }
+  ]
+}

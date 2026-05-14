@@ -1,0 +1,1255 @@
+[
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "End User Identification",
+    "text": "If the card is not enrolled, this means that either the bank that issued the card is not yet supporting 3D Secure or it means that the cardholder has not yet been registered for the service. If however the card is enrolled, the MPI will redirect the cardholder to the 3D Secure authentication web page for the issuing bank; the cardholder will then identify himself.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "Enrolment Enquiry",
+    "text": "When a payment request arrives at the merchant or payment gateway, the Merchant Plug In (MPI) component is activated. The MPI talks to Payment scheme (Visa or MasterCard) to check if the card is enrolled for 3D Secure.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "How Does 3D Secure Work",
+    "text": "Enrolment Enquiry When a payment request arrives at the merchant or payment gateway, the Merchant Plug In (MPI) component is activated. The MPI talks to Payment scheme (Visa or MasterCard) to check if the card is enrolled for 3D Secure. End User Identification If the card is not enrolled, this means that either the bank that issued the card is not yet supporting 3D Secure or it means that the cardholder has not yet been registered for the service. If however the card is enrolled, the MPI will redirect the cardholder to the 3D Secure authentication web page for the issuing bank; the cardholder will then identify himself. Transaction Authorisation The MPI will evaluate the reply from the bank and, if successful, allow the transaction to proceed for authorisation. The transaction could still fail for lack of funds or other reasons but is more likely to be approved because of the authentication.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "How can we help?",
+    "text": "If you require your annual 3D Secure audit or if you are interesting in consultancy regarding the secure operation of your 3D Secure system please contact us using the contact form or give us a call on +44 (0) 8443 760400",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "Transaction Authorisation",
+    "text": "The MPI will evaluate the reply from the bank and, if successful, allow the transaction to proceed for authorisation. The transaction could still fail for lack of funds or other reasons but is more likely to be approved because of the authentication.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "What Do We Do",
+    "text": "We will complete an on-site assessment of your current security controls against the current regulatory requirements. Employing AC Assure for your audit will not only ensure you complete your regulatory obligationâs, you will also be reassured that your systems security is robust without being inhibitive to effective production. We will look at your: Policies and procedures Technical controls such as firewalls, web servers etc. Cryptographic keys ï¿¼",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "3dsecure.html",
+    "section": "What Is 3D Secure",
+    "text": "3D Secure, such as Verified by Visa and MasterCard SecureCode, allows transactions to be conducted in safety online, greatly reducing the risk of fraud and chargebacks. The process allows the cardholder domain, interoperability domain and merchant domain (3 Domains or 3D) to securely communicate with each other and allow the authentication of the cardholder transaction.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\3dsecure.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "careers.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, careers@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\careers.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "careers@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "careers.html",
+    "section": "Current Vacancies: Security Consultant & Auditor",
+    "text": "AC Assure is looking for a computer security professional to join the team to perform logical and physical security assessments and consultancy. The companyâs core business is providing information security services for the financial and banking sector, mainly across Europe. This post will focus primarily on performing Payment Card Industry (PCI) Card Production audits. Main Responsibilities â¢ Conduct financial scheme PCI Card Production security assessments. â¢ Presentation of findings to client at senior management level. â¢ Produce compliance reports for clients and regulatory bodies. â¢ Development of UK based security consultancy and Cyber Essential audits. â¢ Support the development of new business services. Experience & Qualifications Candidates must be able to demonstrate at least 3 years practical experience within the following areas: â¢ Cryptography & key management â¢ Physical security â¢ Data security â¢ Network & system security â¢ Database security â¢ Application security Candidates should have a computer related degree or have a recognised certification such as CISSP, CISA or CISM. Any candidates with experience of the PCI Card Production requirements will have a distinct advantage as this will form the core element of this role. It would be advantageous for candidates to also have experience in computer forensics, penetration testing, smartcard technologies, EMV, mobile OTA, NFC and HCE technologies. Practical experience of governance and compliance services, such as ISO/IEC 27000 series and PCI-DSS, is also desirable. Personal Skills You must be professional, organised, self-motivated, and technically competent. You display excellent written and verbal communication, are a quick learner and possess a real desire to contribute to a developing small company. Further Details The position will be offered on a permanent basis, subject to the successful completion of a probationary period and a third party assessment, for which full training will be provided. A degree of flexibility is required from staff due to the foreign travel as this could account for up to 50% of your working time. Although the company offices are based in Cheshire, the company operates a remote and home working option so it not necessary to be based in the Northwest. The job will initially attract a salary range of £35,000 to £50,000 along with a bonus scheme related to performance and contribution to business development. Interested? If you feel you can bring something extra to our team, please contact us (careers@acassure.com) with your CV and covering letter detailing your suitability.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\careers.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "careers.html",
+    "section": "Interested?",
+    "text": "If you feel you can bring something extra to our team, please contact us (careers@acassure.com) with your CV and covering letter detailing your suitability.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\careers.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "careers.html",
+    "section": "Recruitment Companies",
+    "text": "If you are representing a recruitment company, we would kindly ask that you refrain from contacting or soliciting any of our staff. Currently We only deal directly with the candidate and we are not accepting any applications or speculative applications from recruitment companies.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\careers.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "careers.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\careers.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "careers.html",
+    "section": "The Right Kind of Person",
+    "text": "We are always looking for people to join our skilled and professional team. We know that our success depends on our employeesâ competence, drive and motivation. Thatâs why we are committed to finding people with a passion and drive for the IT security industry and reward those with a competitive package and a great working environment.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\careers.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "contact.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\contact.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "contact.html",
+    "section": "Getting in touch with us",
+    "text": "If you are interested in speaking to us about the range of specialist services that we offer, please contact us by phone, email, or alternatively submit your enquiry using the contact form and a member of our team will get back to you as soon as possible. Thank you for your interest in AC Assure. AC Assure Ltd Address: The Hub @ GadBrook Park, Royal Court, Gadbrook Park, Northwich, Cheshire, UK. CW9 7UT Phone: +44 (0) 8443 760400 Email: contact@acassure.com",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\contact.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "contact.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\contact.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "cyberessentials.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\cyberessentials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "cyberessentials.html",
+    "section": "How can we help?",
+    "text": "As Approved Cyber Essential (ACE) consultants we are in an ideal position get assist you in completing your questionnaire or preparing for your formal assessment. If you'd like to know more about the first steps to improving your cyber security please get in touch with us using the contact form, or give us a call on +44 (0) 8443 760400.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\cyberessentials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "cyberessentials.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\cyberessentials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "cyberessentials.html",
+    "section": "What are the benefits of Cyber Essentials certification?",
+    "text": "Provides cost-effective, basic cyber security for organizations of all sizes Demonstrates that an organization meets one of the eligibility requirements when bidding for UK Government contracts Can reduce the risk of prevalent cyber-attacks on an organization Differentiate yourself from your competitors by demonstrating that you take cyber security seriously How can we help? As Approved Cyber Essential (ACE) consultants we are in an ideal position get assist you in completing your questionnaire or preparing for your formal assessment. If you'd like to know more about the first steps to improving your cyber security please get in touch with us using the contact form, or give us a call on +44 (0) 8443 760400.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\cyberessentials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "cyberessentials.html",
+    "section": "What is Cyber Essentials?",
+    "text": "The Cyber Essentials scheme has been developed by Government and industry to fulfil two main functions. The first of these is to provide a framework of basic controls that all organisations can implement that will help them to mitigate the risks from common internet based threats. The core of this common threats is based on the Governments 10 Steps to Cyber Security. Secondly the scheme can also function as an assurance framework, that will offers allow organisations the ability to demonstrate to their customers, investors, insurers and others that they have taken these essential precautions. Cyber Essentials offers a solid foundation for businesses to develop their cyber security controls measures that all types of organisations can implement and potentially build upon. It is important to reflex that although implementing the these measures can significantly reduce an organisation's vulnerability it will not remove all cyber security risk. Ultimately Cyber Essentials offers a focused set of controls that can provide organisations with a cost effective approach to limit the risks their organisation faces.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\cyberessentials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "cyberessentials.html",
+    "section": "Which controls does Cyber Essentials cover?",
+    "text": "Cyber Essentials covers five key controls: Boundary firewalls and internet gateways â prevention of unauthorized access Secure configuration â ensures secure system configuration Access Control â ensures appropriate access to systems Malware protection â installation and maintenance of virus and malware protection Patch management â application of patches and ensuring the latest version of applications is used",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\cyberessentials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Certifications",
+    "text": "For third parties seeking to offer services within the Cloud Based Payments ecosystem the following compliance requirements are applicable: As a Cloud Based Payment Platform (CBPP) provider you must comply with the following requirements: Visa Cloud-Based Payments Program Minimum Requirements and Guidelines Visa Cloud-Based Payments Provider Security Requirements Mobile Application As a Mobile Application (MA) provider you must comply to the following requirements: Visa Cloud-Based Payments Contactless Specification Visa Cloud-Based Payments Program Minimum Requirements and Guidelines (functional & Security) Visa Brand Standards Mobile Application Platform As a Mobile Application Platform (MAP) provider you must comply with the following requirements: Visa Cloud-Based Payments Program Minimum Requirements and Guidelines PCI Data Security Standard (if the MAP transmits and or process cardholder information)",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Host Based Emulation could help reclaim lost ground in digital payments",
+    "text": "Cloud Based Payments offers the same contactless payment functionality on a mobile device that is currently provided by âVisa payWaveâ contactless cards, but develops this further by removing the need for a hardware secure element on the smartphone by allowing the secure deployment of accounts in the cloud. Cloud Based Payments allows cardholders to conduct their payment transactions in participating merchant locations using their smartphone with card emulation capabilities built outside of the secure element. Current examples of Host Based Emulation offered in the market are Androidâs Host Card Emulation and BlackBerryâs Software Card Emulation.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "How can we help?",
+    "text": "If you require your annual Cloud Payment audit or if you are interesting in consultancy regarding the secure operation of your Host based Card Emulation system please contact us using the contact form or give us a call on +44 (0) 8443 760400",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Mobile Application",
+    "text": "The application installed on the smartphone to allow the management of enrolment, provisioning, lifecycle management and payment by the consumer.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Products",
+    "text": "The platform to provision and manage accounts according to issuer preferences.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Products",
+    "text": "The platform to securely transmit messages for enrolment, provisioning, active account management between the CBPP and Mobile Application.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Technology",
+    "text": "The inception of Cloud Based Payments is seen as the future of card issuance where the emphasis is placed upon digital cards rather than the physical plastic cards that we are familiar with and use daily. In recent years NFC-enabled mobile phones have seen a transformation of the consumer shopping experience allowing consumers to pay for their goods and services using their smartphone and digital wallet. However the marketplace has been slow to adopt this technology, largely due to the complexity and size of the ecosystem.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "hce.html",
+    "section": "Technology",
+    "text": "The current Cloud Based Payments program offered by Visa aims to support payments across various channels and technologies. The Cloud Based Payments program consists of a number of functional components that support 'Visa payWave' payments using Host Card Emulation: Cloud Based Payments Platform The platform to provision and manage accounts according to issuer preferences. Mobile Application The application installed on the smartphone to allow the management of enrolment, provisioning, lifecycle management and payment by the consumer. Mobile Application Platform The platform to securely transmit messages for enrolment, provisioning, active account management between the CBPP and Mobile Application.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\hce.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Certifications",
+    "text": "As 3D Secure Assessors experience in both security controls and payment scheme audits we are ideally positioned to assist in providing your 3D Secure compliance audit or assist with attaining this challenging security standard.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Certifications",
+    "text": "Without the correct security management, the organisation can not be sure the controls they have implemented are sufficient now or in the future. AC Assure can provide advice and assistance on your ISO27001 deployment.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "CyberEssentials",
+    "text": "This Government scheme provides a recognised cyber security standard for organisations to demonstrate that they are taking reasonable step to protect themselves. Following this standard can significantly reduce cyber risks all SMEs.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Host Based Card Emulation (HCE)",
+    "text": "Cloud Based Payments is seen as the future of card issuance where the emphasis is placed upon digital cards rather than plastic cards held in your phone. Providing both audits and consultancy we can help you get ahead of the curve.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Keeping upto date with patches?",
+    "text": "If not you are at risk of being infected with malware that could to steal your data and damage your business. Following the Cyber Essential guidelines is an important initial step in protecting your business. Learn More",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Mobile payments are changing.",
+    "text": "Host based card emulation is set to dramatically change the security of online payments, with limited time-to-live payment credentials and real-time distribution of payment cards. Learn More",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "PCI DSSConsultancy",
+    "text": "PCI DSS requirements apply to all organisations or merchants, regardless of size or number of transactions, that accepts, transmits or stores any cardholder data. No matter the size of your organisation we can help you be compliant.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Payment Scheme Security",
+    "text": "We are a specialist security business that concentrates on PCI Card Production PCI Data Security Standard Host Based Card Emulation (HCE) and 3D Secure Implementations (such as Verified by Visa ). With experience consultants that have worked with all the major companies who perform card personalisation activities, AC Assure represents both a business that can undertake your payment compliance audit and offer you critical and cost effective advice, both before and after your payment scheme audit.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Products",
+    "text": "As payment scheme Security Assessors (SA) we are able to conduct both logical and physical compliance audits against the PCI Card Production, including PIN in pack and Electronic PIN distribution requirements.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "SME SecurityReviews",
+    "text": "If you thought that cyber criminals only target big businesses, think again. SMEs are more vulnerable to cyber threats however we can help you understand and protect your business against the risks that are related to you and your business.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Securing SME Businesses",
+    "text": "Although our core business is with payment schemes, we also offer our high level of expertise to SME. If you run a business or organisation that uses computers you need considering how a cyber incident could affect you . We understand that cyber security is far more than just a technical issue and can assess the wider risk to your systems and data. Basic cyber security measures can significantly protect your business and we can provide this in both a cost effective and realistic way for your working practices.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "Understanding the weakest link.",
+    "text": "Not everything is as secure as it looks. Understanding how your security works together is vital for ensuring you remain secure and we can help you understand the risks to your business. Learn More",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "index.html",
+    "section": "VulnerabilityScanning",
+    "text": "Undertaking vulnerability scans is an important tool in understanding whether your systems have security risks present. By providing you with vulnerability scans and penetration tests we can help you remediate the risk before they're exploited.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\index.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "iso27001.html",
+    "section": "Certifications",
+    "text": "ISO27001 has become the de-facto standard for implementing an Information Security Management System. It is designed to provide a framework for implementation of technical and procedural security controls and processes for managing them. The framework implements the Plan, Do, Check, Act (PDCA) four-step management cycle methodology. A successful implementation sees the process go through the steps iteratively to achieve continual improvement.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\iso27001.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "iso27001.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\iso27001.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "iso27001.html",
+    "section": "How can we help?",
+    "text": "If you require your assistance with 27001 or if you are interesting in developing an information security management system please contact us using the contact form or give us a call on +44 (0) 8443 760400.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\iso27001.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "iso27001.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\iso27001.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "iso27001.html",
+    "section": "What Can We do",
+    "text": "AC Assure has proven experience in 27001 implementation and can either take ownership of the full project or provide help and support in the following areas: Completing a Project Plan Creating an ISMS Scope and Policy Completing a Risk Assessment Creating a Statement of Applicability (SOA) Implementation of various Technical and Procedural Controls Completing Independent Internal Audits * Please note audits must not be performed by stakeholders who implement the activity they audit.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\iso27001.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "iso27001.html",
+    "section": "Why Become Compliant",
+    "text": "ISO27001 implementation is not implemented without resource cost and so you should understand what you will to get out of the process before you start. Many companies consider the project as merely an exercise to improve security, however compliance can offer so much more. These implicit benefits include: Improvements in Business Efficiency Quality Assurance Process Enhancements Legal and Regulatory Liability Mitigation Reliability and Security of Systems Improved Customer and Business Partner Confidence Enhanced Business Continuity Improved Managerial Control",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\iso27001.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "news.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\news.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "news.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\news.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "Certifications",
+    "text": "Preparing for Your Compliance Audit? We provide pre audit assessments to assist vendors in their preparation for future compliance audits inline with the security standards from the two leading card payment brands. Following Your Compliance Audit? We provide vendors with assistance for remediation of non compliance issues raised during audit which require corrective action. How can we help? If you require your annual PCI Card Production audit or if you are interesting in consultancy regarding the secure operation of your payment card personalisation please contact us using the contact form or give us a call on +44 (0) 8443 760400",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "Certifications",
+    "text": "We provide pre audit assessments to assist vendors in their preparation for future compliance audits inline with the security standards from the two leading card payment brands.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "Certifications",
+    "text": "We provide vendors with assistance for remediation of non compliance issues raised during audit which require corrective action.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "How can we help?",
+    "text": "If you require your annual PCI Card Production audit or if you are interesting in consultancy regarding the secure operation of your payment card personalisation please contact us using the contact form or give us a call on +44 (0) 8443 760400",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "Products",
+    "text": "Our team of consultants are approved auditors for a major payment card brand, and have conducted card personalisation and manufacturing audits on behalf of the leading card payment brands, in more than 30 countries worldwide. At AC Assure, we have an in depth knowledge of the logical and physical security standards, (including the PIN distribution and âOver The Airâ (OTA) supplementary requirements), developed by the leading payment card brands and the PCI Security Standards Council. We can evaluate your compliance towards the card personalisation requirements that applies to vendors that personalise cards or manipulate card data during the preparation of payment cards. Following completion of the vendor audit, a comprehensive report would be submitted securely to both the card payment brand and vendor within 10 working days.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcicp.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcicp.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Certifications",
+    "text": "Need Help in Preparing for Your Compliance Audit? We provide pre audit assessments to assist vendors in their preparation for future compliance audits inline with the security standards from the two leading card payment brands. Need Help Following Your Compliance Audit? We provide vendors with assistance for remediation of non compliance issues raised during audit which require corrective action. How can we help? If you require consultancy regarding the PCI Data Security Standard (DSS) please contact us using the contact form or give us a call on +44 (0) 8443 760400.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Certifications",
+    "text": "We provide pre audit assessments to assist vendors in their preparation for future compliance audits inline with the security standards from the two leading card payment brands.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Certifications",
+    "text": "We provide vendors with assistance for remediation of non compliance issues raised during audit which require corrective action.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "How can we help?",
+    "text": "If you require consultancy regarding the PCI Data Security Standard (DSS) please contact us using the contact form or give us a call on +44 (0) 8443 760400.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Selecting a PCI Consultant",
+    "text": "AC Assure has formally accredited Payment Card Industry Professionals (PCIP) staff who can assist with helping you achieve compliance to the PCI DSS standard. As Payment Card Industry Professionals they have all demonstrated there understanding to the PCI DSS. Although we have only recently started offering PCI DSS services we are not new to payment scheme audits, having provided both PCI Card Production audits and 3D Secure audits over the past 4 years. In fact a core element of vendors wishing to meet the Visa 3D Secure Requirements is first to be PCI DSS compliant. Having performed over 200 payment scheme audits we understand about the implementation of security in real world environments and our wealth of experience of allows us to offer a range of solutions to secure your systems. As a results we can offer a complete range of services to ensure Merchants and Service Providers meet Payment Card Industry Services (PCI-DSS) compliance. Our approach to each assignment can be adapted according to the size and specific requirements of our clients, we produce a personalised offering to meet with your individual needs.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Services",
+    "text": "For Merchants and Service Providers, we provide a range of professional PCI services. Depending on the specific client requirements, this can include from engagement: PCI DSS Readiness Assessment PCI DSS Report on Compliance PCI DSS Consulting Penetration Testing Vulnerability Scanning PCI DSS Policy & Procedure Development",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "pcidss.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\pcidss.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "privacy.html",
+    "section": "About",
+    "text": "The site www.acassure.com is operated by AC Assure Limited. We are registered in England and Wales under company number 09617420 and have our trading address at The Hub @ GadBrook Park, Royal Court, Gadbrook Park, Northwich, Cheshire, UK. CW9 7UT and the Registered office address Oak House, Barrington Road, Altrincham, Cheshire, United Kingdom, WA14 1HZ",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\privacy.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "privacy.html",
+    "section": "Accessing Our Site",
+    "text": "The use of this website is subject to the following terms of use: 2.1 The content of the pages of this website is for your general information and use only. It is subject to change without notice. 2.1.1 Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements. 2.1.2 Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law. 2.1.3 Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements. 2.1.4 This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions. 2.1.5 All trade marks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website. 2.1.6 Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence. 2.1.7 Any redistribution or reproduction of part or all of the contents in any form is prohibited other than the following: 2.1.7.1 You may print or download to a local hard disk extracts for your personal and non-commercial use only. 2.1.7.2 You may copy the content to individual third parties for their personal use, but only if you acknowledge the website as the source of the material. 2.1.8 You may not, except with our express written permission, distribute or commercially exploit the content. Nor may you transmit it or store it in any other website or other form of electronic retrieval system. 2.1.9 From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s). 2.1.10 Every effort is made to keep the website up and running smoothly. However, AC Assure Limited takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. 2.1.11 Your use of this website and any dispute arising out of such use of the website is subject to the laws of England, Northern Ireland, Scotland and Wales.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\privacy.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "privacy.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\privacy.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "privacy.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\privacy.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "privacy.html",
+    "section": "Terms & Conditions of the Website",
+    "text": "This page tells you the terms of use on which you may make use of our website www.acassure.com (our âwebsiteâ). Please read these terms of use carefully before you start to use our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern AC Assure Limitedâs relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website. The term âAC Assure Ltdâ or âAC Assureâ or âusâ or âweâ refers to the owner of the website. The term âyouâ refers to the user or viewer of our website.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\privacy.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "scanning.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\scanning.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "scanning.html",
+    "section": "How can we help?",
+    "text": "If you require any security testing if you are interesting in consultancy regarding the secure operation of your payment card personalisation please contact us using the contact form or give us a call on +44 (0) 8443 760400",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\scanning.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "scanning.html",
+    "section": "Penetration Testing",
+    "text": "Penetration testing focuses on exploiting system vulnerabilities. This is usually performed by a human using the same techniques currently being used by malicious threats in an attempt to breach your current security controls and gain access to your systems. Getting the test right As with any project, planning is the key to a successful delivery. When deciding how best to perform testing, clear objectives and goals must be defined and a framework developed to ensure those goals are reached. During the planning phase we will work with you to: Define your assets Define the deliverables Define the testing type required Define the rules of engagement Establish the lines of communication Once these have been completed we will create a test plan that will be reviewed and signed off before any testing takes place. Services There are a number of different test types that we can complete and these differ on the amount of prior knowledge the tester knows about the target and the amount of awareness the target has about the test. We have both experienced and professionally accredited penetration and vulnerability scanning professionals who can provide a range of services including: External Vulnerability Scanning (from a remote location) Internal Vulnerability Scanning (from the target location) External Network Penetration Testing (from a remote location) Internal Network Scanning (from the target location) Web Application testing Wireless Security testing",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\scanning.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "scanning.html",
+    "section": "Security put to the test",
+    "text": "If you want to stay in business it is now critical for organisations to ensure that they are secure. Penetration Testing and Vulnerability Scanning is considered the best point in time assessment of your current security standing. Whilst Penetration Testing and Vulnerability Scanning get categorised together there are some slight differences.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\scanning.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "scanning.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\scanning.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "scanning.html",
+    "section": "Vulnerability Scanning",
+    "text": "This is usually run using automatic testing tools with the objective of reviewing the technical controls of a company against a set of known vulnerabilities. It will measure your current defences and highlight any operational weaknesses.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\scanning.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Detailed Security Assessment",
+    "text": "In addition to the Formal Security Assessment described above, we will complete a more comprehensive assessment. We will look into the technical, physical and administrative controls to a much greater depth. We will also complete some Social Engineering techniques and complete a review of your Incident Management and Business Continuity plans.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Formal Security Assessment",
+    "text": "The assessment will take place at the designated site and will be completed against a predefined set of standards. This may be an industry standard or one defined by our expert security consultants. This can include physical or logical security and is completed explicitly with full staff awareness. On completion of the assessment, AC Assure will provide a both a verbal debrief and a formal report recording any findings and any required remediation actions.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Free Network Vulnerability Scan",
+    "text": "Using industry recognised tools and methodologies, our team of security professionals will perform a network vulnerability scan to evaluate the perimeter of your IT networks and provide you with an executive report on your overall security status.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "How can we help?",
+    "text": "If you would like to discuss cyber security for your business please contact us using the contact form or give us a call on +44 (0) 8443 760400",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "If your IT network is not secure can you afford to take the risk?",
+    "text": "From a cost-benefit perspective, businesses that suffered a breach during the last year spent on average less of their IT budget on security than those that did not, with remediation actions after the breach forming the largest part of this spending. This suggests that businesses who have invested more in security defences have fewer breaches. Therefore given the rising costs of these breaches, under investment in security seems to be a false economy.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Logical Security Review",
+    "text": "As well as Vulnerability Scanning and Penetration Testing, AC Assure can also provide a more comprehensive review of your technical controls. We can assess your patching and update system, backup systems, server and workstation configurations and also your development processes. We can also assess your policies and procedures to ensure your not only secure now, but have the process in place to safeguard your security in the future.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Physical Security Review",
+    "text": "We will complete a full on-site review of the physical security of your organisation. This can include such tasks as reviewing your CCTV monitoring, review of your security guard configuration, evaluation of your pre-employment background checks and verifying your physical building security such as door and safe lock types.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Supplier or 3rd Party Assessment",
+    "text": "Integration with other parties always includes risk. Indeed, some of the more well known security exploits of larger corporations have come from vulnerabilities in 3rd parties. To give you piece of mind and the confidence to trust another organization before you commit, AC Assure can complete a security assessment tailored to the particular integration. Having expertise in the security field, AC Assure can focus the review to the parts of the 3rd party holding your data and any extra exposure created by the business connection.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "Understanding the Risks",
+    "text": "In the face of constantly changing technology, it is becoming increasingly difficult for businesses to protect their key information assets and IT infrastructure. If your business stores personal data you may be a target from outsider attacks and have a legal obligation to ensure that this data is stored and managed securely. â33% of small business were attacked by an unauthorised outsider in the past yearâ The 2014 IT security survey conducted by PWC and commissioned by the Department for Business Innovation & Skills found that 33% of small business were attacked by an unauthorised outsider in the past year. More details on the 2014 Information Security breaches Survey report conducted by PWC can be found here Although the number of security breaches affecting UK businesses has slightly decreased overall to 81% for large businesses and 60% for small businesses from 2013, the scale and cost of individual breaches has nearly doubled for small businesses with the average cost between £65k â £115k for their worst security breach incident. It is now apparent that cyber threats are a real risk for all businesses.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "What Can We Offer",
+    "text": "Being a proven security consultancy provider we have the skills and experience to asses you current security level. We can provide various packages from a high level office based risk assessment to a comprehensive technical and managerial review to suit both your size and budget. Once complete, we will provide you with a full report documenting the findings using a rating scale to suite and defining any remediation requirements. The following services we offer have been tailored from our extensive experience in this field:",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "smesecurity.html",
+    "section": "â33% of small business were attacked by an unauthorised outsider in the past yearâ",
+    "text": "The 2014 IT security survey conducted by PWC and commissioned by the Department for Business Innovation & Skills found that 33% of small business were attacked by an unauthorised outsider in the past year. More details on the 2014 Information Security breaches Survey report conducted by PWC can be found here",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\smesecurity.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "terms.html",
+    "section": "About",
+    "text": "The site www.acassure.com is operated by AC Assure Limited. We are registered in England and Wales under company number 09617420 and have our trading address at The Hub @ GadBrook Park, Royal Court, Gadbrook Park, Northwich, Cheshire, UK. CW9 7UT and the Registered office address Oak House, Barrington Road, Altrincham, Cheshire, United Kingdom, WA14 1HZ",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\terms.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "terms.html",
+    "section": "Accessing Our Site",
+    "text": "The use of this website is subject to the following terms of use: 2.1 The content of the pages of this website is for your general information and use only. It is subject to change without notice. 2.1.1 Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements. 2.1.2 Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law. 2.1.3 Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements. 2.1.4 This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions. 2.1.5 All trade marks reproduced in this website which are not the property of, or licensed to, the operator are acknowledged on the website. 2.1.6 Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence. 2.1.7 Any redistribution or reproduction of part or all of the contents in any form is prohibited other than the following: 2.1.7.1 You may print or download to a local hard disk extracts for your personal and non-commercial use only. 2.1.7.2 You may copy the content to individual third parties for their personal use, but only if you acknowledge the website as the source of the material. 2.1.8 You may not, except with our express written permission, distribute or commercially exploit the content. Nor may you transmit it or store it in any other website or other form of electronic retrieval system. 2.1.9 From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s). 2.1.10 Every effort is made to keep the website up and running smoothly. However, AC Assure Limited takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. 2.1.11 Your use of this website and any dispute arising out of such use of the website is subject to the laws of England, Northern Ireland, Scotland and Wales.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\terms.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "terms.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\terms.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "terms.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\terms.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "terms.html",
+    "section": "Terms & Conditions of the Website",
+    "text": "This page tells you the terms of use on which you may make use of our website www.acassure.com (our âwebsiteâ). Please read these terms of use carefully before you start to use our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern AC Assure Limitedâs relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website. The term âAC Assure Ltdâ or âAC Assureâ or âusâ or âweâ refers to the owner of the website. The term âyouâ refers to the user or viewer of our website.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\terms.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "testimonials.html",
+    "section": "Case Studies",
+    "text": "We will be adding to this section shortly.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\testimonials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": ""
+  },
+  {
+    "domain": "acassure.com",
+    "page": "testimonials.html",
+    "section": "Contact Information",
+    "text": "Email addresses: contact@acassure.com, contact@acassure.com\nPhone numbers: 8443 760400\ncontact@acassure.com\nFooter information: AC Assure LtdThe Hub @ GadBrook ParkRoyal CourtGadbrook ParkNorthwichCheshire+44 (0) 8443 760400contact@acassure.comï¿¼Terms and conditionsPrivacy policyCareersContact usCard Production LogicalCard Production PhysicalData Security StandardPCI Card ProductionCloud Based Payments3D SecurePCI DSSCyber EssentialsISO 27001Vulnerability ScanningSME Security© AC Assure 2015 Ltd -  All right reserved.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\testimonials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "emails": [
+        "contact@acassure.com",
+        "contact@acassure.com"
+      ],
+      "phones": [
+        "8443 760400"
+      ],
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  },
+  {
+    "domain": "acassure.com",
+    "page": "testimonials.html",
+    "section": "Social Media",
+    "text": "Social Media Links:\nFacebook: https://www.facebook.com/acassure?ref=hl\nX: https://twitter.com/acassure\nLinkedin: https://www.linkedin.com/company/ac-assure",
+    "source_path": "D:\\ZORO\\company_intel\\data\\acassure.com\\testimonials.html",
+    "page_title": "AC ASSURE",
+    "meta_description": "",
+    "structured_data": {
+      "social_links": {
+        "facebook": "https://www.facebook.com/acassure?ref=hl",
+        "x": "https://twitter.com/acassure",
+        "linkedin": "https://www.linkedin.com/company/ac-assure"
+      }
+    }
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "company_name": "Bespoke Support Solutions Ltd",
+  "domain": "bespokesupportsolutions.co.uk",
+  "description_short": "We are a small team of IT professionals providing security solutions for on premise and cloud services.",
+  "description_long": "We pride ourselves on providing security solutions that perfectly meet the needs of our clients. We provide consultancy services including bid support, IT operations modernisation, virtual Chief Information Security Officer (CISO), risk management consultancy, Cyber Essentials certification, and ISO 27001 maintenance support.",
+  "industry": "Technology",
+  "sub_industry": "Cybersecurity",
+  "sectors": [
+    "Technology",
+    "Finance"
+  ],
+  "ssc_code": "",
+  "products": [],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "BSS",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [
+    "UK"
+  ],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "domain": "bespokesupportsolutions.co.uk",
+    "company_name": "Bespoke Support Solutions Ltd",
+    "full_address": "",
+    "phone": "01226 690414",
+    "sales_phone": "01226 690414",
+    "fax": "",
+    "mobile": "",
+    "other_numbers": [],
+    "email": "info@bespokesupportsolutions.co",
+    "hours_of_operation": "",
+    "hq_indicator": ""
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "https://www.facebook.com/BespokeSupportSolutionsLtd",
+    "x": "",
+    "instagram": "https://www.instagram.com/BespokeSupportSolutionsLtd",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO",
+    "certification",
+    "ISO 27001",
+    "NIS"
+  ],
+  "services": [
+    {
+      "name": "providing security solutions that perfectly",
+      "type": "service"
+    },
+    {
+      "name": "provide consultancy services including bid",
+      "type": "service"
+    },
+    {
+      "name": "Cyber Essentials certification, and ISO",
+      "type": "service"
+    },
+    {
+      "name": "on providing security solutions that",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "Small",
+  "technology_signals": [
+    "AI",
+    "Cloud",
+    "REST"
+  ],
+  "extraction_confidence": 0.68
+}

@@ -1,0 +1,659 @@
+[
+  {
+    "domain": "atex-inspection.com",
+    "page": "index.html",
+    "section": "EFFICIENCY",
+    "text": "With Compliance comes a better understanding of your assets. Read more…",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\index.html",
+    "page_title": "ATEX Inspection Software - Index by Terrington DM",
+    "meta_description": "Terrington Data Management are Specialists in providing ATEX Inspection Software to manufacturers across the world."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "index.html",
+    "section": "COMPLIANCE",
+    "text": "Ensuring your site is safe and ATEX compliant is a priority for any business. Find out more…",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\index.html",
+    "page_title": "ATEX Inspection Software - Index by Terrington DM",
+    "meta_description": "Terrington Data Management are Specialists in providing ATEX Inspection Software to manufacturers across the world."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "wp-login.php.html",
+    "section": "Log In",
+    "text": "Index by Terrington DM – Limited only by Imagination Lost your password? ← Go to Index by Terrington DM /* <![CDATA[ */\nvar cnArgs = {\"ajaxUrl\":\"https:\\/\\/atex-inspection.com\\/wp-admin\\/admin-ajax.php\",\"nonce\":\"2b128b5852\",\"hideEffect\":\"fade\",\"position\":\"bottom\",\"onScroll\":false,\"onScrollOffset\":100,\"onClick\":false,\"cookieName\":\"cookie_notice_accepted\",\"cookieTime\":3600,\"cookieTimeRejected\":3600,\"globalCookie\":false,\"redirection\":false,\"cache\":true,\"revokeCookies\":false,\"revokeCookiesOpt\":\"automatic\"};\n/* ]]> */ /* <![CDATA[ */\nvar _zxcvbnSettings = {\"src\":\"https:\\/\\/atex-inspection.com\\/wp-includes\\/js\\/zxcvbn.min.js\"};\n/* ]]> */ /* <![CDATA[ */\nwp.i18n.setLocaleData( { 'text direction\\u0004ltr': [ 'ltr' ] } );\n/* ]]> */ /* <![CDATA[ */\nvar pwsL10n = {\"unknown\":\"Password strength unknown\",\"short\":\"Very weak\",\"bad\":\"Weak\",\"good\":\"Medium\",\"strong\":\"Strong\",\"mismatch\":\"Mismatch\"};\n/* ]]> */ /* <![CDATA[ */\n( function( domain, translations ) {\n\tvar localeData = translations.locale_data[ domain ] || translations.locale_data.messages;\n\tlocaleData[\"\"].domain = domain;\n\twp.i18n.setLocaleData( localeData, domain );\n} )( \"default\", {\"translation-revision-date\":\"2025-05-25 12:26:44+0000\",\"generator\":\"GlotPress\\/4.0.1\",\"domain\":\"messages\",\"locale_data\":{\"messages\":{\"\":{\"domain\":\"messages\",\"plural-forms\":\"nplurals=2; plural=n != 1;\",\"lang\":\"en_GB\"},\"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.\":[\"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.\"]}},\"comment\":{\"reference\":\"wp-admin\\/js\\/password-strength-meter.js\"}} );\n/* ]]> */ /* <![CDATA[ */\nvar _wpUtilSettings = {\"ajax\":{\"url\":\"\\/wp-admin\\/admin-ajax.php\"}};\n/* ]]> */ /* <![CDATA[ */\n( function( domain, translations ) {\n\tvar localeData = translations.locale_data[ domain ] || translations.locale_data.messages;\n\tlocaleData[\"\"].domain = domain;\n\twp.i18n.setLocaleData( localeData, domain );\n} )( \"default\", {\"translation-revision-date\":\"2025-08-25 13:50:40+0000\",\"generator\":\"GlotPress\\/4.0.1\",\"domain\":\"messages\",\"locale_data\":{\"messages\":{\"\":{\"domain\":\"messages\",\"plural-forms\":\"nplurals=2; plural=n != 1;\",\"lang\":\"en_GB\"},\"Notifications\":[\"Notifications\"]}},\"comment\":{\"reference\":\"wp-includes\\/js\\/dist\\/a11y.js\"}} );\n/* ]]> */ /* <![CDATA[ */\nvar userProfileL10n = {\"user_id\":\"0\",\"nonce\":\"ad46bdd080\"};\n/* ]]> */ /* <![CDATA[ */\n( function( domain, translations ) {\n\tvar localeData = translations.locale_data[ domain ] || translations.locale_data.messages;\n\tlocaleData[\"\"].domain = domain;\n\twp.i18n.setLocaleData( localeData, domain );\n} )( \"default\", {\"translation-revision-date\":\"2025-05-25 12:26:44+0000\",\"generator\":\"GlotPress\\/4.0.1\",\"domain\":\"messages\",\"locale_data\":{\"messages\":{\"\":{\"domain\":\"messages\",\"plural-forms\":\"nplurals=2; plural=n != 1;\",\"lang\":\"en_GB\"},\"Application password has been copied to your clipboard.\":[\"Application password has been copied to your clipboard.\"],\"Your new password has not been saved.\":[\"Your new password has not been saved.\"],\"Hide\":[\"Hide\"],\"Confirm use of weak password\":[\"Confirm use of weak password\"],\"Hide password\":[\"Hide password\"],\"Show password\":[\"Show password\"],\"Show\":[\"Show\"],\"The changes you made will be lost if you navigate away from this page.\":[\"The changes you made will be lost if you navigate away from this page.\"]}},\"comment\":{\"reference\":\"wp-admin\\/js\\/user-profile.js\"}} );\n/* ]]> */ We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Accept All Reject Privacy Policy & Cookies",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\wp-login.php.html",
+    "page_title": "Log In ‹ Index by Terrington DM — WordPress",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "wp-login.php.html",
+    "section": "Index by Terrington DM – Limited only by Imagination",
+    "text": "Lost your password? /* <![CDATA[ */\nfunction wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( \"user_login\" );d.focus(); d.select();} catch( er ) {}}, 200);}\nwp_attempt_focus();\nif ( typeof wpOnload === 'function' ) { wpOnload() }\n/* ]]> */ ← Go to Index by Terrington DM",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\wp-login.php.html",
+    "page_title": "Log In ‹ Index by Terrington DM — WordPress",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "atex-compliance/index.html",
+    "section": "Your Title Goes Here",
+    "text": "Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\atex-compliance\\index.html",
+    "page_title": "ATEX Compliance - Index by Terrington DM",
+    "meta_description": "Index by Terrington Data Management helps make ATEX Compliance attainable and profitable for your business"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "atex-compliance/index.html",
+    "section": "Work Management",
+    "text": "The bane of any business is the threat of unplanned downtime. One of the positives of a well-documented inspection regime is that potential downtime can be spotted before it happens. Transform will help you to spot trends in your data to pre-empt potential equipment failures. Transform gives you the ability to take a proactive stance and do a planned repair or replacement at a convenient time, thus reducing the hassle and panic of having a failure during peak production times.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\atex-compliance\\index.html",
+    "page_title": "ATEX Compliance - Index by Terrington DM",
+    "meta_description": "Index by Terrington Data Management helps make ATEX Compliance attainable and profitable for your business"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "atex-compliance/index.html",
+    "section": "Data visible for reports",
+    "text": "Once data is uploaded into Transform it is immediately available to report on. The tablet makes it possible to check and update equipment details during an inspection. Technicians are usually working offline when completing inspections, only needing Wi-Fi when they’re ready to upload the new data back into Transform where it is immediately ready for reporting.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\atex-compliance\\index.html",
+    "page_title": "ATEX Compliance - Index by Terrington DM",
+    "meta_description": "Index by Terrington Data Management helps make ATEX Compliance attainable and profitable for your business"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "atex-compliance/index.html",
+    "section": "Visibility to all who need it",
+    "text": "There are so many reasons to welcome the visibility of your asset data. In particular, you can ensure that all your assets get the attention they need and that nothing is overlooked. Transform can also store all photographs and documents relating to each asset or inspection record, making everything available in the same place for full visibility.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\atex-compliance\\index.html",
+    "page_title": "ATEX Compliance - Index by Terrington DM",
+    "meta_description": "Index by Terrington Data Management helps make ATEX Compliance attainable and profitable for your business"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "atex-compliance/index.html",
+    "section": "Fully customisable forms",
+    "text": "Transform incorporates IndEx which includes a suite of inspection forms designed to help its users comply with the international and British standard 60079-17 – Explosive atmospheres Part 17: Electrical installations inspection and maintenance. However, these forms are fully customisable meaning that they can be adapted to suit each clients exact requirements. This can include collecting data to help implement risk-based inspection and repair strategies. It also means that other templates can be developed for other applications. In fact, any activity that involves paper-based data collection can be replicated electronically using Transform. Our team are more than happy to speak to you about how Transform can meet more than just your ATEX needs.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\atex-compliance\\index.html",
+    "page_title": "ATEX Compliance - Index by Terrington DM",
+    "meta_description": "Index by Terrington Data Management helps make ATEX Compliance attainable and profitable for your business"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "atex-verification-services/index.html",
+    "section": "ATEX & Verification Services",
+    "text": "by Sam Clayton | Dec 16, 2022 | Showcase",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\atex-verification-services\\index.html",
+    "page_title": "ATEX & Verification Services - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "chemuk-2023/index.html",
+    "section": "See you at CHEMUK 2023",
+    "text": "by Andrew Clayton | Nov 22, 2022 | Thoughts, News and Views",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\chemuk-2023\\index.html",
+    "page_title": "See you at CHEMUK 2023 - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community\\index.html",
+    "page_title": "Index by Terringtons DM Forum – Index by Terrington DM",
+    "meta_description": "Index by Terringtons DM Discussion Board"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\index.html",
+    "page_title": "Index by Terringtons DM Forum – Index by Terrington DM",
+    "meta_description": "Index by Terringtons DM Discussion Board"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/index.html",
+    "section": "Index by Terringtons DM ForumUnread Posts|Forums|Topics",
+    "text": "Main Category Main Forum 0 / 0 Status Author Topics Forum Replies Views Last Post Load More Topics",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\index.html",
+    "page_title": "Index by Terringtons DM Forum – Index by Terrington DM",
+    "meta_description": "Index by Terringtons DM Discussion Board"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "contact-support/index.html",
+    "section": "Welcome to our support page",
+    "text": "We have a number of dedicated resources to help you with any queries that you may have.  More often than not you will be able to find what you need in these resources. Please check them out before opening a ticket with our support team.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\contact-support\\index.html",
+    "page_title": "Contact Support - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "contact-us/index.html",
+    "section": "Address",
+    "text": "Terrington Data Management IT Centre York Science Park Heslington York YO10 5NP United Kingdom Tel: +44 (0)1904 922091 Email: [email protected]",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\contact-us\\index.html",
+    "page_title": "Contact Us - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "dps/index.html",
+    "section": "DPS Group",
+    "text": "by Sam Clayton | Nov 26, 2021 | Showcase",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\dps\\index.html",
+    "page_title": "DPS Group - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "ec-type-examination-certificate-library/index.html",
+    "section": "EC-Type Examination Certificate Library",
+    "text": "This resource is available to supported customers only and contains a database of EC-Type Examination Certificates for equipment that is certified for use in potentially explosive environments.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\ec-type-examination-certificate-library\\index.html",
+    "page_title": "EC-Type Examination Certificate Library - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Your Title Goes Here",
+    "text": "Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Reduced time to do inspections",
+    "text": "We have had instances where customers have reported that, before the instigation of IndEx within their business, 25% of the time spent on an inspection relates to the completion of records, usually in Excel. With IndEx, all the data gathering is done at the point of inspection by the engineer when it is fresh in their mind. In addition, photographs and documents can be filed alongside the equipment record in the database, with each item of equipment identified by a Near Field Communication (NFC) Tag, which is attached to your equipment to ensure the correct items are audited, and all information is associated with the right item. With a Wifi connection, engineers can complete and upload reports in real-time in a simplified and efficient format, which leads to a reduction in inspection time and results in engineers achieving a higher number of inspections.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Less time finding data to produce HSE reports",
+    "text": "Because IndEx was designed to collect and collate the data needed to comply with ATEX 137, we already have all the data required to submit the correct data to HSE and hold the data that allows you to back up your submissions should HSE decide to audit your site. Using IndEx by Transform is far more efficient and less time-consuming than using any paper-based data management method, especially when it comes to having your site audited.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Proactive maintenance means equipment is replaced less often",
+    "text": "IndEx ensures that your assets are inspected regularly by collecting critical data about proactive and reactive maintenance. IndEx makes it possible to reduce downtime and general wear on equipment, leading to longer operational life and less frequent replacement of expensive plant and machinery . Our technology can determine common faults before they become a more significant problem, which can help reduce the time lost in production when these parts need replacing.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Your Title Goes Here",
+    "text": "Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Reduced downtime",
+    "text": "The bane of any manufacturing business is the threat of unplanned downtime. One of the positives of a well-documented inspection regime is that potential downtime can be spotted before it happens . You can use the data held within IndEx to pre-empt potential equipment failures based on historical data. IndEx will allow you to spot trends in your data. For instance, if your engineers are recording that they have replaced a particular component every six months when it breaks, you can take a proactive stance and do a planned inspection at a convenient time to replace that component, thus reducing the hassle and panic of having a failure during peak production times.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Job continuity between shifts",
+    "text": "IndEx can help you better manage your engineering resource by allowing job lists or workflows to be passed between shifts. Once a job list has been drawn up in IndEx, it can be passed from shift to shift, ensuring that no tasks are overlooked and that the changeover time between shifts is kept to a minimum . This simplifies the jobs for your engineers and allows for a smoother transition between shifts.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Your Title Goes Here",
+    "text": "Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Work Management",
+    "text": "Inspection data can update records instantly, with data analysis and reporting being shared between stakeholders.  Corrective maintenance is proactively shared to enable swift approval and planning of remedial works to minimise disruption to plant operations.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Data visible for reports",
+    "text": "Once data is entered into IndEx via a tablet or PC, it is immediately available to report on. The tablet makes it possible to update and check previous records on a piece of equipment at the point of inspection. Once the engineer is back in an area with a WIFI signal, it is possible to immediately upload the new data back to IndEx, ready for reporting. Therefore, this updates any reports in real-time, which helps to streamline and speed up your processes, which can result in an 85% reduction in inspection times.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Removes guess work",
+    "text": "When allocating a task requiring an inspection or work on a particular piece of equipment, the history of that equipment is made available on the tablet. This allows the engineer to see what other work has been carried out and if an issue has previously occurred. This will enable tasks to be completed quickly and more efficiently by presenting the engineer's complete history .",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Visibility to all who need it",
+    "text": "There are so many reasons to welcome the visibility of your asset data. In particular, you can ensure that all of your assets are getting the attention that they need and nothing is getting overlooked. Each asset's own NFC tag can easily be identified in the IndEx database. The database can also hold images and documents that pertain to that asset, meaning everything is in the same place for complete visibility. The NFC tagging process also has the advantage of allowing you to build a complete asset list, ensuring that there are no missing items from your inventory. You can also use the same process to tag and account for non-ATEX 137 compliant assets such as office equipment.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "efficiency/index.html",
+    "section": "Fully customisable forms",
+    "text": "When you first start using IndEx, you are presented with a set of customisable template forms which will allow you to collect the data needed to comply with ATEX 137. This means you can collect data for your assets that may be used for compliance or tracking purposes. Our team are more than happy to speak to you about how IndEx can meet more than just your ATEX needs. But don’t just take our word for it, head over to the showcases page and see what some of our clients have to say about us and how IndEx by Transform has managed to save them time and money on their sites.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\efficiency\\index.html",
+    "page_title": "Efficiency - Index by Terrington DM",
+    "meta_description": "ATEX is the abbreviated name of the European Directive 2014/34/EC, which was introduced on July 1st 2003 and can be managed with IndEx..."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "legislation/index.html",
+    "section": "Excluded from Atex Directive (because of other directives that apply):",
+    "text": "Medical devices which are intended for use in a medical environment; Equipment and protective systems where the explosion hazards result exclusively from the presence of explosive substances or unstable chemical substances; Equipment intended for use in domestic and non-commercial environments where potentially explosive atmospheres may only rarely be created, solely as a result of the accidental leakage of fuel gas; Personal protective equipment covered by Council Directive 89/686/EEC; Seagoing vessels and mobile offshore units together with equipment on board such vessels or units; Means of transport, i.e. vehicles and their trailers intended solely for transporting passengers by air or by road, rail or water networks, as well as means of transport in so far as such means are designed for transporting goods by air, by public road or rail networks or by water. Vehicles intended for use in a potentially explosive atmosphere shall not be excluded from the scope of this Directive; Definitions of key terms (which can be found in The Equipment and Protective Systems Intended for Use in Potentially Explosive Atmospheres Regulations 1996): “equipment” means machines, apparatus, fixed or mobile devices, control components and instrumentation thereof and detection or prevention systems which, separately or jointly, are intended for the generation, transfer, storage, measurement, control and conversion of energy or the processing of material and which are capable of causing an explosion through their own potential sources of ignition; “protective systems” means design units which are intended to halt incipient explosions immediately and/or to limit the effective range of explosive flames and explosion pressures; protective systems may be integrated into equipment or separately placed on the market for use as autonomous systems; “devices” means safety devices, controlling devices and regulating devices intended for use outside potentially explosive atmospheres but required for or contributing to the safe functioning of equipment and protective systems with respect to the risks of explosion. “component” means any item essential to the safe functioning of equipment and protective systems but with no autonomous function; “intended use” means the use of equipment, protective systems, and devices in accordance with the equipment group and category and with all the information supplied by the manufacturer which is required for the safe functioning of equipment, protective systems and devices; “explosive atmosphere” means the mixture with air, under atmospheric conditions, of flammable substances in the form of gases, vapours, mists or dusts in which, after ignition occurred, combustion spreads to the entire unburned mixture; and “potentially explosive atmosphere” means an atmosphere which could become explosive due to local and operational conditions.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\legislation\\index.html",
+    "page_title": "ATEX Legislation - Index by Terrington DM",
+    "meta_description": "ATEX Legislation UK documentation requires a technical file that includes each equipment piece, including a UK declaration of conformity(s).."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "legislation/index.html",
+    "section": "Sets out conformity assessment procedures in Section 10, (subsections 1-6).",
+    "text": "More key definitions are in Directive 2014/34/EU of the European Parliament and of the council of 26 February 2014 on the harmonisation of the laws of the Member States relating to equipment and protective systems intended for use in potentially explosive atmospheres: ‘components’ means any item essential to the safe functioning of equipment and protective systems but with no autonomous function ‘equipment-group I’ means equipment intended for use in underground parts of mines, and in those parts of surface installations of such mines, liable to be endangered by firedamp and/or combustible dust, comprising equipment categories M 1 & M 2 ‘equipment group II’ means equipment intended for use in other places liable to be endangered by explosive atmospheres, comprising equipment categories 1, 2 and 3 ‘equipment category’ means the classification of equipment within each equipment-group, specified in Annex 1, determining the requisite level of protection to be ensured ‘intended use’ means the use of a product prescribed by the manufacturer by assigning the equipment to a particular equipment-group and category or by providing all the information which is required for the safe functioning of a protective system, device or component ‘manufacturer’ means any natural or legal person who manufactures a product or has a product designed or manufactured, and markets that product under his name or trade mark or uses it for his own purposes ‘authorised representative’ means any natural or legal person established within the Union who has received a written mandate from a manufacturer to act on his behalf in relation to a specified task ‘importer’ means any natural or legal person established within the Union who places a product from a third country on the Union market ‘distributor’ means any natural or legal person in the supply chain, other than the manufacturer or the importer, who makes the product available on the market ‘technical specification’ means a document that prescribes technical requirements to be fulfilled by a product ‘conformity assessment’ means the process demonstrating whether the essential health and safety requirements of this Directive relating to a product have been fulfilled ‘conformity assessment body’ means a body that performs conformity assessment activities including calibration, testing, certification and inspection ‘CE marking’ means a marking by which the manufacturer indicates that the product is in conformity with the applicable requirements set out in Union harmonisation legislation providing for its affixing Annex 2 – Essential health and safety requirements relating to the design and construction of equipment and protective systems intended for use in potentially explosive atmospheres Marking Name, registered trade name or registered trade mark, and address of the manufacturer CE marking Designation of series or type Batch/serial number Year of construction The specific marking of explosion protection followed by the symbol of the equipment-group and category For equipment-group II, the letter G’’ (gases, vapours or mists) And/or The letter ‘D’ (dust) Instructions A recapitulation of the information with which the equipment or protective system is marked, except for the batch or serial number together with any appropriate additional information to facilitate maintenance Instructions for safe: Putting into service Use Assembling and dismantling Maintenance Installation Adjustment An indication of the danger areas in front of pressure-relief devices Training instructions Details which allow a decision to be taken beyond",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\legislation\\index.html",
+    "page_title": "ATEX Legislation - Index by Terrington DM",
+    "meta_description": "ATEX Legislation UK documentation requires a technical file that includes each equipment piece, including a UK declaration of conformity(s).."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "legislation/index.html",
+    "section": "Module EC-Type Examination: Schedule 6 (Annex III of the ATEX Directive)",
+    "text": "Describes the part of the procedure by which a notified body ascertains and attests that a specimen representative of the production envisaged meets the relevant applicable provisions of the directive. The application shall be lodged by the manufacturer or his authorised representative established within the Community with a notified body of his choice, and shall include: The name and address of the manufacturer and, if the application is lodged by the authorised representative, his name and address in addition; A written declaration that the same application has not been lodged with any other notified body The technical documentation, which shall include: A general type-description Design and manufacturing drawings and layouts of components, sub-assemblies, circuits, etc Descriptions and explanations necessary for the understanding of said drawings and layouts and the operations of the product A list of the standards referred to in Article 5, applied in full or in part, and descriptions of the solutions adopted to meet the essential requirements of the directive where the standards referred to in Article 5 have not been applied Results of design calculations made, examinations carried out, etc Test reports Meanwhile it is the role of the notified body to (Subsection 4): Examine the technical documentation, verify that the type has been manufactured in conformity with the technical documentation and identify the elements which have been designed in accordance with the relevant provisions of the standards referred to in Article 5, as well as the components which have been designed without applying the relevant provisions of those standards; Perform or have performed the appropriate examinations and necessary tests to check whether the solutions adopted by the manufacturer meet the essential requirements of the Directive where the standards referred to in Article 5 have not been applied; Perform or have performed the appropriate examinations and necessary tests to check whether these have actually been applied, where the manufacturer has chosen to apply the relevant settings; Agree with the applicant the location where the examinations and necessary tests shall be carried out",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\legislation\\index.html",
+    "page_title": "ATEX Legislation - Index by Terrington DM",
+    "meta_description": "ATEX Legislation UK documentation requires a technical file that includes each equipment piece, including a UK declaration of conformity(s).."
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "majorchemicalprocessor/index.html",
+    "section": "Major Chemical Processor",
+    "text": "by Sam Clayton | Dec 15, 2022 | Showcase",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\majorchemicalprocessor\\index.html",
+    "page_title": "Major Chemical Processor - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "privacy-policy-cookies/index.html",
+    "section": "Privacy Policy & Cookies",
+    "text": "Privacy This privacy policy sets out how Terrington Data Management (‘Terrington’) uses and protects any information that you give Terrington when you use this website. Terrington is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, you can be assured that it will only be used in accordance with this privacy statement. Terrington may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from 18 December 2013. We may collect the following information: name and job title contact information including email address other information relevant to customer surveys and/or offers What we do with the information we gather : We require this information to understand your needs and provide you with a better service, and in particular for the following reasons: Improve our products and services. We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided. From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customise the website according to your interests. We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. No information will be provided to third parties for advertising or marketing purposes. Subscribers to newsletters / email updates will have the option to opt out of future mailing when they receive an emailed newsletter. Security We are committed to ensuring that your information is secure. In order to prevent unauthorised access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online. Cookies Like many websites, terringtondm.com (the “Website”) makes use of cookies. A cookie is a text-only string of information that passes to your computer’s hard disk through your web browser so that the Website can remember who you are. Cookies cannot be used by themselves to identify you although they may be used to identify your IP address. A cookie will typically contain the name of the domain from which the cookie has come, the ‘lifetime’ of the cookie, and a value, usually a randomly generated unique number. TerringtonDM uses two types of cookies on its Website: 1) per session cookies, which are temporary cookies that remain in the cookies file of your browser until you leave the Website; 2) persistent cookies, which remain in the cookies file of your browser for longer (dependent of the lifetime of the specific cookie). These cookies are used to store information between visits to a site. Third party websites to which you may be redirected by whatever means from the TerringtonDM Website may also use cookies. The TerringtonDM website uses cookies to help it understand more about how the “Website” is used and to provide you with a more personalised web service. If you do not wish to receive cookies you can easily modify your web browser to refuse cookies or to notify you when you receive a new cookie. However, you may not be able to use all the interactive features of the TerringtonDM Website if cookies are disabled and TerringtonDM recommends that you leave them switched on. For more information about cookies and instructions on how to stop cookies being installed on your browser, visit www.allaboutcookies.org/manage-cookies By using the TerringtonDM Website you agree to accept the TerringtonDM Cookie Policy and agree to make your own arrangements to modify your web browser to refuse cookies or to notify when you receive a new cookie. TerringtonDM may change this Cookie Policy from time to time. It is your responsibility to check the Cookie Policy regularly. You will be deemed to have accepted any amendments to the Cookie Policy if you continue to make use of the Website after a change to the Cookie Policy has been made.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\privacy-policy-cookies\\index.html",
+    "page_title": "Privacy Policy & Cookies - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "product-safety-recall/index.html",
+    "section": "Product Safety Recall",
+    "text": "by Sam Clayton | Nov 27, 2021 | Thoughts, News and Views | 0 comments",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\product-safety-recall\\index.html",
+    "page_title": "Product Safety Recall - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "robinson-brothers-ltd/index.html",
+    "section": "Robinson Brothers Ltd",
+    "text": "by Sam Clayton | Dec 12, 2022 | Showcase",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\robinson-brothers-ltd\\index.html",
+    "page_title": "Robinson Brothers Ltd - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "sign-in/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\sign-in\\index.html",
+    "page_title": "Login – Index by Terringtons DM Forum",
+    "meta_description": "Index by Terringtons DM Discussion Board"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "terms-conditions/index.html",
+    "section": "General",
+    "text": "Terms & Conditions Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern Terrington’s relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.The term ‘Terrington York Ltd’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is Heritage House, Murton Way, Osbaldwick, York, Y019 5UW. Our company registration number is 5213252. The term ‘you’ refers to the user or viewer of our website. The use of this website is subject to the following terms of use: The content of the pages of this website is for your general information and use only. It is subject to change without notice. Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law. Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements. This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the copywriting, design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions. All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website. Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence. From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s). Your use of this website and any dispute arising out of such use of the website is subject to the laws of England, Northern Ireland, Scotland and Wales. We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Accept All Reject Privacy Policy & Cookies",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\terms-conditions\\index.html",
+    "page_title": "Terms & Conditions - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/blogs/index.html",
+    "section": "See you at CHEMUK 2023",
+    "text": "It's back and we will be there waiting to see you at stand F68. CHEMUK 2023 will return on the 10th & 11th May 2023 running in Hall 1 at the NEC, Birmingham. The expo will present 400+ specialist exhibitors and 150+ expert speakers split between three major show... read more",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\blogs\\index.html",
+    "page_title": "News and Views - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/blogs/index.html",
+    "section": "Product Safety Recall",
+    "text": "A recent report by the Office for Product Safety & Standards has identified the PowerStar Electricals BTF Series Explosion Proof Axial Flow Fan as a severe risk. Although sold as safe, the report finds that the product may not be safe for use in potentially... read more",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\blogs\\index.html",
+    "page_title": "News and Views - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/community/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\community\\index.html",
+    "page_title": "Forum - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/community/index.html",
+    "section": "Index by Terringtons DM ForumUnread Posts|Forums|Topics",
+    "text": "Main Category Add topic Main Forum 0 / 0 Status Author Topics Forum Replies Views Last Post Load More Topics",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\community\\index.html",
+    "page_title": "Forum - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/faq/index.html",
+    "section": "Frequently Asked Questions…",
+    "text": "There are a number of questions that we regularly get asked about our software. Here are just a few of them. If you have a question that isn’t answered below then please use the form to ask us about anything you are unsure of.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\faq\\index.html",
+    "page_title": "ATEX Inspection FAQ - Index by Terrington DM",
+    "meta_description": "Here are some of the most Frequently Asked Questions about IndEx and Transform in relation to ATEX Compliance"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/knowledge-base-archive/index.html",
+    "section": "General",
+    "text": "This is the archive page for the default knowledge base We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies. Accept All Reject Privacy Policy & Cookies",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\knowledge-base-archive\\index.html",
+    "page_title": "Knowledge Base Archive - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/showcase/index.html",
+    "section": "Showcase",
+    "text": "Transform by name Transform by nature – We have many stories showing how our software has transformed our client’s businesses and processes, save time and money by enabling them to effectively track and process any form of data they choose to collect, not just or Atex compliance.",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\showcase\\index.html",
+    "page_title": "Showcase - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/showcase/index.html",
+    "section": "ATEX & Verification Services",
+    "text": "Terrington’s cloud-based data management solution enabled us to develop a bespoke holistic asset management, inspection and verification system in compliance with our requirements as an accredited inspection body providing conformity assessment solutions to companies... read more",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\showcase\\index.html",
+    "page_title": "Showcase - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/showcase/index.html",
+    "section": "Major Chemical Processor",
+    "text": "“Our operations are of strategic national importance to the UK and focus mainly on the production of chlorine, caustic soda and chlorinated derivatives.  The chemicals produced at the Site are sold into a wide variety of industrial applications across sectors such as... read more",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\showcase\\index.html",
+    "page_title": "Showcase - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/showcase/index.html",
+    "section": "Robinson Brothers Ltd",
+    "text": "Founded in 1869, Robinson Brothers is one of the UK’s largest independent chemical manufacturers of speciality/fine chemicals and rubber accelerators. They offer a wide range of custom manufactured intermediates on a commercial scale, all produced to the highest... read more",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\showcase\\index.html",
+    "page_title": "Showcase - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "resources/showcase/index.html",
+    "section": "DPS Group",
+    "text": "DPS Group is trusted by many of Scotland’s distilleries to produce electrical, control, and instrumentation solutions. The paperless ATEX system (Transform) we used for Loch Lomond Distillery allows clients to streamline administration. We believe clients who work... read more",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\resources\\showcase\\index.html",
+    "page_title": "Showcase - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "participant/wrapped/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\participant\\wrapped\\index.html",
+    "page_title": "Login – Index by Terringtons DM Forum",
+    "meta_description": "Index by Terringtons DM Discussion Board"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/main-category/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\main-category\\index.html",
+    "page_title": "Main Category – Index by Terringtons DM Forum",
+    "meta_description": "This is a simple category / section"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/main-category/index.html",
+    "section": "Main Category",
+    "text": "This is a simple category / section RSS",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\main-category\\index.html",
+    "page_title": "Main Category – Index by Terringtons DM Forum",
+    "meta_description": "This is a simple category / section"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/main-forum/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\main-forum\\index.html",
+    "page_title": "Main Forum – Index by Terringtons DM Forum",
+    "meta_description": "This is a simple parent forum"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/main-forum/index.html",
+    "section": "Main Forum",
+    "text": "This is a simple parent forum RSS",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\main-forum\\index.html",
+    "page_title": "Main Forum – Index by Terringtons DM Forum",
+    "meta_description": "This is a simple parent forum"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/recent/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\recent\\index.html",
+    "page_title": "Unread Posts – Index by Terringtons DM Forum",
+    "meta_description": "Recent Posts"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community-3/tags/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community-3\\tags\\index.html",
+    "page_title": "Tags – Index by Terringtons DM Forum",
+    "meta_description": "Tags"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community/recent/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community\\recent\\index.html",
+    "page_title": "Unread Posts – Index by Terringtons DM Forum",
+    "meta_description": "Recent Posts"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community/tags/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community\\tags\\index.html",
+    "page_title": "Tags – Index by Terringtons DM Forum",
+    "meta_description": "Tags"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "community/test-forum/test-topic/index.html",
+    "section": "Terrington User Forum",
+    "text": "This forum is only available to registered user of Terrington products",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\community\\test-forum\\test-topic\\index.html",
+    "page_title": "Test Topic – Test Forum – Index by Terringtons DM Forum",
+    "meta_description": "I've got a problem with my widget. Can anybody help?"
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "category/blogs-page/index.html",
+    "section": "See you at CHEMUK 2023",
+    "text": "by Andrew Clayton | Nov 22, 2022 | Thoughts, News and Views It’s back and we will be there waiting to see you at stand F68. CHEMUK 2023 will return on the 10th & 11th May 2023 running in Hall 1 at the NEC, Birmingham. The expo will present 400+ specialist exhibitors and 150+ expert speakers split between three major...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\category\\blogs-page\\index.html",
+    "page_title": "Thoughts, News and Views Archives - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "category/blogs-page/index.html",
+    "section": "Product Safety Recall",
+    "text": "by Sam Clayton | Nov 27, 2021 | Thoughts, News and Views A recent report by the Office for Product Safety & Standards has identified the PowerStar Electricals BTF Series Explosion Proof Axial Flow Fan as a severe risk. Although sold as safe, the report finds that the product may not be safe for use in potentially...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\category\\blogs-page\\index.html",
+    "page_title": "Thoughts, News and Views Archives - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "category/showcase/index.html",
+    "section": "ATEX & Verification Services",
+    "text": "by Sam Clayton | Dec 16, 2022 | Showcase Terrington’s cloud-based data management solution enabled us to develop a bespoke holistic asset management, inspection and verification system in compliance with our requirements as an accredited inspection body providing conformity assessment solutions to companies...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\category\\showcase\\index.html",
+    "page_title": "Showcase Archives - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "category/showcase/index.html",
+    "section": "Major Chemical Processor",
+    "text": "by Sam Clayton | Dec 15, 2022 | Showcase “Our operations are of strategic national importance to the UK and focus mainly on the production of chlorine, caustic soda and chlorinated derivatives.  The chemicals produced at the Site are sold into a wide variety of industrial applications across sectors such as...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\category\\showcase\\index.html",
+    "page_title": "Showcase Archives - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "category/showcase/index.html",
+    "section": "Robinson Brothers Ltd",
+    "text": "by Sam Clayton | Dec 12, 2022 | Showcase Founded in 1869, Robinson Brothers is one of the UK’s largest independent chemical manufacturers of speciality/fine chemicals and rubber accelerators. They offer a wide range of custom manufactured intermediates on a commercial scale, all produced to the highest...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\category\\showcase\\index.html",
+    "page_title": "Showcase Archives - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "category/showcase/index.html",
+    "section": "DPS Group",
+    "text": "by Sam Clayton | Nov 26, 2021 | Showcase DPS Group is trusted by many of Scotland’s distilleries to produce electrical, control, and instrumentation solutions. The paperless ATEX system (Transform) we used for Loch Lomond Distillery allows clients to streamline administration. We believe clients who work...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\category\\showcase\\index.html",
+    "page_title": "Showcase Archives - Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "author/andrew-clayton/index.html",
+    "section": "See you at CHEMUK 2023",
+    "text": "by Andrew Clayton | Nov 22, 2022 | Thoughts, News and Views It’s back and we will be there waiting to see you at stand F68. CHEMUK 2023 will return on the 10th & 11th May 2023 running in Hall 1 at the NEC, Birmingham. The expo will present 400+ specialist exhibitors and 150+ expert speakers split between three major...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\author\\andrew-clayton\\index.html",
+    "page_title": "Andrew Clayton, Author at Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "author/sam-clayton/index.html",
+    "section": "ATEX & Verification Services",
+    "text": "by Sam Clayton | Dec 16, 2022 | Showcase Terrington’s cloud-based data management solution enabled us to develop a bespoke holistic asset management, inspection and verification system in compliance with our requirements as an accredited inspection body providing conformity assessment solutions to companies...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\author\\sam-clayton\\index.html",
+    "page_title": "Sam Clayton, Author at Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "author/sam-clayton/index.html",
+    "section": "Major Chemical Processor",
+    "text": "by Sam Clayton | Dec 15, 2022 | Showcase “Our operations are of strategic national importance to the UK and focus mainly on the production of chlorine, caustic soda and chlorinated derivatives.  The chemicals produced at the Site are sold into a wide variety of industrial applications across sectors such as...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\author\\sam-clayton\\index.html",
+    "page_title": "Sam Clayton, Author at Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "author/sam-clayton/index.html",
+    "section": "Robinson Brothers Ltd",
+    "text": "by Sam Clayton | Dec 12, 2022 | Showcase Founded in 1869, Robinson Brothers is one of the UK’s largest independent chemical manufacturers of speciality/fine chemicals and rubber accelerators. They offer a wide range of custom manufactured intermediates on a commercial scale, all produced to the highest...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\author\\sam-clayton\\index.html",
+    "page_title": "Sam Clayton, Author at Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "author/sam-clayton/index.html",
+    "section": "Product Safety Recall",
+    "text": "by Sam Clayton | Nov 27, 2021 | Thoughts, News and Views A recent report by the Office for Product Safety & Standards has identified the PowerStar Electricals BTF Series Explosion Proof Axial Flow Fan as a severe risk. Although sold as safe, the report finds that the product may not be safe for use in potentially...",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\author\\sam-clayton\\index.html",
+    "page_title": "Sam Clayton, Author at Index by Terrington DM",
+    "meta_description": ""
+  },
+  {
+    "domain": "atex-inspection.com",
+    "page": "author/sam-clayton/index.html",
+    "section": "D & D",
+    "text": "by Sam Clayton | Nov 26, 2021 | Uncategorized Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia odio at nisl porta, nec sagittis odio vehicula. Integer tristique orci nec ipsum faucibus varius sit amet vitae enim. Sed arcu dolor, fringilla ac tincidunt vel, elementum non sapien....",
+    "source_path": "D:\\ZORO\\company_intel\\data\\atex-inspection.com\\author\\sam-clayton\\index.html",
+    "page_title": "Sam Clayton, Author at Index by Terrington DM",
+    "meta_description": ""
+  }
+]

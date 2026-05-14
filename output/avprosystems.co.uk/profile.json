@@ -1,0 +1,70 @@
+{
+  "company_name": "AV Prosystem",
+  "domain": "avprosystems.co.uk",
+  "description_short": "Software engineering company delivering digital platforms, products, and applications for businesses.",
+  "description_long": "Delivers custom solutions and products that perfectly fit the needs and behavior of their users. Provides IT strategy, digital transformation, system integration, and marketing technology expertise.",
+  "industry": "Technology",
+  "sub_industry": "Software Engineering",
+  "sectors": [
+    "Technology",
+    "Business"
+  ],
+  "ssc_code": "",
+  "products": [
+    "Digital platforms",
+    "Products",
+    "Applications"
+  ],
+  "domain_status": "Active",
+  "company_registration": "",
+  "vat_number": "",
+  "acronym": "",
+  "logo_url": "",
+  "headquarters": "",
+  "locations": [],
+  "leadership": [],
+  "people": [],
+  "contact": {
+    "email": "it@avprosystems.co.uk",
+    "phone": "+447441429169"
+  },
+  "social": {
+    "linkedin": "",
+    "facebook": "",
+    "x": "",
+    "instagram": "",
+    "youtube": "",
+    "blog": "",
+    "articles": ""
+  },
+  "certifications": [
+    "ISO 27001",
+    "ISO",
+    "certification"
+  ],
+  "services": [
+    {
+      "name": "Software development",
+      "type": "service"
+    },
+    {
+      "name": "IT Consulting",
+      "type": "service"
+    },
+    {
+      "name": "Marketing technology",
+      "type": "service"
+    }
+  ],
+  "business_type": "B2B",
+  "company_size": "1-10",
+  "technology_signals": [
+    "OS",
+    "browser",
+    "device"
+  ],
+  "extraction_confidence": 0.0,
+  "meta": {
+    "extraction_confidence": 0.8
+  }
+}
