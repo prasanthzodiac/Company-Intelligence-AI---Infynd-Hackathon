@@ -394,6 +394,12 @@ def run_pipeline(
             num_workers,
             on_progress=_download_progress,
         )
+
+        download_status_by_domain = {domain: status for _, domain, status in results}
+        for company in companies:
+            if company.domain in download_status_by_domain:
+                company.status = download_status_by_domain[company.domain]
+
         save_companies_manifest(paths, companies)
 
         downloaded_count = sum(
@@ -413,7 +419,28 @@ def run_pipeline(
         )
 
         # Step 2: LLM extraction (parallel, rate-limited for remote/cloud LLMs)
-        llm_args = [(c, output_dir, settings, repo_base) for c in companies]
+        llm_args = [
+            (c, output_dir, settings, repo_base)
+            for c in companies
+            if c.status == "crawled"
+        ]
+        llm_total = len(llm_args)
+
+        if llm_total == 0:
+            _set_job(
+                repo_base,
+                session_id,
+                job_id,
+                {
+                    "stage": "complete",
+                    "message": f"Completed! Processed 0 of {total} companies",
+                    "progress": 100,
+                    "total_companies": total,
+                    "processed_companies": 0,
+                },
+            )
+            return
+
         llm_config = get_llm_config(settings)
         from services.llm_client import check_llm_reachable
 
@@ -441,8 +468,8 @@ def run_pipeline(
                 "stage": "llm",
                 "message": llm_message,
                 "progress": 60,
-                "total_companies": total,
-                "processed_companies": downloaded_count,
+                "total_companies": llm_total,
+                "processed_companies": 0,
             },
         )
 
@@ -453,10 +480,10 @@ def run_pipeline(
                 job_id,
                 {
                     "stage": "llm",
-                    "message": f"{llm_message} ({i}/{total})",
-                    "progress": 60 + int((i / total) * 35),
-                    "total_companies": total,
-                    "processed_companies": downloaded_count + i,
+                    "message": f"{llm_message} ({i}/{llm_total})",
+                    "progress": 60 + int((i / llm_total) * 35),
+                    "total_companies": llm_total,
+                    "processed_companies": i,
                     "current_company": result[1] if len(result) > 1 else "",
                 },
             )

@@ -159,21 +159,24 @@ function UploadScreen({ onProcessingComplete, onStartOver }) {
       })
 
       let pollErrors = 0
+      let jobNotFoundPolls = 0
       const pollInterval = setInterval(async () => {
         try {
           const { response: statusResponse } = await apiFetch(`/processing-status/${jobId}`)
           const statusData = await statusResponse.json()
-          pollErrors = 0
 
           if (
             statusData.stage === 'error' &&
             (statusData.message || '').toLowerCase().includes('job not found')
           ) {
-            pollErrors += 1
-            if (pollErrors < 8) {
+            jobNotFoundPolls += 1
+            if (jobNotFoundPolls < 8) {
               return
             }
+          } else {
+            jobNotFoundPolls = 0
           }
+          pollErrors = 0
 
           setStatus({
             stage: statusData.stage || 'processing',

@@ -24,6 +24,7 @@ from backend.api.session_context import (
     require_session_id,
 )
 from backend.api.domain_paths import resolve_domain_dir
+from services.domain_utils import normalize_domain
 
 # Determine if we're in development or production mode
 # In production, serve React build from frontend/dist
@@ -61,7 +62,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Error handler for file size limit
-from werkzeug.exceptions import RequestEntityTooLarge
+from werkzeug.exceptions import HTTPException, RequestEntityTooLarge
 
 @app.errorhandler(RequestEntityTooLarge)
 def handle_file_too_large(e):
@@ -139,6 +140,8 @@ def get_companies():
         companies = load_companies_manifest(paths)
         return jsonify(companies)
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
         logger.error(f"Error loading companies: {e}")
         return jsonify({"error": str(e)}), 500
 
@@ -147,6 +150,7 @@ def get_companies():
 def get_company_profile(domain):
     """Get company profile by domain"""
     try:
+        domain = normalize_domain(domain)
         paths = paths_for_request(base_dir)
         domain_dir = resolve_domain_dir(paths.output_dir, domain)
         profile_path = domain_dir / "profile.json"
@@ -193,6 +197,10 @@ def get_company_profile(domain):
         
         return jsonify(profile)
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
+        if isinstance(e, ValueError):
+            return jsonify({"error": str(e)}), 400
         logger.error(f"Error loading profile for {domain}: {e}")
         # Try to return default profile as fallback
         try:
@@ -340,6 +348,7 @@ def _generate_default_profile(domain: str, output_dir: Path) -> dict:
 def get_company_chunks(domain):
     """Get company chunks for proofs"""
     try:
+        domain = normalize_domain(domain)
         paths = paths_for_request(base_dir)
         domain_dir = resolve_domain_dir(paths.output_dir, domain)
         chunks_path = domain_dir / "chunks.json"
@@ -364,6 +373,14 @@ def get_company_chunks(domain):
             "domain": domain_dir.name,
         })
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
+        if isinstance(e, ValueError):
+            return jsonify({
+                "chunks": [],
+                "message": str(e),
+                "domain": domain,
+            }), 400
         logger.error(f"Error loading chunks for %s: %s", domain, e)
         return jsonify({
             "chunks": [],
@@ -385,6 +402,7 @@ def chat():
         
         if not domain:
             return jsonify({"error": "Domain is required"}), 400
+        domain = normalize_domain(domain)
         
         paths = paths_for_request(base_dir)
         chatbot = ChatbotService(base_dir, paths.output_dir)
@@ -397,6 +415,10 @@ def chat():
             "proofs": proofs
         })
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
+        if isinstance(e, ValueError):
+            return jsonify({"error": str(e)}), 400
         logger.error(f"Error in chat endpoint: {e}")
         return jsonify({"error": str(e)}), 500
 
@@ -405,12 +427,17 @@ def chat():
 def get_proofs(domain):
     """Get proofs for a specific domain"""
     try:
+        domain = normalize_domain(domain)
         query = request.args.get('query', '')
         paths = paths_for_request(base_dir)
         proofs_svc = ProofsService(base_dir, paths.output_dir)
         proofs = proofs_svc.get_proofs(domain, query, "")
         return jsonify(proofs)
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
+        if isinstance(e, ValueError):
+            return jsonify({"error": str(e)}), 400
         logger.error(f"Error getting proofs for {domain}: {e}")
         return jsonify({"error": str(e)}), 500
 
@@ -459,6 +486,8 @@ def upload_csv():
             "message": "CSV uploaded and processing started"
         })
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
         logger.exception(f"Error uploading CSV: {e}")
         return jsonify({"error": str(e)}), 500
 
@@ -471,6 +500,8 @@ def processing_status(job_id):
         status = get_job_status(job_id, session_id)
         return jsonify(status)
     except Exception as e:
+        if isinstance(e, HTTPException):
+            raise
         logger.error(f"Error getting status: {e}")
         return jsonify({"error": str(e)}), 500
 
