@@ -13,8 +13,9 @@ The Vercel app is static React only. Run the **Flask API** on Render or Railway,
 2. Connect the repository; root directory stays the **repo root** (where `requirements.txt` and `wsgi.py` live).
 3. **Runtime**: Python 3.11 (optional: `runtime.txt` pins `3.11.9`).
 4. **Build command**: `pip install -r requirements.txt`
-5. **Start command**:  
-   `gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 180 wsgi:app`
+5. **Start command:** use exactly (do not use bare `gunicorn app:app` unless you have pulled the latest repo with root `app.py`):  
+   `gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 180 wsgi:app`  
+   Equivalent: `... gunicorn app:app` after **`app.py`** exists at repo root (re-exports the same application).
 6. **Health check path** (optional): `/api/companies`
 7. Deploy. Copy the service URL (e.g. `https://company-intelligence-api.onrender.com`).
 8. On **Vercel**, set `VITE_API_BASE_URL` to `https://<your-render-host>/api` and redeploy the frontend.
