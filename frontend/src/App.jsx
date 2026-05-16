@@ -81,6 +81,10 @@ function App() {
       }
     } catch (error) {
       console.error('Error loading companies:', error)
+      alert(
+        `Could not load companies from API: ${error.message}\n\n` +
+          'Confirm VITE_API_BASE_URL on Vercel points to your Render URL + /api, then redeploy.'
+      )
     } finally {
       setLoading(false)
     }

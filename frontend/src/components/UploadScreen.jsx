@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { API_BASE, isProductionSameOriginApi } from '../services/api.js'
+import { API_BASE, apiFetch, isProductionSameOriginApi } from '../services/api.js'
 import './UploadScreen.css'
 
 // SVG Icon Components
@@ -119,12 +119,10 @@ function UploadScreen({ onProcessingComplete }) {
 
     const formData = new FormData()
     formData.append('csv_file', csvFile)
-    const uploadUrl = `${API_BASE}/upload-csv`
-
     try {
-      const uploadResponse = await fetch(uploadUrl, {
+      const { response: uploadResponse, url: uploadUrl } = await apiFetch('/upload-csv', {
         method: 'POST',
-        body: formData
+        body: formData,
       })
 
       if (!uploadResponse.ok) {
@@ -153,7 +151,7 @@ function UploadScreen({ onProcessingComplete }) {
 
       const pollInterval = setInterval(async () => {
         try {
-          const statusResponse = await fetch(`${API_BASE}/processing-status/${jobId}`)
+          const { response: statusResponse } = await apiFetch(`/processing-status/${jobId}`)
           const statusData = await statusResponse.json()
 
           setStatus({
@@ -180,6 +178,12 @@ function UploadScreen({ onProcessingComplete }) {
           console.error('Error polling status:', error)
           clearInterval(pollInterval)
           setIsProcessing(false)
+          alert(`Lost connection to API while processing: ${error.message}`)
+          setStatus({
+            stage: 'error',
+            message: error.message,
+            progress: 0,
+          })
         }
       }, 2000)
 

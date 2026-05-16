@@ -32,7 +32,17 @@ else:
     # Development: serve templates (fallback)
     app = Flask(__name__, static_folder='../../frontend/static', template_folder='../../frontend/templates')
 
-CORS(app)
+# Allow browser calls from Vercel and local dev (set CORS_ORIGINS for extra domains)
+_cors_origins = os.environ.get("CORS_ORIGINS", "*")
+if _cors_origins.strip() == "*":
+    CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=False)
+else:
+    _origin_list = [o.strip() for o in _cors_origins.split(",") if o.strip()]
+    CORS(
+        app,
+        resources={r"/api/*": {"origins": _origin_list}},
+        supports_credentials=False,
+    )
 
 # Increase file upload size limit (default is 16MB)
 app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB

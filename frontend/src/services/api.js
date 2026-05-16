@@ -1,6 +1,7 @@
 /**
  * Same-origin Flask: leave unset (uses `/api`).
- * Split deploy (e.g. Vercel UI + Flask on Railway): set `VITE_API_BASE_URL` to your API root, e.g. `https://your-api.example.com/api` (no trailing slash).
+ * Split deploy (Vercel UI + Render API): set VITE_API_BASE_URL to your API root,
+ * e.g. https://your-app.onrender.com/api (no trailing slash).
  */
 function resolveApiBase() {
   const raw = import.meta.env.VITE_API_BASE_URL
@@ -8,7 +9,6 @@ function resolveApiBase() {
     return '/api'
   }
   let base = String(raw).trim().replace(/\/+$/, '')
-  // Common mistake: https://my-app.onrender.com (missing /api)
   if (/^https?:\/\//i.test(base) && !base.endsWith('/api')) {
     base = `${base}/api`
   }
@@ -17,20 +17,40 @@ function resolveApiBase() {
 
 export const API_BASE = resolveApiBase()
 
-/** True when the built app still targets same-origin `/api` in production (no Flask on Vercel static). */
 export const isProductionSameOriginApi = () =>
   Boolean(import.meta.env.PROD && API_BASE === '/api')
 
+/**
+ * fetch() with clearer errors for cross-origin / offline API issues.
+ */
+export async function apiFetch(path, options = {}) {
+  const url = path.startsWith('http') ? path : `${API_BASE}${path.startsWith('/') ? path : `/${path}`}`
+  try {
+    const response = await fetch(url, options)
+    return { response, url }
+  } catch (err) {
+    const msg = err?.message || String(err)
+    if (msg === 'Failed to fetch' || err instanceof TypeError) {
+      throw new Error(
+        `Cannot reach API at ${url}. ` +
+          'Check Render is running, open /api/health in the browser, set VITE_API_BASE_URL on Vercel, and redeploy.'
+      )
+    }
+    throw err
+  }
+}
+
 export const getCompanies = async () => {
-  const response = await fetch(`${API_BASE}/companies`)
+  const { response } = await apiFetch('/companies')
   if (!response.ok) {
-    throw new Error('Failed to load companies')
+    const body = await response.text().catch(() => '')
+    throw new Error(`Failed to load companies (${response.status}): ${body || response.statusText}`)
   }
   return response.json()
 }
 
 export const getCompanyProfile = async (domain) => {
-  const response = await fetch(`${API_BASE}/companies/${domain}/profile`)
+  const { response } = await apiFetch(`/companies/${encodeURIComponent(domain)}/profile`)
   if (!response.ok) {
     throw new Error('Failed to load profile')
   }
@@ -38,7 +58,7 @@ export const getCompanyProfile = async (domain) => {
 }
 
 export const getCompanyChunks = async (domain) => {
-  const response = await fetch(`${API_BASE}/companies/${domain}/chunks`)
+  const { response } = await apiFetch(`/companies/${encodeURIComponent(domain)}/chunks`)
   if (!response.ok) {
     throw new Error('Failed to load chunks')
   }
@@ -46,11 +66,9 @@ export const getCompanyChunks = async (domain) => {
 }
 
 export const sendChatMessage = async (domain, question) => {
-  const response = await fetch(`${API_BASE}/chat`, {
+  const { response } = await apiFetch('/chat', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ domain, question }),
   })
   if (!response.ok) {
@@ -60,10 +78,11 @@ export const sendChatMessage = async (domain, question) => {
 }
 
 export const getProofs = async (domain, query) => {
-  const response = await fetch(`${API_BASE}/proofs/${domain}?query=${encodeURIComponent(query)}`)
+  const { response } = await apiFetch(
+    `/proofs/${encodeURIComponent(domain)}?query=${encodeURIComponent(query)}`
+  )
   if (!response.ok) {
     throw new Error('Failed to load proofs')
   }
   return response.json()
 }
-

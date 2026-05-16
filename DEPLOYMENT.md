@@ -63,6 +63,14 @@ Then open `http://127.0.0.1:5000/api/companies`.
 
 `flask-cors` is enabled for all origins by default in `backend/api/app.py`, so browser calls from your Vercel domain to the API URL are allowed.
 
+## "Failed to fetch" / CSV upload error
+
+1. Open **`https://<render-host>/api/health`** in a new tab. If it does not load, fix Render first.
+2. **Vercel** → `VITE_API_BASE_URL` = `https://<render-host>/api` → **Redeploy** (required).
+3. In DevTools → **Network**, the upload must go to **`onrender.com`**, not **`vercel.app`**.
+4. Render free tier may **sleep** — wait 30–60s after first visit, then retry upload.
+5. CSV must have a header column named **`domain`** (see repo `domains.csv`).
+
 ## Upload returns 404
 
 1. Open **`https://<your-render-host>/api/health`** — must return `{"status":"ok",...}`. If this 404s, fix Render first (start command `wsgi:app` or `app:app`, latest code deployed).

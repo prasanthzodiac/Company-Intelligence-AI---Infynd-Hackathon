@@ -12,7 +12,7 @@ import yaml
 import sys
 
 # Add parent directories to path
-base_dir = Path(__file__).parent.parent.parent.parent
+base_dir = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(base_dir))
 
 from services.csv_loader import Company, load_companies_from_csv, write_manifest
