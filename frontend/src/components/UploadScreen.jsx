@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { API_BASE, apiFetch, ensureSession, isProductionSameOriginApi } from '../services/api.js'
+import { setProcessingActive } from '../services/session.js'
 import './UploadScreen.css'
 
 // SVG Icon Components
@@ -118,6 +119,7 @@ function UploadScreen({ onProcessingComplete, onStartOver }) {
     }
 
     setIsProcessing(true)
+    setProcessingActive(true)
     setStatus({
       stage: 'uploading',
       message: 'Uploading CSV file...',
@@ -156,10 +158,22 @@ function UploadScreen({ onProcessingComplete, onStartOver }) {
         progress: 5
       })
 
+      let pollErrors = 0
       const pollInterval = setInterval(async () => {
         try {
           const { response: statusResponse } = await apiFetch(`/processing-status/${jobId}`)
           const statusData = await statusResponse.json()
+          pollErrors = 0
+
+          if (
+            statusData.stage === 'error' &&
+            (statusData.message || '').toLowerCase().includes('job not found')
+          ) {
+            pollErrors += 1
+            if (pollErrors < 8) {
+              return
+            }
+          }
 
           setStatus({
             stage: statusData.stage || 'processing',
@@ -173,6 +187,7 @@ function UploadScreen({ onProcessingComplete, onStartOver }) {
           if (statusData.stage === 'complete' || statusData.stage === 'error') {
             clearInterval(pollInterval)
             setIsProcessing(false)
+            setProcessingActive(false)
             if (statusData.stage === 'error') {
               alert(`Processing failed: ${statusData.message || 'Unknown error'}`)
               return
@@ -187,8 +202,13 @@ function UploadScreen({ onProcessingComplete, onStartOver }) {
           }
         } catch (error) {
           console.error('Error polling status:', error)
+          pollErrors += 1
+          if (pollErrors < 5) {
+            return
+          }
           clearInterval(pollInterval)
           setIsProcessing(false)
+          setProcessingActive(false)
           alert(`Lost connection to API while processing: ${error.message}`)
           setStatus({
             stage: 'error',
@@ -202,6 +222,7 @@ function UploadScreen({ onProcessingComplete, onStartOver }) {
       console.error('Error processing CSV:', error)
       alert('Error processing CSV: ' + error.message)
       setIsProcessing(false)
+      setProcessingActive(false)
       setStatus({
         stage: 'error',
         message: 'Error: ' + error.message,

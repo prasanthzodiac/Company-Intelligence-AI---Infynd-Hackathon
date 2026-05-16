@@ -1,27 +1,4 @@
-"""Resolve output/data paths when CSV domain differs from stored folder name."""
-from __future__ import annotations
+"""Re-export for API layer (implementation in services.domain_paths)."""
+from services.domain_paths import domain_folder_variants, resolve_domain_dir
 
-from pathlib import Path
-
-
-def domain_folder_variants(domain: str) -> list[str]:
-    domain = (domain or "").strip().lower()
-    variants = [domain]
-    if domain.startswith("www."):
-        bare = domain[4:]
-        if bare not in variants:
-            variants.append(bare)
-    else:
-        www = f"www.{domain}"
-        if www not in variants:
-            variants.append(www)
-    return variants
-
-
-def resolve_domain_dir(parent: Path, domain: str) -> Path:
-    """Pick existing session subfolder for domain (handles www vs apex)."""
-    for variant in domain_folder_variants(domain):
-        candidate = parent / variant
-        if candidate.is_dir():
-            return candidate
-    return parent / domain
+__all__ = ["domain_folder_variants", "resolve_domain_dir"]

@@ -58,6 +58,13 @@ export async function createSession() {
 export function endSessionBeacon() {
   const sid = getSessionId()
   if (!sid) return
+  try {
+    if (sessionStorage.getItem('company_intel_processing') === '1') {
+      return
+    }
+  } catch {
+    /* ignore */
+  }
   const url = `${API_BASE}/session?session_id=${encodeURIComponent(sid)}`
   try {
     fetch(url, {
@@ -127,10 +134,19 @@ export const getCompanies = async () => {
 export const getCompanyProfile = async (domain) => {
   await ensureSession()
   const { response } = await apiFetch(`/companies/${encodeURIComponent(domain)}/profile`)
-  if (!response.ok) {
-    throw new Error('Failed to load profile')
+  let body = {}
+  try {
+    body = await response.json()
+  } catch {
+    body = {}
   }
-  return response.json()
+  if (!response.ok) {
+    throw new Error(
+      body.error ||
+        `Could not load profile (${response.status}). Try re-uploading your CSV.`
+    )
+  }
+  return body
 }
 
 /**

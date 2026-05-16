@@ -17,3 +17,19 @@ export function clearSessionId() {
   if (typeof window === 'undefined') return
   sessionStorage.removeItem(STORAGE_KEY)
 }
+
+const PROCESSING_KEY = 'company_intel_processing'
+
+export function setProcessingActive(active) {
+  if (typeof window === 'undefined') return
+  if (active) {
+    sessionStorage.setItem(PROCESSING_KEY, '1')
+  } else {
+    sessionStorage.removeItem(PROCESSING_KEY)
+  }
+}
+
+export function isProcessingActive() {
+  if (typeof window === 'undefined') return false
+  return sessionStorage.getItem(PROCESSING_KEY) === '1'
+}

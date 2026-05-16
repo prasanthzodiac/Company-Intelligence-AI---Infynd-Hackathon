@@ -72,6 +72,16 @@ def session_exists(repo_base: Path, session_id: str) -> bool:
 def delete_session(repo_base: Path, session_id: str) -> bool:
     if not validate_session_id(session_id):
         return False
+    try:
+        from services.job_store import session_has_active_jobs
+
+        if session_has_active_jobs(repo_base, session_id):
+            logger.info(
+                "Deferred session delete %s: pipeline still running", session_id
+            )
+            return False
+    except Exception as e:
+        logger.warning("Could not check active jobs for %s: %s", session_id, e)
     root = get_session_paths(repo_base, session_id).root
     if root.exists():
         shutil.rmtree(root, ignore_errors=True)

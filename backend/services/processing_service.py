@@ -23,8 +23,27 @@ from services.llm_extractor import extract_profile_for_company
 
 logger = logging.getLogger(__name__)
 
-# In-memory job status storage (in production, use Redis or database)
-job_statuses: Dict[str, Dict] = {}
+from services.job_store import read_job_status, write_job_status
+
+
+def _is_cloud_runtime() -> bool:
+    return bool(
+        os.environ.get("RENDER")
+        or os.environ.get("RAILWAY_ENVIRONMENT")
+        or os.environ.get("VERCEL")
+    )
+
+
+def _set_job(
+    repo_base: Path,
+    session_id: str,
+    job_id: str,
+    status: Dict,
+) -> None:
+    write_job_status(repo_base, session_id, job_id, status)
+    from services.session_store import touch_session
+
+    touch_session(repo_base, session_id)
 
 
 def check_downloaded(domain_dir: Path) -> bool:
@@ -60,25 +79,36 @@ def check_scraped(chunks_path: Path) -> bool:
 
 
 def check_llm_extracted(profile_path: Path) -> bool:
-    """Check if LLM extraction is already done"""
+    """Check if LLM extraction is already done with real content."""
     if not profile_path.exists():
         return False
     try:
         with profile_path.open("r", encoding="utf-8") as f:
             profile_data = json.load(f)
-        # Check if profile has meaningful data
-        if profile_data and isinstance(profile_data, dict):
-            # Must have at least company name or domain
-            if profile_data.get("company_name") or profile_data.get("domain"):
-                # Check if it has some content (not just empty fields)
-                has_content = (
-                    profile_data.get("description_short") or 
-                    profile_data.get("description_long") or
-                    profile_data.get("industry") or
-                    profile_data.get("contact", {}).get("email") or
-                    profile_data.get("contact", {}).get("phone")
-                )
-                return bool(has_content)
+        if not profile_data or not isinstance(profile_data, dict):
+            return False
+
+        pipeline_status = profile_data.get("pipeline_status") or ""
+        if pipeline_status.startswith("failed"):
+            return False
+
+        has_content = bool(
+            profile_data.get("description_short")
+            or profile_data.get("description_long")
+            or profile_data.get("industry")
+            or (profile_data.get("contact") or {}).get("email")
+            or (profile_data.get("contact") or {}).get("phone")
+            or profile_data.get("services")
+            or profile_data.get("llm_fallback")
+        )
+        if not has_content:
+            return False
+
+        confidence = float(profile_data.get("extraction_confidence") or 0)
+        if pipeline_status in ("crawled", "pending") and confidence < 0.15:
+            return False
+
+        return True
     except Exception:
         pass
     return False
@@ -220,11 +250,16 @@ def run_pipeline(
 
         config_path = repo_base / "config" / "settings.yaml"
         if not config_path.exists():
-            job_statuses[job_id] = {
-                "stage": "error",
-                "message": "Config file not found",
-                "progress": 0,
-            }
+            _set_job(
+                repo_base,
+                session_id,
+                job_id,
+                {
+                    "stage": "error",
+                    "message": "Config file not found",
+                    "progress": 0,
+                },
+            )
             return
 
         from services.settings_loader import load_settings, get_llm_config
@@ -237,11 +272,16 @@ def run_pipeline(
         output_dir = paths.output_dir.resolve()
         
         # Load companies from CSV
-        job_statuses[job_id] = {
-            "stage": "downloading",
-            "message": "Loading companies from CSV...",
-            "progress": 5
-        }
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
+                "stage": "downloading",
+                "message": "Loading companies from CSV...",
+                "progress": 5,
+            },
+        )
         
         companies = load_companies_from_csv(csv_path, data_dir)
         total = len(companies)
@@ -250,11 +290,16 @@ def run_pipeline(
         save_companies_manifest(paths, companies)
 
         if total == 0:
-            job_statuses[job_id] = {
-                "stage": "error",
-                "message": "No valid companies found in CSV file",
-                "progress": 0
-            }
+            _set_job(
+                repo_base,
+                session_id,
+                job_id,
+                {
+                    "stage": "error",
+                    "message": "No valid companies found in CSV file",
+                    "progress": 0,
+                },
+            )
             return
         
         # Check how many companies are already fully processed
@@ -273,55 +318,75 @@ def run_pipeline(
         
         # If all companies are already processed, skip to completion
         if fully_processed == total:
-            job_statuses[job_id] = {
-                "stage": "complete",
-                "message": f"All {total} companies already processed! Skipping to main page...",
-                "progress": 100,
-                "total_companies": total,
-                "processed_companies": total,
-                "all_complete": True
-            }
+            _set_job(
+                repo_base,
+                session_id,
+                job_id,
+                {
+                    "stage": "complete",
+                    "message": f"All {total} companies already processed! Skipping to main page...",
+                    "progress": 100,
+                    "total_companies": total,
+                    "processed_companies": total,
+                    "all_complete": True,
+                },
+            )
             # Still update manifest
             save_companies_manifest(paths, companies)
             return
 
-        job_statuses[job_id] = {
-            "stage": "downloading",
-            "message": f"Processing {total} companies ({fully_processed} already complete)...",
-            "progress": 10,
-            "total_companies": total,
-            "processed_companies": fully_processed
-        }
-        
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
+                "stage": "downloading",
+                "message": f"Processing {total} companies ({fully_processed} already complete)...",
+                "progress": 10,
+                "total_companies": total,
+                "processed_companies": fully_processed,
+            },
+        )
+
         # Step 1: Download and Crawl (parallel)
         download_crawl_args = [(c, settings, data_dir, output_dir) for c in companies]
-        # Increase workers for faster processing - use more cores
         parallel_config = settings.get("parallel", {})
         workers_setting = parallel_config.get("workers", 0)
         if workers_setting == 0:
-            # Auto-detect: use CPU count but cap at 8
             default_workers = min(8, os.cpu_count() or 4)
         else:
             default_workers = workers_setting
         num_workers = max(1, min(default_workers, len(companies)))
-        
-        job_statuses[job_id] = {
-            "stage": "downloading",
-            "message": "Checking and downloading websites...",
-            "progress": 15,
-            "total_companies": total,
-            "processed_companies": 0
-        }
-        
-        def _download_progress(i, _total, result):
-            job_statuses[job_id] = {
+        if _is_cloud_runtime():
+            num_workers = min(num_workers, 3)
+
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
                 "stage": "downloading",
-                "message": f"Downloading and scraping websites... ({i}/{total})",
-                "progress": 15 + int((i / total) * 35),
+                "message": "Checking and downloading websites...",
+                "progress": 15,
                 "total_companies": total,
-                "processed_companies": i,
-                "current_company": result[1] if len(result) > 1 else "",
-            }
+                "processed_companies": 0,
+            },
+        )
+
+        def _download_progress(i, _total, result):
+            _set_job(
+                repo_base,
+                session_id,
+                job_id,
+                {
+                    "stage": "downloading",
+                    "message": f"Downloading and scraping websites... ({i}/{total})",
+                    "progress": 15 + int((i / total) * 35),
+                    "total_companies": total,
+                    "processed_companies": i,
+                    "current_company": result[1] if len(result) > 1 else "",
+                },
+            )
 
         results = _run_parallel(
             process_company_download_crawl,
@@ -331,43 +396,70 @@ def run_pipeline(
         )
         save_companies_manifest(paths, companies)
 
-        downloaded_count = sum(1 for _, _, status in results if status == "downloaded" or status == "crawled")
-        job_statuses[job_id] = {
-            "stage": "scraping",
-            "message": f"Completed scraping {downloaded_count} websites",
-            "progress": 50,
-            "total_companies": total,
-            "processed_companies": downloaded_count
-        }
-        
+        downloaded_count = sum(
+            1 for _, _, status in results if status in ("downloaded", "crawled")
+        )
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
+                "stage": "scraping",
+                "message": f"Completed scraping {downloaded_count} websites",
+                "progress": 50,
+                "total_companies": total,
+                "processed_companies": downloaded_count,
+            },
+        )
+
         # Step 2: LLM extraction (parallel, rate-limited for remote/cloud LLMs)
         llm_args = [(c, output_dir, settings, repo_base) for c in companies]
         llm_config = get_llm_config(settings)
+        from services.llm_client import check_llm_reachable
+
+        llm_health = check_llm_reachable(llm_config)
+        if not llm_health.get("ok"):
+            logger.warning("LLM not reachable: %s", llm_health.get("error"))
         llm_workers = recommended_llm_workers(llm_config, len(companies), num_workers)
         logger.info(
-            "LLM provider=%s model=%s workers=%d",
+            "LLM provider=%s model=%s workers=%d reachable=%s",
             llm_config.provider,
             llm_config.model,
             llm_workers,
+            llm_health.get("ok"),
         )
-        
-        job_statuses[job_id] = {
-            "stage": "llm",
-            "message": "Extracting profiles with LLM...",
-            "progress": 60,
-            "total_companies": total,
-            "processed_companies": downloaded_count
-        }
-        
-        def _llm_progress(i, _total, result):
-            job_statuses[job_id] = {
+
+        llm_message = "Extracting profiles with LLM..."
+        if not llm_health.get("ok"):
+            llm_message += " (LLM offline — using scraped-data fallback)"
+
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
                 "stage": "llm",
-                "message": f"Extracting profiles with LLM... ({i}/{total})",
-                "progress": 60 + int((i / total) * 35),
+                "message": llm_message,
+                "progress": 60,
                 "total_companies": total,
-                "processed_companies": downloaded_count + i,
-                "current_company": result[1] if len(result) > 1 else "",
-            }
+                "processed_companies": downloaded_count,
+            },
+        )
+
+        def _llm_progress(i, _total, result):
+            _set_job(
+                repo_base,
+                session_id,
+                job_id,
+                {
+                    "stage": "llm",
+                    "message": f"{llm_message} ({i}/{total})",
+                    "progress": 60 + int((i / total) * 35),
+                    "total_companies": total,
+                    "processed_companies": downloaded_count + i,
+                    "current_company": result[1] if len(result) > 1 else "",
+                },
+            )
 
         llm_results = _run_parallel(
             process_company_llm,
@@ -383,35 +475,54 @@ def run_pipeline(
 
         save_companies_manifest(paths, companies)
 
-        success_count = sum(1 for _, _, status in llm_results if status == "profile_generated")
-        
-        job_statuses[job_id] = {
-            "stage": "complete",
-            "message": f"Completed! Processed {success_count} of {total} companies",
-            "progress": 100,
-            "total_companies": total,
-            "processed_companies": success_count
-        }
-        
+        success_count = sum(
+            1 for _, _, status in llm_results if status == "profile_generated"
+        )
+        scraped_only = sum(1 for _, _, status in llm_results if status == "crawled")
+        if success_count == 0 and scraped_only > 0:
+            success_count = scraped_only
+
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
+                "stage": "complete",
+                "message": f"Completed! Processed {success_count} of {total} companies",
+                "progress": 100,
+                "total_companies": total,
+                "processed_companies": success_count,
+            },
+        )
+
     except Exception as e:
         logger.exception("Pipeline error: %s", e)
-        job_statuses[job_id] = {
-            "stage": "error",
-            "message": f"Error: {str(e)}",
-            "progress": 0
-        }
+        _set_job(
+            repo_base,
+            session_id,
+            job_id,
+            {
+                "stage": "error",
+                "message": f"Error: {str(e)}",
+                "progress": 0,
+            },
+        )
 
 
 def start_processing(csv_path: Path, session_id: str, repo_base: Path) -> str:
     """Start processing pipeline and return job ID"""
     job_id = str(uuid.uuid4())
 
-    job_statuses[job_id] = {
-        "stage": "uploading",
-        "message": "Starting pipeline...",
-        "progress": 0,
-        "session_id": session_id,
-    }
+    _set_job(
+        repo_base,
+        session_id,
+        job_id,
+        {
+            "stage": "uploading",
+            "message": "Starting pipeline...",
+            "progress": 0,
+        },
+    )
 
     thread = threading.Thread(
         target=run_pipeline,
@@ -425,7 +536,7 @@ def start_processing(csv_path: Path, session_id: str, repo_base: Path) -> str:
 
 def get_job_status(job_id: str, session_id: str | None = None) -> Dict:
     """Get current status of a job (optionally verify session ownership)."""
-    status = job_statuses.get(job_id)
+    status = read_job_status(base_dir, job_id, session_id)
     if not status:
         return {"stage": "error", "message": "Job not found", "progress": 0}
     if session_id and status.get("session_id") and status["session_id"] != session_id:

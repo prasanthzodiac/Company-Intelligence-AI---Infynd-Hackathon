@@ -6,6 +6,7 @@ import logging
 from pathlib import Path
 from typing import Dict
 
+from services.domain_paths import resolve_domain_dir
 from services.llm_client import chat_completion
 from services.settings_loader import get_llm_config, load_settings
 
@@ -21,7 +22,8 @@ class ChatbotService:
 
     def get_response(self, domain: str, question: str) -> str:
         try:
-            chunks_path = self.output_dir / domain / "chunks.json"
+            domain_dir = resolve_domain_dir(self.output_dir, domain)
+            chunks_path = domain_dir / "chunks.json"
 
             if not chunks_path.exists():
                 return (
@@ -36,7 +38,7 @@ class ChatbotService:
                 return f"Sorry, no scraped content available for {domain}."
 
             profile = {}
-            profile_path = self.base_dir / "output" / domain / "profile.json"
+            profile_path = domain_dir / "profile.json"
             if profile_path.exists():
                 with profile_path.open("r", encoding="utf-8") as f:
                     profile = json.load(f)
