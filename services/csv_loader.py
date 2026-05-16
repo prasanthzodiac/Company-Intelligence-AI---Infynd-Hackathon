@@ -10,9 +10,7 @@ from typing import List
 logger = logging.getLogger(__name__)
 
 
-DOMAIN_REGEX = re.compile(
-    r"^(?!-)(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,63}$"
-)
+from .domain_utils import normalize_domain
 
 
 @dataclass
@@ -21,18 +19,6 @@ class Company:
     domain: str
     folder_path: str
     status: str = "pending"
-
-
-def _validate_domain(domain: str) -> str:
-    domain = domain.strip()
-    # Reject protocol or paths
-    if domain.startswith(("http://", "https://")):
-        raise ValueError(f"Domain must not include protocol: {domain}")
-    if "/" in domain:
-        raise ValueError(f"Domain must not include paths: {domain}")
-    if not DOMAIN_REGEX.match(domain):
-        raise ValueError(f"Invalid domain format: {domain}")
-    return domain
 
 
 def load_companies_from_csv(csv_path: Path, data_dir: Path) -> List[Company]:
@@ -54,7 +40,7 @@ def load_companies_from_csv(csv_path: Path, data_dir: Path) -> List[Company]:
                 logger.warning("Skipping empty domain row")
                 continue
             try:
-                domain = _validate_domain(raw_domain)
+                domain = normalize_domain(raw_domain)
             except ValueError as e:
                 logger.warning("Skipping domain '%s': %s", raw_domain, e)
                 continue

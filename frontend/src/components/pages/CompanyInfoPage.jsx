@@ -65,8 +65,10 @@ function CompanyInfoPage({ profile, selectedDomain, loading }) {
 
   const domainToName = (domain) => {
     if (!domain) return ''
-    const core = domain.split('.')[0] || domain
-    return core.charAt(0).toUpperCase() + core.slice(1) + ' Inc.'
+    const core = domain.replace(/^www\./i, '').split('.')[0] || domain
+    if (!core || core === 'www') return domain
+    const titled = core.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+    return titled.includes('Inc') ? titled : `${titled}`
   }
 
   // Helper to check if value exists and is not empty
@@ -142,7 +144,9 @@ function CompanyInfoPage({ profile, selectedDomain, loading }) {
     business_type: '',
     company_size: '',
     technology_signals: [],
-    extraction_confidence: 0.0
+    extraction_confidence: 0.0,
+    pipeline_status: '',
+    pipeline_message: '',
   }
   
   // Use profile if available, otherwise use default
@@ -158,10 +162,20 @@ function CompanyInfoPage({ profile, selectedDomain, loading }) {
   return (
     <div className="page active">
       {/* Warning message if profile not loaded */}
-      {!profile && (
-        <div className="card" style={{ marginBottom: '20px', background: '#3b2a1f', border: '1px solid #f59e0b' }}>
-          <div style={{ padding: '12px', color: '#f59e0b', fontSize: '13px' }}>
-            ⚠️ Profile data not fully available. Showing default information based on domain.
+      {(displayProfile.pipeline_message || !profile) && (
+        <div
+          className="card"
+          style={{
+            marginBottom: '20px',
+            background: String(displayProfile.pipeline_status || '').includes('failed')
+              ? '#3b1f1f'
+              : '#3b2a1f',
+            border: `1px solid ${String(displayProfile.pipeline_status || '').includes('failed') ? '#ef4444' : '#f59e0b'}`,
+          }}
+        >
+          <div style={{ padding: '12px', color: '#fbbf24', fontSize: '13px' }}>
+            {displayProfile.pipeline_message ||
+              'Profile data not fully available. Wait for processing to finish or upload again.'}
           </div>
         </div>
       )}

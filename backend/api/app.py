@@ -341,11 +341,17 @@ def get_company_chunks(domain):
         paths = paths_for_request(base_dir)
         chunks_path = paths.output_dir / domain / "chunks.json"
         if not chunks_path.exists():
-            return jsonify({"error": "Chunks not found"}), 404
-        
+            return jsonify({
+                "chunks": [],
+                "message": "No scraped data yet. Wait for processing to finish or re-upload your CSV.",
+                "domain": domain,
+            })
+
         with chunks_path.open('r', encoding='utf-8') as f:
             chunks = json.load(f)
-        
+
+        if not isinstance(chunks, list):
+            chunks = []
         return jsonify(chunks)
     except Exception as e:
         logger.error(f"Error loading chunks for {domain}: {e}")

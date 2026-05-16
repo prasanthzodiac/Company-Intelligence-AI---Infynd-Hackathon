@@ -10,6 +10,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 
 from .csv_loader import Company
+from .domain_utils import crawl_hosts
 
 
 logger = logging.getLogger(__name__)
@@ -192,49 +193,49 @@ def download_for_company(company: Company, settings: Dict, data_dir: Path) -> st
     target_dir = data_dir / company.domain
     target_dir.mkdir(parents=True, exist_ok=True)
 
-    # Try HTTPS first, fallback to HTTP
-    url = f"https://{company.domain}/"
-
     used_tool = None
     success = False
 
-    if httrack_path:
-        # httrack usage: httrack <URL> -O <path> "+*.domain.com/*" -r<depth> -n -s0 ...
-        cmd = [
-            httrack_path,
-            url,
-            "-O",
-            str(target_dir),
-            f"+*{company.domain}/*",
-            f"-r{depth}",
-            "-n",  # do not linger on pages
-        ]
-        used_tool = "httrack"
-        logger.info("Using %s to download %s into %s", used_tool, company.domain, target_dir)
-        success = _run_with_retry(cmd, timeout=timeout, cwd=target_dir)
-    elif wget_path:
-        # wget recursive mirror
-        cmd = [
-            wget_path,
-            "--mirror",
-            "--convert-links",
-            "--page-requisites",
-            "--no-parent",
-            f"--directory-prefix={target_dir}",
-            "--no-robots",
-            f"--level={depth}",
-            url,
-        ]
-        used_tool = "wget"
-        logger.info("Using %s to download %s into %s", used_tool, company.domain, target_dir)
-        success = _run_with_retry(cmd, timeout=timeout, cwd=target_dir)
-    else:
-        logger.warning(
-            "Neither httrack nor wget available; falling back to Python HTTP crawler for %s",
-            company.domain,
-        )
-        used_tool = "python_crawler"
-        success = _python_crawl(company.domain, url, target_dir, depth=depth, timeout=timeout)
+    for host in crawl_hosts(company.domain):
+        url = f"https://{host}/"
+        if httrack_path:
+            cmd = [
+                httrack_path,
+                url,
+                "-O",
+                str(target_dir),
+                f"+*{host}/*",
+                f"-r{depth}",
+                "-n",
+            ]
+            used_tool = "httrack"
+            logger.info("Using %s to download %s into %s", used_tool, host, target_dir)
+            success = _run_with_retry(cmd, timeout=timeout, cwd=target_dir)
+        elif wget_path:
+            cmd = [
+                wget_path,
+                "--mirror",
+                "--convert-links",
+                "--page-requisites",
+                "--no-parent",
+                f"--directory-prefix={target_dir}",
+                "--no-robots",
+                f"--level={depth}",
+                url,
+            ]
+            used_tool = "wget"
+            logger.info("Using %s to download %s into %s", used_tool, host, target_dir)
+            success = _run_with_retry(cmd, timeout=timeout, cwd=target_dir)
+        else:
+            used_tool = "python_crawler"
+            logger.info("Python crawler for %s (host %s)", company.domain, host)
+            success = _python_crawl(host, url, target_dir, depth=depth, timeout=timeout)
+
+        if success:
+            html_files = list(target_dir.rglob("*.html")) + list(target_dir.rglob("*.htm"))
+            if html_files:
+                break
+            success = False
 
     if not success:
         logger.error("Download failed for %s using %s", company.domain, used_tool)

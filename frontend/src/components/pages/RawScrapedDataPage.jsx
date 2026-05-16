@@ -22,10 +22,14 @@ function RawScrapedDataPage({ selectedDomain, loading: initialLoading }) {
       setLoading(true)
       setError(null)
       const data = await getCompanyChunks(selectedDomain)
-      setChunks(data || [])
+      const list = Array.isArray(data) ? data : data?.chunks || []
+      setChunks(list)
+      if (list.length === 0 && data?.message) {
+        setError(data.message)
+      }
     } catch (err) {
       console.error('Error loading chunks:', err)
-      setError('Failed to load raw scraped data')
+      setError(err.message || 'Failed to load raw scraped data')
       setChunks([])
     } finally {
       setLoading(false)
@@ -76,7 +80,14 @@ function RawScrapedDataPage({ selectedDomain, loading: initialLoading }) {
       <div className="page active">
         <section className="card">
           <div className="card-title">Raw Scraped Data</div>
-          <div style={{ padding: '20px', color: '#ef4444' }}>{error}</div>
+          <div style={{ padding: '20px', color: '#ef4444' }}>
+            {error}
+            <div style={{ marginTop: '12px' }}>
+              <button type="button" onClick={loadChunks} style={{ padding: '8px 14px', cursor: 'pointer' }}>
+                Retry
+              </button>
+            </div>
+          </div>
         </section>
       </div>
     )

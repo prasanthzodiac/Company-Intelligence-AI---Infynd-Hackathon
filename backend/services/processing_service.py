@@ -102,16 +102,31 @@ def process_company_download_crawl(args: Tuple) -> Tuple[int, str, str]:
         if is_downloaded and is_scraped:
             return (company.company_id, company.domain, "crawled")
         
+        from services.pipeline_profiles import write_profile_from_chunks, write_status_profile
+
         if not is_downloaded:
             download_status = download_for_company(company, settings, data_dir)
             if download_status != "downloaded":
+                write_status_profile(
+                    output_dir,
+                    company.domain,
+                    download_status,
+                    "Could not download the website. Check the domain is public and reachable.",
+                )
                 return (company.company_id, company.domain, download_status)
-        
+
         if not is_scraped:
             crawl_status = crawl_company(company, data_dir, output_dir, settings)
             if crawl_status != "crawled":
+                write_status_profile(
+                    output_dir,
+                    company.domain,
+                    crawl_status,
+                    "Download succeeded but scraping produced no content.",
+                )
                 return (company.company_id, company.domain, crawl_status)
-        
+            write_profile_from_chunks(output_dir, company.domain)
+
         return (company.company_id, company.domain, "crawled")
     except Exception as e:
         logger.exception("Error processing %s: %s", company.domain, e)
@@ -135,7 +150,15 @@ def process_company_llm(args: Tuple) -> Tuple[int, str, str]:
             logger.info("Skipping LLM extraction for %s: already extracted", company.domain)
             return (company.company_id, company.domain, "profile_generated")
         
+        from services.pipeline_profiles import write_status_profile
+
         if not chunks_path.exists():
+            write_status_profile(
+                output_dir,
+                company.domain,
+                "failed_llm",
+                "No scraped content available for extraction.",
+            )
             return (company.company_id, company.domain, "failed_llm")
         
         status = extract_profile_for_company(company, output_dir, settings, base_dir)
