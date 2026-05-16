@@ -23,6 +23,7 @@ from backend.api.session_context import (
     paths_for_request,
     require_session_id,
 )
+from backend.api.domain_paths import resolve_domain_dir
 
 # Determine if we're in development or production mode
 # In production, serve React build from frontend/dist
@@ -147,7 +148,8 @@ def get_company_profile(domain):
     """Get company profile by domain"""
     try:
         paths = paths_for_request(base_dir)
-        profile_path = paths.output_dir / domain / "profile.json"
+        domain_dir = resolve_domain_dir(paths.output_dir, domain)
+        profile_path = domain_dir / "profile.json"
         
         # If profile doesn't exist, try to generate a default one from chunks
         if not profile_path.exists():
@@ -260,10 +262,10 @@ def _generate_default_profile(domain: str, output_dir: Path) -> dict:
         from services.llm_extractor import _default_profile_schema
         import json
         
-        chunks_path = output_dir / domain / "chunks.json"
-        profile = _default_profile_schema(domain)
-        
-        # Try to extract basic info from chunks if available
+        domain_dir = resolve_domain_dir(output_dir, domain)
+        chunks_path = domain_dir / "chunks.json"
+        profile = _default_profile_schema(domain_dir.name)
+
         if chunks_path.exists():
             try:
                 with chunks_path.open('r', encoding='utf-8') as f:
@@ -339,23 +341,35 @@ def get_company_chunks(domain):
     """Get company chunks for proofs"""
     try:
         paths = paths_for_request(base_dir)
-        chunks_path = paths.output_dir / domain / "chunks.json"
+        domain_dir = resolve_domain_dir(paths.output_dir, domain)
+        chunks_path = domain_dir / "chunks.json"
         if not chunks_path.exists():
             return jsonify({
                 "chunks": [],
-                "message": "No scraped data yet. Wait for processing to finish or re-upload your CSV.",
+                "message": (
+                    "No scraped data for this domain yet. "
+                    "Wait until processing shows Complete, then click Retry."
+                ),
                 "domain": domain,
             })
 
-        with chunks_path.open('r', encoding='utf-8') as f:
+        with chunks_path.open("r", encoding="utf-8") as f:
             chunks = json.load(f)
 
         if not isinstance(chunks, list):
             chunks = []
-        return jsonify(chunks)
+        return jsonify({
+            "chunks": chunks,
+            "count": len(chunks),
+            "domain": domain_dir.name,
+        })
     except Exception as e:
-        logger.error(f"Error loading chunks for {domain}: {e}")
-        return jsonify({"error": str(e)}), 500
+        logger.error(f"Error loading chunks for %s: %s", domain, e)
+        return jsonify({
+            "chunks": [],
+            "message": str(e),
+            "domain": domain,
+        }), 200
 
 
 @app.route('/api/chat', methods=['POST'])

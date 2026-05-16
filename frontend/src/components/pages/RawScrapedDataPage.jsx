@@ -24,8 +24,13 @@ function RawScrapedDataPage({ selectedDomain, loading: initialLoading }) {
       const data = await getCompanyChunks(selectedDomain)
       const list = Array.isArray(data) ? data : data?.chunks || []
       setChunks(list)
-      if (list.length === 0 && data?.message) {
-        setError(data.message)
+      if (list.length === 0) {
+        setError(
+          data?.message ||
+            'No scraped content yet. Finish CSV processing on the upload screen, then click Retry.'
+        )
+      } else {
+        setError(null)
       }
     } catch (err) {
       console.error('Error loading chunks:', err)

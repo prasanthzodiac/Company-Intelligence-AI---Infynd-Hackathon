@@ -19,7 +19,7 @@ function CompanyInfoPage({ profile, selectedDomain, loading }) {
     try {
       setChunksLoading(true)
       const data = await getCompanyChunks(selectedDomain)
-      setChunks(data || [])
+      setChunks(data?.chunks || [])
     } catch (error) {
       console.error('Error loading chunks:', error)
       setChunks([])

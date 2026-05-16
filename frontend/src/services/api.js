@@ -125,6 +125,7 @@ export const getCompanies = async () => {
 }
 
 export const getCompanyProfile = async (domain) => {
+  await ensureSession()
   const { response } = await apiFetch(`/companies/${encodeURIComponent(domain)}/profile`)
   if (!response.ok) {
     throw new Error('Failed to load profile')
@@ -132,12 +133,39 @@ export const getCompanyProfile = async (domain) => {
   return response.json()
 }
 
+/**
+ * @returns {{ chunks: array, message?: string|null }}
+ */
 export const getCompanyChunks = async (domain) => {
+  await ensureSession()
   const { response } = await apiFetch(`/companies/${encodeURIComponent(domain)}/chunks`)
-  if (!response.ok) {
-    throw new Error('Failed to load chunks')
+  let body = {}
+  try {
+    body = await response.json()
+  } catch {
+    body = {}
   }
-  return response.json()
+
+  if (!response.ok) {
+    return {
+      chunks: [],
+      message:
+        body.error ||
+        `Could not load scraped data (${response.status}). Check your session and try uploading again.`,
+    }
+  }
+
+  if (Array.isArray(body)) {
+    return {
+      chunks: body,
+      message: body.length ? null : 'No scraped content for this domain yet.',
+    }
+  }
+
+  return {
+    chunks: Array.isArray(body.chunks) ? body.chunks : [],
+    message: body.message || null,
+  }
 }
 
 export const sendChatMessage = async (domain, question) => {
