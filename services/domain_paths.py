@@ -3,9 +3,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from .domain_utils import normalize_domain
+
 
 def domain_folder_variants(domain: str) -> list[str]:
-    domain = (domain or "").strip().lower()
+    domain = normalize_domain(domain)
     variants = [domain]
     if domain.startswith("www."):
         bare = domain[4:]

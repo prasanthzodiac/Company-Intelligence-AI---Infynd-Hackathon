@@ -5,7 +5,6 @@ import ChatPanel from './components/ChatPanel'
 import UploadScreen from './components/UploadScreen'
 import CompanySelector from './components/CompanySelector'
 import {
-  createSession,
   endSessionBeacon,
   ensureSession,
   getCompanies,
@@ -29,7 +28,7 @@ function App() {
     let cancelled = false
     ;(async () => {
       try {
-        await createSession()
+        await ensureSession()
         if (!cancelled) {
           setSessionReady(true)
           setLoading(false)

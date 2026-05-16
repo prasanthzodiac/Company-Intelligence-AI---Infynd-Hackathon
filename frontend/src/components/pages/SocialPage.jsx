@@ -23,7 +23,6 @@ function SocialPage({ profile, loading }) {
       facebook: '',
       instagram: '',
       github: '',
-      x: '',
       blog: '',
       articles: ''
     }
