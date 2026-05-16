@@ -166,6 +166,10 @@ function UploadScreen({ onProcessingComplete }) {
           if (statusData.stage === 'complete' || statusData.stage === 'error') {
             clearInterval(pollInterval)
             setIsProcessing(false)
+            if (statusData.stage === 'error') {
+              alert(`Processing failed: ${statusData.message || 'Unknown error'}`)
+              return
+            }
             if (statusData.stage === 'complete' && onProcessingComplete) {
               // If all companies were already complete, redirect immediately
               const delay = statusData.all_complete ? 500 : 1000

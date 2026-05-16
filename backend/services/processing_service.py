@@ -3,19 +3,20 @@ Processing service for handling CSV uploads and running the pipeline
 """
 import json
 import logging
-import multiprocessing
+import os
 import threading
 import uuid
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import Dict, List, Tuple
-import yaml
+from typing import Callable, Dict, List, Tuple
 import sys
 
 # Add parent directories to path
 base_dir = Path(__file__).resolve().parent.parent.parent
 sys.path.insert(0, str(base_dir))
 
-from services.csv_loader import Company, load_companies_from_csv, write_manifest
+from services.csv_loader import Company, load_companies_from_csv
+from services.company_manifest import save_companies_manifest
 from services.downloader import download_for_company
 from services.crawler import crawl_company
 from services.llm_extractor import extract_profile_for_company
@@ -144,6 +145,49 @@ def process_company_llm(args: Tuple) -> Tuple[int, str, str]:
         return (company.company_id, company.domain, "failed_llm")
 
 
+def _use_thread_pool() -> bool:
+    """Thread pool is safer on Render/Railway than multiprocessing."""
+    return os.environ.get("PIPELINE_USE_THREADS", "true").lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+
+
+def _run_parallel(
+    worker_fn: Callable,
+    args_list: List[Tuple],
+    max_workers: int,
+    on_progress: Callable[[int, int, Tuple], None] | None = None,
+) -> List[Tuple]:
+    if not args_list:
+        return []
+    total = len(args_list)
+    results: List[Tuple] = []
+    workers = max(1, min(max_workers, total))
+
+    if _use_thread_pool():
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            futures = [executor.submit(worker_fn, args) for args in args_list]
+            for i, future in enumerate(as_completed(futures), 1):
+                result = future.result()
+                results.append(result)
+                if on_progress:
+                    on_progress(i, total, result)
+        return results
+
+    import multiprocessing
+
+    if sys.platform == "win32":
+        multiprocessing.set_start_method("spawn", force=True)
+    with multiprocessing.Pool(processes=workers) as pool:
+        for i, result in enumerate(pool.imap_unordered(worker_fn, args_list), 1):
+            results.append(result)
+            if on_progress:
+                on_progress(i, total, result)
+    return results
+
+
 def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
     """Run the full pipeline in a background thread"""
     try:
@@ -174,6 +218,9 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
         
         companies = load_companies_from_csv(csv_path, data_dir)
         total = len(companies)
+
+        # Write manifest immediately so the UI can list companies while processing
+        save_companies_manifest(base_dir, companies)
         
         if total == 0:
             job_statuses[job_id] = {
@@ -208,9 +255,7 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
                 "all_complete": True
             }
             # Still update manifest
-            manifest_csv = base_dir / "data" / "companies.csv"
-            manifest_json = base_dir / "data" / "companies.json"
-            write_manifest(companies, manifest_csv, manifest_json)
+            save_companies_manifest(base_dir, companies)
             return
         
         job_statuses[job_id] = {
@@ -222,16 +267,13 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
         }
         
         # Step 1: Download and Crawl (parallel)
-        if sys.platform == "win32":
-            multiprocessing.set_start_method("spawn", force=True)
-        
         download_crawl_args = [(c, settings, data_dir, output_dir) for c in companies]
         # Increase workers for faster processing - use more cores
         parallel_config = settings.get("parallel", {})
         workers_setting = parallel_config.get("workers", 0)
         if workers_setting == 0:
             # Auto-detect: use CPU count but cap at 8
-            default_workers = min(8, multiprocessing.cpu_count())
+            default_workers = min(8, os.cpu_count() or 4)
         else:
             default_workers = workers_setting
         num_workers = max(1, min(default_workers, len(companies)))
@@ -244,24 +286,23 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
             "processed_companies": 0
         }
         
-        # Process download and crawl in parallel with progress updates
-        if len(companies) > 0:
-            results = []
-            with multiprocessing.Pool(processes=num_workers) as pool:
-                # Use imap_unordered for faster results
-                for i, result in enumerate(pool.imap_unordered(process_company_download_crawl, download_crawl_args), 1):
-                    results.append(result)
-                    # Update progress
-                    job_statuses[job_id] = {
-                        "stage": "downloading",
-                        "message": f"Downloading and scraping websites... ({i}/{total})",
-                        "progress": 15 + int((i / total) * 35),
-                        "total_companies": total,
-                        "processed_companies": i,
-                        "current_company": result[1] if len(result) > 1 else ""
-                    }
-        else:
-            results = []
+        def _download_progress(i, _total, result):
+            job_statuses[job_id] = {
+                "stage": "downloading",
+                "message": f"Downloading and scraping websites... ({i}/{total})",
+                "progress": 15 + int((i / total) * 35),
+                "total_companies": total,
+                "processed_companies": i,
+                "current_company": result[1] if len(result) > 1 else "",
+            }
+
+        results = _run_parallel(
+            process_company_download_crawl,
+            download_crawl_args,
+            num_workers,
+            on_progress=_download_progress,
+        )
+        save_companies_manifest(base_dir, companies)
         
         downloaded_count = sum(1 for _, _, status in results if status == "downloaded" or status == "crawled")
         job_statuses[job_id] = {
@@ -291,28 +332,29 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
             "processed_companies": downloaded_count
         }
         
-        if len(companies) > 0:
-            llm_results = []
-            with multiprocessing.Pool(processes=llm_workers) as pool:
-                # Use imap_unordered for faster results
-                for i, result in enumerate(pool.imap_unordered(process_company_llm, llm_args), 1):
-                    llm_results.append(result)
-                    # Update progress
-                    job_statuses[job_id] = {
-                        "stage": "llm",
-                        "message": f"Extracting profiles with LLM... ({i}/{total})",
-                        "progress": 60 + int((i / total) * 35),
-                        "total_companies": total,
-                        "processed_companies": downloaded_count + i,
-                        "current_company": result[1] if len(result) > 1 else ""
-                    }
-        else:
-            llm_results = []
-        
-        # Update manifest
-        manifest_csv = base_dir / "data" / "companies.csv"
-        manifest_json = base_dir / "data" / "companies.json"
-        write_manifest(companies, manifest_csv, manifest_json)
+        def _llm_progress(i, _total, result):
+            job_statuses[job_id] = {
+                "stage": "llm",
+                "message": f"Extracting profiles with LLM... ({i}/{total})",
+                "progress": 60 + int((i / total) * 35),
+                "total_companies": total,
+                "processed_companies": downloaded_count + i,
+                "current_company": result[1] if len(result) > 1 else "",
+            }
+
+        llm_results = _run_parallel(
+            process_company_llm,
+            llm_args,
+            llm_workers,
+            on_progress=_llm_progress,
+        )
+
+        status_by_domain = {domain: status for _, domain, status in llm_results}
+        for company in companies:
+            if company.domain in status_by_domain:
+                company.status = status_by_domain[company.domain]
+
+        save_companies_manifest(base_dir, companies)
         
         success_count = sum(1 for _, _, status in llm_results if status == "profile_generated")
         

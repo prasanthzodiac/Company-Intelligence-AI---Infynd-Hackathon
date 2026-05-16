@@ -94,18 +94,31 @@ def health():
 
 @app.route('/api/companies', methods=['GET'])
 def get_companies():
-    """Get list of all companies"""
+    """List companies from manifest and/or output/ (never 404 when output exists)."""
     try:
-        manifest_path = base_dir / "data" / "companies.json"
-        if not manifest_path.exists():
-            return jsonify({"error": "Manifest not found"}), 404
-        
-        with manifest_path.open('r', encoding='utf-8') as f:
-            companies = json.load(f)
-        
+        from services.company_manifest import load_companies_manifest
+
+        from services.company_manifest import list_companies_from_output, sync_manifest_from_output
+
+        companies = load_companies_manifest(base_dir)
+        if not companies and list_companies_from_output(base_dir):
+            companies = sync_manifest_from_output(base_dir)
         return jsonify(companies)
     except Exception as e:
         logger.error(f"Error loading companies: {e}")
+        return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/companies/sync', methods=['POST'])
+def sync_companies():
+    """Rebuild data/companies.json from output/ (use after deploy or manual runs)."""
+    try:
+        from services.company_manifest import sync_manifest_from_output
+
+        companies = sync_manifest_from_output(base_dir)
+        return jsonify({"count": len(companies), "companies": companies})
+    except Exception as e:
+        logger.error(f"Error syncing companies: {e}")
         return jsonify({"error": str(e)}), 500
 
 

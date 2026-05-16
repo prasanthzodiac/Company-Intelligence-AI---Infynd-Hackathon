@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Sidebar from './components/Sidebar'
 import MainContent from './components/MainContent'
 import ChatPanel from './components/ChatPanel'
 import UploadScreen from './components/UploadScreen'
 import CompanySelector from './components/CompanySelector'
-import { getCompanies, getCompanyProfile } from './services/api'
+import { getCompanies, getCompanyProfile, isProductionSameOriginApi } from './services/api'
 import './App.css'
 
 function App() {
@@ -15,14 +15,56 @@ function App() {
   const [activePage, setActivePage] = useState('company-info')
   const [loading, setLoading] = useState(true)
   const [showCompanySelector, setShowCompanySelector] = useState(false)
+  const [loadError, setLoadError] = useState(null)
+
+  const loadCompanies = useCallback(async (retries = 2) => {
+    setLoadError(null)
+    let lastError = null
+    for (let attempt = 0; attempt <= retries; attempt++) {
+      try {
+        const data = await getCompanies()
+        const list = Array.isArray(data) ? data : []
+        setCompanies(list)
+        if (list.length > 0) {
+          setShowCompanySelector(true)
+          if (typeof window !== 'undefined') {
+            window.history.pushState({ view: 'selector' }, 'Companies', '#companies')
+          }
+        }
+        return list
+      } catch (error) {
+        lastError = error
+        console.error('Error loading companies:', error)
+        if (attempt < retries) {
+          await new Promise((r) => setTimeout(r, 1500))
+        }
+      }
+    }
+    setLoadError(lastError?.message || 'Failed to load companies')
+    return []
+  }, [])
+
+  useEffect(() => {
+    if (isProductionSameOriginApi()) {
+      setLoading(false)
+      return
+    }
+    ;(async () => {
+      const data = await loadCompanies(1)
+      if (data.length > 0) {
+        setShowUpload(false)
+      }
+      setLoading(false)
+    })()
+  }, [loadCompanies])
 
   useEffect(() => {
     if (!showUpload) {
-      loadCompanies()
+      setLoading(true)
+      loadCompanies().finally(() => setLoading(false))
     }
-  }, [showUpload])
+  }, [showUpload, loadCompanies])
 
-  // Sync simple views (upload → selector → main) with browser history
   useEffect(() => {
     if (typeof window === 'undefined') return
 
@@ -53,7 +95,6 @@ function App() {
 
     window.addEventListener('popstate', handlePopState)
 
-    // Initial state
     if (!window.history.state) {
       window.history.replaceState({ view: 'upload' }, 'Upload', '#upload')
     }
@@ -64,31 +105,10 @@ function App() {
   }, [])
 
   useEffect(() => {
-    if (selectedDomain && !showUpload) {
+    if (selectedDomain && !showUpload && !showCompanySelector) {
       loadProfile(selectedDomain)
     }
-  }, [selectedDomain, showUpload])
-
-  const loadCompanies = async () => {
-    try {
-      const data = await getCompanies()
-      setCompanies(data)
-      if (data.length > 0) {
-        setShowCompanySelector(true)
-        if (typeof window !== 'undefined') {
-          window.history.pushState({ view: 'selector' }, 'Companies', '#companies')
-        }
-      }
-    } catch (error) {
-      console.error('Error loading companies:', error)
-      alert(
-        `Could not load companies from API: ${error.message}\n\n` +
-          'Confirm VITE_API_BASE_URL on Vercel points to your Render URL + /api, then redeploy.'
-      )
-    } finally {
-      setLoading(false)
-    }
-  }
+  }, [selectedDomain, showUpload, showCompanySelector])
 
   const loadProfile = async (domain) => {
     try {
@@ -98,6 +118,10 @@ function App() {
     } catch (error) {
       console.error('Error loading profile:', error)
       setProfile(null)
+      alert(
+        `Could not load profile for ${domain}: ${error.message}\n\n` +
+          'Try another company or re-run extraction from the upload screen.'
+      )
     } finally {
       setLoading(false)
     }
@@ -106,25 +130,60 @@ function App() {
   const handleDomainChange = (domain) => {
     setSelectedDomain(domain)
     setShowCompanySelector(false)
+    setProfile(null)
     if (typeof window !== 'undefined') {
-      window.history.pushState({ view: 'company', domain }, `Company: ${domain}`, `#company-${domain}`)
+      window.history.pushState(
+        { view: 'company', domain },
+        `Company: ${domain}`,
+        `#company-${domain}`
+      )
     }
   }
 
-  const handleProcessingComplete = () => {
+  const handleProcessingComplete = async () => {
     setShowUpload(false)
-    loadCompanies()
+    setLoading(true)
+    const data = await loadCompanies(3)
+    setLoading(false)
+
+    if (data.length === 0) {
+      alert(
+        'Processing finished but no companies were found.\n\n' +
+          'Check Render logs for pipeline errors, confirm LLM env vars, and ensure your CSV has a "domain" column.'
+      )
+      setShowUpload(true)
+      return
+    }
+
     if (typeof window !== 'undefined') {
       window.history.pushState({ view: 'selector' }, 'Companies', '#companies')
     }
+  }
+
+  if (loading && !showUpload && companies.length === 0 && !showCompanySelector) {
+    return (
+      <div className="app-loading-screen">
+        <p>Loading company data…</p>
+      </div>
+    )
   }
 
   if (showUpload) {
     return <UploadScreen onProcessingComplete={handleProcessingComplete} />
   }
 
-  if (showCompanySelector) {
-    return <CompanySelector companies={companies} onSelect={handleDomainChange} />
+  if (showCompanySelector || !selectedDomain) {
+    return (
+      <CompanySelector
+        companies={companies}
+        loadError={loadError}
+        onSelect={handleDomainChange}
+        onBackToUpload={() => {
+          setShowUpload(true)
+          setShowCompanySelector(false)
+        }}
+      />
+    )
   }
 
   return (

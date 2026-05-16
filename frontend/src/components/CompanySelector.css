@@ -185,6 +185,28 @@
   }
 }
 
+.company-selector-center {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.company-selector-back-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 92, 77, 0.5);
+  background: rgba(255, 92, 77, 0.15);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.company-selector-back-btn:hover {
+  background: rgba(255, 92, 77, 0.3);
+}
+
 @media (max-width: 768px) {
   .company-selector-header {
     padding-inline: 20px;

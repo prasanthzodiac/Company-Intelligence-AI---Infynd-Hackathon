@@ -1,15 +1,23 @@
 import React from 'react'
 import './CompanySelector.css'
 
-function CompanySelector({ companies, onSelect }) {
+function CompanySelector({ companies, loadError, onSelect, onBackToUpload }) {
   if (!companies || companies.length === 0) {
     return (
       <div className="company-selector-shell">
         <div className="company-selector-center">
-          <div className="company-selector-title">Loading companies…</div>
-          <div className="company-selector-subtitle">
-            Once your ingestion finishes, you&apos;ll see companies here to explore.
+          <div className="company-selector-title">
+            {loadError ? 'Could not load companies' : 'No companies yet'}
           </div>
+          <div className="company-selector-subtitle">
+            {loadError ||
+              'Upload a CSV with a domain column, wait for processing to finish, then return here.'}
+          </div>
+          {onBackToUpload && (
+            <button type="button" className="company-selector-back-btn" onClick={onBackToUpload}>
+              Back to upload
+            </button>
+          )}
         </div>
       </div>
     )
@@ -78,5 +86,3 @@ function CompanySelector({ companies, onSelect }) {
 }
 
 export default CompanySelector
-
-
