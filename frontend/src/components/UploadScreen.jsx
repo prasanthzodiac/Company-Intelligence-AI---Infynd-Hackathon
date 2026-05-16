@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { API_BASE, apiFetch, isProductionSameOriginApi } from '../services/api.js'
+import { API_BASE, apiFetch, ensureSession, isProductionSameOriginApi } from '../services/api.js'
 import './UploadScreen.css'
 
 // SVG Icon Components
@@ -73,7 +73,7 @@ const ArrowRightIcon = () => (
   </svg>
 )
 
-function UploadScreen({ onProcessingComplete }) {
+function UploadScreen({ onProcessingComplete, onStartOver }) {
   const [csvFile, setCsvFile] = useState(null)
   const [csvFileName, setCsvFileName] = useState('')
   const [isProcessing, setIsProcessing] = useState(false)
@@ -107,6 +107,13 @@ function UploadScreen({ onProcessingComplete }) {
       alert(
         'This Vercel site only serves the UI. Deploy the Flask API elsewhere, then in Vercel → Project → Settings → Environment Variables set VITE_API_BASE_URL to your API root (for example https://your-app.onrender.com/api), save, and trigger a new deployment.'
       )
+      return
+    }
+
+    try {
+      await ensureSession()
+    } catch (e) {
+      alert('Could not start session: ' + e.message)
       return
     }
 

@@ -27,3 +27,6 @@ Thumbs.db
 
 # Vercel (local)
 .vercel
+
+# Ephemeral user sessions (never commit)
+sessions/

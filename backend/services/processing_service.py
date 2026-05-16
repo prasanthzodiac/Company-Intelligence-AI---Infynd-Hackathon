@@ -188,26 +188,30 @@ def _run_parallel(
     return results
 
 
-def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
-    """Run the full pipeline in a background thread"""
+def run_pipeline(
+    csv_path: Path, job_id: str, session_id: str, repo_base: Path
+) -> None:
+    """Run the full pipeline in a background thread (session-scoped storage only)."""
     try:
-        # Load settings
-        config_path = base_dir / "config" / "settings.yaml"
+        from services.session_store import get_session_paths, touch_session
+
+        config_path = repo_base / "config" / "settings.yaml"
         if not config_path.exists():
             job_statuses[job_id] = {
                 "stage": "error",
                 "message": "Config file not found",
-                "progress": 0
+                "progress": 0,
             }
             return
-        
+
         from services.settings_loader import load_settings, get_llm_config
         from services.llm_client import recommended_llm_workers
 
-        settings = load_settings(base_dir)
-        
-        data_dir = (base_dir / settings["paths"]["data_dir"]).resolve()
-        output_dir = (base_dir / settings["paths"]["output_dir"]).resolve()
+        settings = load_settings(repo_base)
+        paths = get_session_paths(repo_base, session_id)
+        touch_session(repo_base, session_id)
+        data_dir = paths.data_dir.resolve()
+        output_dir = paths.output_dir.resolve()
         
         # Load companies from CSV
         job_statuses[job_id] = {
@@ -220,8 +224,8 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
         total = len(companies)
 
         # Write manifest immediately so the UI can list companies while processing
-        save_companies_manifest(base_dir, companies)
-        
+        save_companies_manifest(paths, companies)
+
         if total == 0:
             job_statuses[job_id] = {
                 "stage": "error",
@@ -255,9 +259,9 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
                 "all_complete": True
             }
             # Still update manifest
-            save_companies_manifest(base_dir, companies)
+            save_companies_manifest(paths, companies)
             return
-        
+
         job_statuses[job_id] = {
             "stage": "downloading",
             "message": f"Processing {total} companies ({fully_processed} already complete)...",
@@ -302,8 +306,8 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
             num_workers,
             on_progress=_download_progress,
         )
-        save_companies_manifest(base_dir, companies)
-        
+        save_companies_manifest(paths, companies)
+
         downloaded_count = sum(1 for _, _, status in results if status == "downloaded" or status == "crawled")
         job_statuses[job_id] = {
             "stage": "scraping",
@@ -314,7 +318,7 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
         }
         
         # Step 2: LLM extraction (parallel, rate-limited for remote/cloud LLMs)
-        llm_args = [(c, output_dir, settings, base_dir) for c in companies]
+        llm_args = [(c, output_dir, settings, repo_base) for c in companies]
         llm_config = get_llm_config(settings)
         llm_workers = recommended_llm_workers(llm_config, len(companies), num_workers)
         logger.info(
@@ -354,8 +358,8 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
             if company.domain in status_by_domain:
                 company.status = status_by_domain[company.domain]
 
-        save_companies_manifest(base_dir, companies)
-        
+        save_companies_manifest(paths, companies)
+
         success_count = sum(1 for _, _, status in llm_results if status == "profile_generated")
         
         job_statuses[job_id] = {
@@ -375,29 +379,33 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
         }
 
 
-def start_processing(csv_path: Path, base_dir: Path) -> str:
+def start_processing(csv_path: Path, session_id: str, repo_base: Path) -> str:
     """Start processing pipeline and return job ID"""
     job_id = str(uuid.uuid4())
-    
+
     job_statuses[job_id] = {
         "stage": "uploading",
         "message": "Starting pipeline...",
-        "progress": 0
+        "progress": 0,
+        "session_id": session_id,
     }
-    
-    # Run in background thread
-    thread = threading.Thread(target=run_pipeline, args=(csv_path, job_id, base_dir))
+
+    thread = threading.Thread(
+        target=run_pipeline,
+        args=(csv_path, job_id, session_id, repo_base),
+    )
     thread.daemon = True
     thread.start()
-    
+
     return job_id
 
 
-def get_job_status(job_id: str) -> Dict:
-    """Get current status of a job"""
-    return job_statuses.get(job_id, {
-        "stage": "error",
-        "message": "Job not found",
-        "progress": 0
-    })
+def get_job_status(job_id: str, session_id: str | None = None) -> Dict:
+    """Get current status of a job (optionally verify session ownership)."""
+    status = job_statuses.get(job_id)
+    if not status:
+        return {"stage": "error", "message": "Job not found", "progress": 0}
+    if session_id and status.get("session_id") and status["session_id"] != session_id:
+        return {"stage": "error", "message": "Job not found", "progress": 0}
+    return status
 

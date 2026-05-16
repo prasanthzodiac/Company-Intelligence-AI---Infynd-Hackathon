@@ -18,6 +18,11 @@ sys.path.insert(0, str(base_dir))
 from backend.services.chatbot_service import ChatbotService
 from backend.services.proofs_service import ProofsService
 from backend.services.processing_service import start_processing, get_job_status
+from backend.api.session_context import (
+    optional_session_id,
+    paths_for_request,
+    require_session_id,
+)
 
 # Determine if we're in development or production mode
 # In production, serve React build from frontend/dist
@@ -34,15 +39,18 @@ else:
 
 # Allow browser calls from Vercel and local dev (set CORS_ORIGINS for extra domains)
 _cors_origins = os.environ.get("CORS_ORIGINS", "*")
+_cors_kw = {
+    "resources": {r"/api/*": {"origins": "*"}},
+    "supports_credentials": False,
+    "allow_headers": ["Content-Type", "X-Session-Id"],
+    "expose_headers": ["X-Session-Id"],
+}
 if _cors_origins.strip() == "*":
-    CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=False)
+    CORS(app, **_cors_kw)
 else:
     _origin_list = [o.strip() for o in _cors_origins.split(",") if o.strip()]
-    CORS(
-        app,
-        resources={r"/api/*": {"origins": _origin_list}},
-        supports_credentials=False,
-    )
+    CORS(app, resources={r"/api/*": {"origins": _origin_list}}, supports_credentials=False,
+         allow_headers=["Content-Type", "X-Session-Id"], expose_headers=["X-Session-Id"])
 
 # Increase file upload size limit (default is 16MB)
 app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB
@@ -59,9 +67,16 @@ def handle_file_too_large(e):
     logger.error(f"File upload too large: {e}")
     return jsonify({"error": "File is too large. Maximum size is 100MB."}), 413
 
-# Initialize services
-chatbot_service = ChatbotService(base_dir)
-proofs_service = ProofsService(base_dir)
+
+@app.errorhandler(401)
+def handle_unauthorized(e):
+    return jsonify({"error": getattr(e, "description", "Unauthorized")}), 401
+
+@app.before_request
+def _cleanup_stale_sessions():
+    if request.path.startswith("/api/"):
+        from services.session_store import cleanup_stale_sessions
+        cleanup_stale_sessions(base_dir)
 
 
 @app.route('/')
@@ -92,33 +107,38 @@ def health():
     })
 
 
+@app.route('/api/session', methods=['POST'])
+def create_browser_session():
+    """Start a new ephemeral session (no old company data)."""
+    from services.session_store import create_session
+
+    paths = create_session(base_dir)
+    return jsonify({"session_id": paths.session_id})
+
+
+@app.route('/api/session', methods=['DELETE'])
+def delete_browser_session():
+    """Delete all data for this browser session (called on tab close)."""
+    from services.session_store import delete_session, validate_session_id
+
+    sid = (request.headers.get("X-Session-Id") or request.args.get("session_id") or "").strip()
+    if not sid or not validate_session_id(sid):
+        return jsonify({"error": "Invalid session"}), 400
+    delete_session(base_dir, sid)
+    return jsonify({"ok": True, "session_id": sid})
+
+
 @app.route('/api/companies', methods=['GET'])
 def get_companies():
-    """List companies from manifest and/or output/ (never 404 when output exists)."""
+    """List companies for the current session only."""
     try:
         from services.company_manifest import load_companies_manifest
 
-        from services.company_manifest import list_companies_from_output, sync_manifest_from_output
-
-        companies = load_companies_manifest(base_dir)
-        if not companies and list_companies_from_output(base_dir):
-            companies = sync_manifest_from_output(base_dir)
+        paths = paths_for_request(base_dir)
+        companies = load_companies_manifest(paths)
         return jsonify(companies)
     except Exception as e:
         logger.error(f"Error loading companies: {e}")
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route('/api/companies/sync', methods=['POST'])
-def sync_companies():
-    """Rebuild data/companies.json from output/ (use after deploy or manual runs)."""
-    try:
-        from services.company_manifest import sync_manifest_from_output
-
-        companies = sync_manifest_from_output(base_dir)
-        return jsonify({"count": len(companies), "companies": companies})
-    except Exception as e:
-        logger.error(f"Error syncing companies: {e}")
         return jsonify({"error": str(e)}), 500
 
 
@@ -126,12 +146,13 @@ def sync_companies():
 def get_company_profile(domain):
     """Get company profile by domain"""
     try:
-        profile_path = base_dir / "output" / domain / "profile.json"
+        paths = paths_for_request(base_dir)
+        profile_path = paths.output_dir / domain / "profile.json"
         
         # If profile doesn't exist, try to generate a default one from chunks
         if not profile_path.exists():
             logger.warning(f"Profile not found for {domain}, generating default from chunks")
-            default_profile = _generate_default_profile(domain, base_dir)
+            default_profile = _generate_default_profile(domain, paths.output_dir)
             if default_profile:
                 return jsonify(default_profile)
             return jsonify({"error": "Profile not found and cannot generate default"}), 404
@@ -142,7 +163,7 @@ def get_company_profile(domain):
             if not content:
                 # Empty file, generate default
                 logger.warning(f"Profile is empty for {domain}, generating default from chunks")
-                default_profile = _generate_default_profile(domain, base_dir)
+                default_profile = _generate_default_profile(domain, paths.output_dir)
                 if default_profile:
                     return jsonify(default_profile)
                 return jsonify({"error": "Profile is empty and cannot generate default"}), 404
@@ -152,7 +173,7 @@ def get_company_profile(domain):
             except json.JSONDecodeError as e:
                 # Invalid JSON, try to generate default
                 logger.error(f"Invalid JSON in profile for {domain}: {e}, generating default")
-                default_profile = _generate_default_profile(domain, base_dir)
+                default_profile = _generate_default_profile(domain, paths.output_dir)
                 if default_profile:
                     return jsonify(default_profile)
                 return jsonify({"error": f"Invalid JSON in profile: {str(e)}"}), 500
@@ -160,7 +181,7 @@ def get_company_profile(domain):
             # Validate profile structure
             if not isinstance(profile, dict) or "domain" not in profile:
                 logger.warning(f"Invalid profile structure for {domain}, generating default")
-                default_profile = _generate_default_profile(domain, base_dir)
+                default_profile = _generate_default_profile(domain, paths.output_dir)
                 if default_profile:
                     return jsonify(default_profile)
                 return jsonify({"error": "Invalid profile structure"}), 500
@@ -173,10 +194,10 @@ def get_company_profile(domain):
         logger.error(f"Error loading profile for {domain}: {e}")
         # Try to return default profile as fallback
         try:
-            default_profile = _generate_default_profile(domain, base_dir)
+            default_profile = _generate_default_profile(domain, paths.output_dir)
             if default_profile:
                 return jsonify(default_profile)
-        except:
+        except Exception:
             pass
         return jsonify({"error": str(e)}), 500
 
@@ -230,7 +251,7 @@ def _normalize_profile(profile: dict) -> dict:
     return profile
 
 
-def _generate_default_profile(domain: str, base_dir: Path) -> dict:
+def _generate_default_profile(domain: str, output_dir: Path) -> dict:
     """
     Generate a default profile from available chunks when profile.json is missing or invalid.
     Returns a minimal profile with basic information extracted from chunks.
@@ -239,7 +260,7 @@ def _generate_default_profile(domain: str, base_dir: Path) -> dict:
         from services.llm_extractor import _default_profile_schema
         import json
         
-        chunks_path = base_dir / "output" / domain / "chunks.json"
+        chunks_path = output_dir / domain / "chunks.json"
         profile = _default_profile_schema(domain)
         
         # Try to extract basic info from chunks if available
@@ -317,7 +338,8 @@ def _generate_default_profile(domain: str, base_dir: Path) -> dict:
 def get_company_chunks(domain):
     """Get company chunks for proofs"""
     try:
-        chunks_path = base_dir / "output" / domain / "chunks.json"
+        paths = paths_for_request(base_dir)
+        chunks_path = paths.output_dir / domain / "chunks.json"
         if not chunks_path.exists():
             return jsonify({"error": "Chunks not found"}), 404
         
@@ -344,11 +366,11 @@ def chat():
         if not domain:
             return jsonify({"error": "Domain is required"}), 400
         
-        # Get response from chatbot service
-        response = chatbot_service.get_response(domain, question)
-        
-        # Get proofs for the response
-        proofs = proofs_service.get_proofs(domain, question, response)
+        paths = paths_for_request(base_dir)
+        chatbot = ChatbotService(base_dir, paths.output_dir)
+        proofs_svc = ProofsService(base_dir, paths.output_dir)
+        response = chatbot.get_response(domain, question)
+        proofs = proofs_svc.get_proofs(domain, question, response)
         
         return jsonify({
             "response": response,
@@ -364,23 +386,13 @@ def get_proofs(domain):
     """Get proofs for a specific domain"""
     try:
         query = request.args.get('query', '')
-        proofs = proofs_service.get_proofs(domain, query, "")
+        paths = paths_for_request(base_dir)
+        proofs_svc = ProofsService(base_dir, paths.output_dir)
+        proofs = proofs_svc.get_proofs(domain, query, "")
         return jsonify(proofs)
     except Exception as e:
         logger.error(f"Error getting proofs for {domain}: {e}")
         return jsonify({"error": str(e)}), 500
-
-
-@app.route('/output/<path:path>')
-def serve_output(path):
-    """Serve output files"""
-    return send_from_directory(str(base_dir / "output"), path)
-
-
-@app.route('/data/<path:path>')
-def serve_data(path):
-    """Serve data files"""
-    return send_from_directory(str(base_dir / "data"), path)
 
 
 @app.route('/api/upload-csv', methods=['POST'])
@@ -404,12 +416,12 @@ def upload_csv():
             logger.warning(f"Invalid file type: {file.filename}")
             return jsonify({"error": "File must be a CSV"}), 400
         
-        # Save uploaded file
-        uploads_dir = base_dir / "data" / "uploads"
-        uploads_dir.mkdir(parents=True, exist_ok=True)
-        logger.info(f"Uploads directory: {uploads_dir}")
-        
-        csv_path = uploads_dir / f"upload_{uuid.uuid4().hex[:8]}.csv"
+        session_id = require_session_id(base_dir)
+        from services.session_store import get_session_paths
+
+        paths = get_session_paths(base_dir, session_id)
+        paths.root.mkdir(parents=True, exist_ok=True)
+        csv_path = paths.root / f"upload_{uuid.uuid4().hex[:8]}.csv"
         logger.info(f"Saving file to: {csv_path}")
         file.save(str(csv_path))
         
@@ -419,7 +431,7 @@ def upload_csv():
         logger.info(f"File saved successfully. Starting processing...")
         
         # Start processing
-        job_id = start_processing(csv_path, base_dir)
+        job_id = start_processing(csv_path, session_id, base_dir)
         logger.info(f"Processing started with job_id: {job_id}")
         
         return jsonify({
@@ -435,7 +447,8 @@ def upload_csv():
 def processing_status(job_id):
     """Get processing status for a job"""
     try:
-        status = get_job_status(job_id)
+        session_id = optional_session_id(base_dir)
+        status = get_job_status(job_id, session_id)
         return jsonify(status)
     except Exception as e:
         logger.error(f"Error getting status: {e}")

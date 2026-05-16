@@ -1,5 +1,5 @@
 """
-Build and read the company manifest (data/companies.json) from CSV pipeline and output/.
+Company manifest for a single ephemeral session (no global output/ scan).
 """
 from __future__ import annotations
 
@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 from .csv_loader import Company, write_manifest
+from .session_store import SessionPaths
 
 logger = logging.getLogger(__name__)
 
@@ -24,14 +25,12 @@ def _status_for_output_dir(domain_dir: Path) -> str:
     return "pending"
 
 
-def list_companies_from_output(base_dir: Path) -> List[Dict[str, Any]]:
-    """Discover companies from output/<domain>/ profiles or chunks."""
-    output_dir = base_dir / "output"
+def list_companies_from_output(paths: SessionPaths) -> List[Dict[str, Any]]:
+    output_dir = paths.output_dir
     if not output_dir.is_dir():
         return []
 
     rows: List[Dict[str, Any]] = []
-    data_dir = base_dir / "data"
     for idx, domain_dir in enumerate(sorted(output_dir.iterdir()), start=1):
         if not domain_dir.is_dir():
             continue
@@ -44,31 +43,26 @@ def list_companies_from_output(base_dir: Path) -> List[Dict[str, Any]]:
             {
                 "company_id": idx,
                 "domain": domain,
-                "folder_path": str(data_dir / domain),
+                "folder_path": str(paths.data_dir / domain),
                 "status": _status_for_output_dir(domain_dir),
             }
         )
     return rows
 
 
-def load_companies_manifest(base_dir: Path) -> List[Dict[str, Any]]:
-    """
-    Return all companies: manifest JSON merged with any domains found under output/.
-    """
-    manifest_path = base_dir / "data" / "companies.json"
+def load_companies_manifest(paths: SessionPaths) -> List[Dict[str, Any]]:
     companies: List[Dict[str, Any]] = []
-
-    if manifest_path.exists():
+    if paths.manifest_json.exists():
         try:
-            with manifest_path.open("r", encoding="utf-8") as f:
+            with paths.manifest_json.open("r", encoding="utf-8") as f:
                 loaded = json.load(f)
             if isinstance(loaded, list):
                 companies = loaded
         except Exception as e:
-            logger.warning("Could not read %s: %s", manifest_path, e)
+            logger.warning("Could not read %s: %s", paths.manifest_json, e)
 
     by_domain = {c.get("domain"): c for c in companies if c.get("domain")}
-    for row in list_companies_from_output(base_dir):
+    for row in list_companies_from_output(paths):
         domain = row["domain"]
         if domain not in by_domain:
             by_domain[domain] = row
@@ -84,27 +78,6 @@ def load_companies_manifest(base_dir: Path) -> List[Dict[str, Any]]:
     return merged
 
 
-def save_companies_manifest(base_dir: Path, companies: List[Company]) -> None:
-    manifest_csv = base_dir / "data" / "companies.csv"
-    manifest_json = base_dir / "data" / "companies.json"
-    write_manifest(companies, manifest_csv, manifest_json)
-
-
-def sync_manifest_from_output(base_dir: Path) -> List[Dict[str, Any]]:
-    """Rebuild manifest from output/ and return company list."""
-    rows = list_companies_from_output(base_dir)
-    if not rows:
-        return load_companies_manifest(base_dir)
-
-    companies = [
-        Company(
-            company_id=r["company_id"],
-            domain=r["domain"],
-            folder_path=r["folder_path"],
-            status=r.get("status", "pending"),
-        )
-        for r in rows
-    ]
-    save_companies_manifest(base_dir, companies)
-    logger.info("Synced manifest with %d companies from output/", len(companies))
-    return [asdict(c) for c in companies]
+def save_companies_manifest(paths: SessionPaths, companies: List[Company]) -> None:
+    paths.root.mkdir(parents=True, exist_ok=True)
+    write_manifest(companies, paths.manifest_csv, paths.manifest_json)

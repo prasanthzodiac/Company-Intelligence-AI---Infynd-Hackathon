@@ -1,8 +1,12 @@
 /**
- * Same-origin Flask: leave unset (uses `/api`).
- * Split deploy (Vercel UI + Render API): set VITE_API_BASE_URL to your API root,
- * e.g. https://your-app.onrender.com/api (no trailing slash).
+ * API client — all data is scoped to an ephemeral browser session (sessionStorage).
  */
+import {
+  clearSessionId,
+  getSessionId,
+  setSessionId,
+} from './session.js'
+
 function resolveApiBase() {
   const raw = import.meta.env.VITE_API_BASE_URL
   if (raw === undefined || raw === null || String(raw).trim() === '') {
@@ -20,20 +24,90 @@ export const API_BASE = resolveApiBase()
 export const isProductionSameOriginApi = () =>
   Boolean(import.meta.env.PROD && API_BASE === '/api')
 
+function sessionHeaders(extra = {}) {
+  const sid = getSessionId()
+  const headers = { ...extra }
+  if (sid) {
+    headers['X-Session-Id'] = sid
+  }
+  return headers
+}
+
 /**
- * fetch() with clearer errors for cross-origin / offline API issues.
+ * Create a new server session (empty data). Call on app load.
  */
-export async function apiFetch(path, options = {}) {
-  const url = path.startsWith('http') ? path : `${API_BASE}${path.startsWith('/') ? path : `/${path}`}`
+export async function createSession() {
+  const { response, url } = await apiFetch('/session', {
+    method: 'POST',
+    skipSession: true,
+  })
+  if (!response.ok) {
+    throw new Error(`Failed to start session (${response.status})`)
+  }
+  const data = await response.json()
+  if (!data.session_id) {
+    throw new Error('Invalid session response from API')
+  }
+  setSessionId(data.session_id)
+  return data.session_id
+}
+
+/**
+ * Delete server-side session data (tab close).
+ */
+export function endSessionBeacon() {
+  const sid = getSessionId()
+  if (!sid) return
+  const url = `${API_BASE}/session?session_id=${encodeURIComponent(sid)}`
   try {
-    const response = await fetch(url, options)
+    fetch(url, {
+      method: 'DELETE',
+      headers: { 'X-Session-Id': sid },
+      keepalive: true,
+    }).catch(() => {})
+  } finally {
+    clearSessionId()
+  }
+}
+
+export async function ensureSession() {
+  if (getSessionId()) {
+    return getSessionId()
+  }
+  return createSession()
+}
+
+export async function resetSession() {
+  const sid = getSessionId()
+  if (sid) {
+    const url = `${API_BASE}/session?session_id=${encodeURIComponent(sid)}`
+    try {
+      await fetch(url, { method: 'DELETE', headers: { 'X-Session-Id': sid } })
+    } catch {
+      /* ignore */
+    }
+    clearSessionId()
+  }
+  return createSession()
+}
+
+export async function apiFetch(path, options = {}) {
+  const { skipSession, headers: extraHeaders, ...rest } = options
+  const url = path.startsWith('http')
+    ? path
+    : `${API_BASE}${path.startsWith('/') ? path : `/${path}`}`
+  const headers = skipSession
+    ? { ...extraHeaders }
+    : sessionHeaders(extraHeaders)
+
+  try {
+    const response = await fetch(url, { ...rest, headers })
     return { response, url }
   } catch (err) {
     const msg = err?.message || String(err)
     if (msg === 'Failed to fetch' || err instanceof TypeError) {
       throw new Error(
-        `Cannot reach API at ${url}. ` +
-          'Check Render is running, open /api/health in the browser, set VITE_API_BASE_URL on Vercel, and redeploy.'
+        `Cannot reach API at ${url}. Check Render is running and VITE_API_BASE_URL is set on Vercel.`
       )
     }
     throw err
@@ -41,6 +115,7 @@ export async function apiFetch(path, options = {}) {
 }
 
 export const getCompanies = async () => {
+  await ensureSession()
   const { response } = await apiFetch('/companies')
   if (!response.ok) {
     const body = await response.text().catch(() => '')

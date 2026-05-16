@@ -40,7 +40,7 @@ function MainContent({ companies, selectedDomain, profile, activePage, loading, 
     <main className="main-column">
       <div className="top-bar">
         <div />
-        <span className="badge">Offline Analyst Mode</span>
+        <span className="badge">Live extraction · session data</span>
       </div>
 
       <div className="content-scroll">{renderPage()}</div>

@@ -10,8 +10,9 @@ logger = logging.getLogger(__name__)
 
 
 class ProofsService:
-    def __init__(self, base_dir: Path):
-        self.base_dir = base_dir
+    def __init__(self, repo_base: Path, output_dir: Path | None = None):
+        self.repo_base = repo_base
+        self.output_dir = output_dir if output_dir is not None else repo_base / "output"
     
     def get_proofs(self, domain: str, query: str, response: str) -> List[Dict]:
         """
@@ -26,7 +27,7 @@ class ProofsService:
             List of proof objects with source information
         """
         try:
-            chunks_path = self.base_dir / "output" / domain / "chunks.json"
+            chunks_path = self.output_dir / domain / "chunks.json"
             if not chunks_path.exists():
                 return []
             
