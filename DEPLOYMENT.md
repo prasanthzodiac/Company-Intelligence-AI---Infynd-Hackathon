@@ -5,7 +5,7 @@ The Vercel app is static React only. Run the **Flask API** on Render or Railway,
 ## Prerequisites
 
 - Repo pushed to GitHub (or GitLab) with `data/`, `output/`, and `config/` as needed for your demo.
-- **LLM**: `config/settings.yaml` defaults to Ollama at `http://localhost:11434`. On a PaaS host, `localhost` is wrong unless you run Ollama on the same machine. Point `llm.api_url` (and model) to a reachable HTTP chat API (Ollama on another server, or an OpenAI-compatible proxy). Chat and extraction will fail until this is reachable from the container.
+- **LLM**: The app no longer assumes Ollama on `localhost` when you set environment variables on Render/Railway (see below). Without any LLM, scraping still runs; profiles use a **chunk-based fallback** when `LLM_FALLBACK_ON_ERROR=true` (default).
 
 ## Render
 
@@ -21,6 +21,23 @@ The Vercel app is static React only. Run the **Flask API** on Render or Railway,
 8. On **Vercel**, set `VITE_API_BASE_URL` to `https://<your-render-host>/api` and redeploy the frontend.
 
 **Notes:** Free web services spin down when idle; first request can be slow. Disk is ephemeral—uploads and new pipeline output can be lost on restart unless you add a disk or external storage.
+
+### LLM on Render / Railway (required for full AI features)
+
+Set these in the service **Environment** tab (copy from `.env.example`):
+
+| Variable | Example (Ollama on another server) | Example (OpenAI) |
+|----------|-----------------------------------|------------------|
+| `LLM_PROVIDER` | `ollama` | `openai` |
+| `LLM_API_URL` | `https://your-ollama-host:11434/api/chat` | `https://api.openai.com/v1/chat/completions` |
+| `LLM_MODEL` | `llama3` | `gpt-4o-mini` |
+| `LLM_API_KEY` | *(empty for Ollama)* | `sk-...` |
+
+Optional: `LLM_MAX_WORKERS=2`, `LLM_FALLBACK_ON_ERROR=true`.
+
+After deploy, open **`https://<your-api>/api/health`** — `llm.ok` should be `true`.
+
+**Do not use `localhost` on Render** unless Ollama runs in the same container (unusual). Use a remote Ollama URL or OpenAI/Groq/etc.
 
 ## Railway
 

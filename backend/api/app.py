@@ -68,8 +68,18 @@ def index():
 
 @app.route('/api/health', methods=['GET'])
 def health():
-    """Lightweight check that the API is reachable (use after deploy)."""
-    return jsonify({"status": "ok", "service": "company-intelligence-api"})
+    """API + LLM connectivity check (use after deploy)."""
+    from services.settings_loader import load_settings, get_llm_config
+    from services.llm_client import check_llm_reachable
+
+    settings = load_settings(base_dir)
+    llm_cfg = get_llm_config(settings)
+    llm_status = check_llm_reachable(llm_cfg)
+    return jsonify({
+        "status": "ok",
+        "service": "company-intelligence-api",
+        "llm": llm_status,
+    })
 
 
 @app.route('/api/companies', methods=['GET'])

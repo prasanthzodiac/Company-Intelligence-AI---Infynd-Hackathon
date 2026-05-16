@@ -157,8 +157,10 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
             }
             return
         
-        with config_path.open("r", encoding="utf-8") as f:
-            settings = yaml.safe_load(f)
+        from services.settings_loader import load_settings, get_llm_config
+        from services.llm_client import recommended_llm_workers
+
+        settings = load_settings(base_dir)
         
         data_dir = (base_dir / settings["paths"]["data_dir"]).resolve()
         output_dir = (base_dir / settings["paths"]["output_dir"]).resolve()
@@ -270,10 +272,16 @@ def run_pipeline(csv_path: Path, job_id: str, base_dir: Path) -> None:
             "processed_companies": downloaded_count
         }
         
-        # Step 2: LLM Extraction (parallel) - limit workers to avoid overwhelming Ollama
+        # Step 2: LLM extraction (parallel, rate-limited for remote/cloud LLMs)
         llm_args = [(c, output_dir, settings, base_dir) for c in companies]
-        # Limit LLM workers to 4-6 to avoid overwhelming Ollama, but still use parallel processing
-        llm_workers = max(1, min(min(6, num_workers), len(companies)))
+        llm_config = get_llm_config(settings)
+        llm_workers = recommended_llm_workers(llm_config, len(companies), num_workers)
+        logger.info(
+            "LLM provider=%s model=%s workers=%d",
+            llm_config.provider,
+            llm_config.model,
+            llm_workers,
+        )
         
         job_statuses[job_id] = {
             "stage": "llm",

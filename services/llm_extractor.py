@@ -1,5 +1,6 @@
 import json
 import logging
+import os
 import re
 from pathlib import Path
 from typing import Dict, List
@@ -88,44 +89,38 @@ def _build_prompt_text(domain: str, chunks: List[Dict]) -> str:
     return result
 
 
-def _call_ollama(model: str, system_prompt: str, user_prompt: str, api_url: str, temperature: float = 0.0) -> str:
-    payload = {
-        "model": model,
-        "stream": False,
-        "format": "json",
-        "options": {
-            "temperature": temperature,
-        },
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-    }
+def _call_llm(model: str, system_prompt: str, user_prompt: str, settings: Dict, temperature: float = 0.0) -> str:
+    from .llm_client import LLMConfig, chat_completion
+    from .settings_loader import get_llm_config
 
+    llm_cfg = get_llm_config(settings)
+    # Allow per-request model override from legacy callers
+    config = LLMConfig(
+        provider=llm_cfg.provider,
+        api_url=llm_cfg.api_url,
+        model=model or llm_cfg.model,
+        temperature=temperature if temperature is not None else llm_cfg.temperature,
+        api_key=llm_cfg.api_key,
+    )
     try:
-        response = requests.post(api_url, json=payload, timeout=600)
-        response.raise_for_status()
-        data = response.json()
-
-        # Ollama's /chat returns {"message": {"content": "..."}}
-        content = ""
-        if isinstance(data, dict):
-            msg = data.get("message") or {}
-            content = msg.get("content") or ""
-        if not content:
-            raise ValueError("Empty response from Ollama")
-        return content.strip()
+        return chat_completion(
+            config,
+            system_prompt,
+            user_prompt,
+            json_mode=True,
+            timeout=600,
+        )
     except requests.exceptions.Timeout:
-        logger.error("Ollama request timed out after 600 seconds")
+        logger.error("LLM request timed out after 600 seconds (%s)", config.api_url)
         raise
     except requests.exceptions.ConnectionError as e:
-        logger.error("Could not connect to Ollama at %s: %s", api_url, e)
-        raise ValueError(f"Could not connect to Ollama: {e}")
+        logger.error("Could not connect to LLM at %s: %s", config.api_url, e)
+        raise ValueError(f"Could not connect to LLM ({config.provider}): {e}") from e
     except requests.exceptions.HTTPError as e:
-        logger.error("Ollama HTTP error: %s", e)
+        logger.error("LLM HTTP error: %s", e)
         raise
     except Exception as e:
-        logger.error("Unexpected error calling Ollama: %s", e)
+        logger.error("Unexpected error calling LLM: %s", e)
         raise
 
 
@@ -333,6 +328,52 @@ def _default_profile_schema(domain: str) -> Dict:
     }
 
 
+def _fallback_profile_from_chunks(domain: str, chunks: List[Dict]) -> Dict:
+    """Build a minimal profile from scraped chunks when LLM is unavailable (cloud/offline)."""
+    profile = _default_profile_schema(domain)
+    if not chunks:
+        return profile
+
+    for chunk in chunks[:20]:
+        page_title = chunk.get("page_title", "")
+        if page_title and not profile.get("company_name"):
+            name = page_title.split("|")[0].split("-")[0].strip()
+            if name and len(name) < 100:
+                profile["company_name"] = name
+
+        meta_desc = chunk.get("meta_description", "")
+        if meta_desc and not profile.get("description_long"):
+            profile["description_long"] = meta_desc[:500]
+            profile["description_short"] = meta_desc[:100]
+
+    for chunk in chunks[:30]:
+        structured = chunk.get("structured_data") or {}
+        if not isinstance(structured, dict):
+            continue
+        emails = structured.get("emails") or []
+        if emails and not profile["contact"].get("email"):
+            valid = [e for e in emails if isinstance(e, str) and "@" in e]
+            if valid:
+                profile["contact"]["email"] = valid[0]
+        phones = structured.get("phones") or []
+        if phones and not profile["contact"].get("phone"):
+            valid_p = [p for p in phones if isinstance(p, str) and len(p) >= 10]
+            if valid_p:
+                profile["contact"]["phone"] = valid_p[0]
+        social = structured.get("social_links") or {}
+        if isinstance(social, dict):
+            for key in profile["social"]:
+                if social.get(key) and not profile["social"].get(key):
+                    profile["social"][key] = social[key]
+        addresses = structured.get("addresses") or []
+        if addresses and not profile.get("headquarters"):
+            profile["headquarters"] = addresses[0]
+            profile["contact"]["full_address"] = addresses[0]
+
+    profile["domain_status"] = "Active"
+    return profile
+
+
 def extract_profile_for_company(
     company: Company,
     output_dir: Path,
@@ -358,10 +399,11 @@ def extract_profile_for_company(
         logger.error("No chunks available for %s", company.domain)
         return "failed_llm"
 
-    llm_cfg = settings.get("llm", {})
-    model = llm_cfg.get("model", "llama3")
-    temperature = float(llm_cfg.get("temperature", 0.0))
-    api_url = llm_cfg.get("api_url", "http://localhost:11434/api/chat")
+    from .settings_loader import get_llm_config
+
+    llm_cfg = get_llm_config(settings)
+    model = llm_cfg.model
+    temperature = llm_cfg.temperature
 
     prompt_path = base_dir / "prompts" / "profile_extraction.txt"
     if not prompt_path.exists():
@@ -387,7 +429,7 @@ def extract_profile_for_company(
 
     for attempt in range(2):  # one retry allowed
         try:
-            raw = _call_ollama(model=model, system_prompt=system_prompt, user_prompt=user_prompt, api_url=api_url, temperature=temperature)
+            raw = _call_llm(model=model, system_prompt=system_prompt, user_prompt=user_prompt, settings=settings, temperature=temperature)
             parsed = _ensure_valid_json(raw)
             profile_data = _default_profile_schema(company.domain)
             
@@ -1145,7 +1187,25 @@ def extract_profile_for_company(
             logger.warning("Attempt %d to extract profile for %s failed: %s", attempt + 1, company.domain, e)
 
     logger.error("LLM extraction failed for %s after retries: %s", company.domain, last_error)
-    # Write a minimal failed profile for traceability
+
+    fallback = os.environ.get("LLM_FALLBACK_ON_ERROR", "true").lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+    if fallback:
+        fallback_profile = _fallback_profile_from_chunks(company.domain, chunks)
+        fallback_profile["extraction_confidence"] = _calculate_extraction_confidence(
+            fallback_profile
+        )
+        fallback_profile["llm_fallback"] = True
+        if last_error:
+            fallback_profile["llm_error"] = str(last_error)
+        with profile_path.open("w", encoding="utf-8") as f:
+            json.dump(fallback_profile, f, ensure_ascii=False, indent=2)
+        logger.info("Wrote chunk-based fallback profile for %s", company.domain)
+        return "profile_generated"
+
     failed_profile = _default_profile_schema(company.domain)
     failed_profile["extraction_confidence"] = 0.0
     failed_profile["error"] = str(last_error) if last_error else "Unknown error"

@@ -13,17 +13,14 @@ downloader:
   timeout_seconds: 600
 
 parallel:
-  # Number of parallel workers for download/crawl (0 = auto-detect CPU count)
   workers: 0
-  # Enable parallel LLM extraction (may overwhelm Ollama if too many workers)
-  # Set to true for faster processing, but limit to 2-4 workers to avoid overwhelming Ollama
   parallel_llm: true
 
+# LLM — overridden by environment variables on Render/Railway (see .env.example)
 llm:
-  # Ollama model name, e.g. "llama3" or "llama3.3"
-  model: "llama3"
+  # ollama = local/remote Ollama | openai = OpenAI-compatible HTTP API
+  provider: ollama
+  model: llama3
   temperature: 0.0
-  # Ollama chat endpoint
   api_url: "http://localhost:11434/api/chat"
-
-
+  api_key: ""
