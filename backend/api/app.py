@@ -66,6 +66,12 @@ def index():
         return render_template('index.html')
 
 
+@app.route('/api/health', methods=['GET'])
+def health():
+    """Lightweight check that the API is reachable (use after deploy)."""
+    return jsonify({"status": "ok", "service": "company-intelligence-api"})
+
+
 @app.route('/api/companies', methods=['GET'])
 def get_companies():
     """Get list of all companies"""
@@ -410,11 +416,10 @@ if is_production:
         """Serve React build assets"""
         return send_from_directory(str(frontend_dist / 'assets'), path)
     
-    # Catch-all route for React Router (must be last)
-    @app.route('/<path:path>')
+    # Catch-all for React (GET only — never handle POST /api/* here)
+    @app.route('/<path:path>', methods=['GET'])
     def serve_react_app(path):
         """Serve React app for client-side routing"""
-        # Don't interfere with API routes
         if path.startswith('api/') or path.startswith('data/') or path.startswith('output/'):
             return jsonify({"error": "Not found"}), 404
         return send_file(str(frontend_dist / 'index.html'))

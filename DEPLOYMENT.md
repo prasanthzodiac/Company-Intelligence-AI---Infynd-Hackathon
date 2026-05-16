@@ -45,3 +45,10 @@ Then open `http://127.0.0.1:5000/api/companies`.
 ## CORS
 
 `flask-cors` is enabled for all origins by default in `backend/api/app.py`, so browser calls from your Vercel domain to the API URL are allowed.
+
+## Upload returns 404
+
+1. Open **`https://<your-render-host>/api/health`** — must return `{"status":"ok",...}`. If this 404s, fix Render first (start command `wsgi:app` or `app:app`, latest code deployed).
+2. **`VITE_API_BASE_URL`** must be the API root, e.g. `https://YOUR-SERVICE.onrender.com/api` (with `/api`). If you only set the host, the frontend now auto-appends `/api` after you redeploy Vercel.
+3. **Redeploy Vercel** after changing env vars (build-time variable).
+4. In the browser **Network** tab, the upload request must go to **`https://...onrender.com/api/upload-csv`**, not `...vercel.app/api/upload-csv`.

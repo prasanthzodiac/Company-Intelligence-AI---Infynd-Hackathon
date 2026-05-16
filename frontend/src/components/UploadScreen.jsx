@@ -119,9 +119,10 @@ function UploadScreen({ onProcessingComplete }) {
 
     const formData = new FormData()
     formData.append('csv_file', csvFile)
+    const uploadUrl = `${API_BASE}/upload-csv`
 
     try {
-      const uploadResponse = await fetch(`${API_BASE}/upload-csv`, {
+      const uploadResponse = await fetch(uploadUrl, {
         method: 'POST',
         body: formData
       })
@@ -134,6 +135,9 @@ function UploadScreen({ onProcessingComplete }) {
           errorMessage = errorData.error || errorMessage
         } catch (e) {
           errorMessage = `Failed to upload CSV: ${uploadResponse.status} ${uploadResponse.statusText}`
+        }
+        if (uploadResponse.status === 404) {
+          errorMessage += `\n\nRequested: ${uploadUrl}\nCheck Render is live and VITE_API_BASE_URL is your API root (e.g. https://YOUR-SERVICE.onrender.com/api), then redeploy Vercel.`
         }
         throw new Error(errorMessage)
       }

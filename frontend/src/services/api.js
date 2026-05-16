@@ -7,7 +7,12 @@ function resolveApiBase() {
   if (raw === undefined || raw === null || String(raw).trim() === '') {
     return '/api'
   }
-  return String(raw).replace(/\/$/, '')
+  let base = String(raw).trim().replace(/\/+$/, '')
+  // Common mistake: https://my-app.onrender.com (missing /api)
+  if (/^https?:\/\//i.test(base) && !base.endsWith('/api')) {
+    base = `${base}/api`
+  }
+  return base
 }
 
 export const API_BASE = resolveApiBase()
